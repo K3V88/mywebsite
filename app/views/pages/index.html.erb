@@ -9,18 +9,21 @@
 <body>
 
 <div id="articles">
+
+
    <% @articles.each do |article| %>
       <div class="article">
         <h2><%= article.title %></h2>
-        <p><%= article.content %></p>
+        <%= image_tag "Ecruteak2.jpg" %>
+        <p><%= article.content.html_safe %></p>
          <div class="article-buttons">
     <button class="like-button">Like</button>
     <button class="comment-button">Comment</button>
     <button class="share-button">Share</button>
 
-  </div>
       </div>
-    <% end %>
+  </div>
+  <% end %>
   <!-- Your articles go here -->
   <div class="article">Article 1</div>
   <div class="article">Article 2</div>

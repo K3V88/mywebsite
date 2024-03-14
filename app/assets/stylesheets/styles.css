@@ -1,4 +1,6 @@
-
+body {
+  background-color: rgb(230, 213, 213);
+}
 
 #articles {
   display: flex;
@@ -7,6 +9,7 @@
   justify-content: center;
   margin-top: 250px;
   border-top: 5px solid rgb(255, 208, 0);
+
 
    /* Enable vertical scrolling when content overflows */
 }
@@ -22,6 +25,7 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
+  background-color: white;
 
 
 }
@@ -32,7 +36,7 @@
 
 h2 {
   color: rgb(22, 29, 68);
-  font-size: 40px;
+  font-size: 35px;
 }
 
 #pagination {
