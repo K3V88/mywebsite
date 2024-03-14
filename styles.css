@@ -1,0 +1,25 @@
+/* Define styles for articles and pagination */
+#articles {
+  max-height: 300px; /* Set a fixed height for demonstration */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+.article {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pagination a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: blue;
+}
+
+#pagination a:hover {
+  text-decoration: underline;
+}
