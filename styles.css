@@ -5,8 +5,9 @@
 }
 
 .article {
-  padding: 10px;
+  padding: 50px;
   border-bottom: 1px solid #ccc;
+  color: blue;
 }
 
 #pagination {
