@@ -6,15 +6,16 @@
   align-items: center;
   justify-content: center;
   margin-top: 250px;
-  border-top: 5px solid rgb(66, 62, 44);
+  border-top: 5px solid rgb(255, 208, 0);
 
    /* Enable vertical scrolling when content overflows */
 }
 
 .article {
-  color: rgb(145, 145, 184);
+  color: rgb(6, 6, 13);
   border-left: 4px solid rgb(47, 189, 237);
   border-right: 4px solid rgb(47, 189, 237);
+  font-family: calibri;
   width: 700px;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,7 @@
 }
 
 .article p {
-  font-size: 20px; /* Set font size for <p> elements inside .article */
+  font-size: 21px; /* Set font size for <p> elements inside .article */
 }
 
 h2 {
