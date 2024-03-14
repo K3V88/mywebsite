@@ -1,17 +1,18 @@
-/* Define styles for articles and pagination */
+
+
 #articles {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 150px;
-  border-top: 5px solid gold;
+  margin-top: 250px;
+  border-top: 5px solid rgb(66, 62, 44);
+
    /* Enable vertical scrolling when content overflows */
 }
 
 .article {
-  padding: 50px;
-  color: blue;
+  color: rgb(145, 145, 184);
   border-left: 4px solid rgb(47, 189, 237);
   border-right: 4px solid rgb(47, 189, 237);
   width: 700px;
@@ -19,11 +20,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50px;
 
+
+}
+
+.article p {
+  font-size: 20px; /* Set font size for <p> elements inside .article */
 }
 
 h2 {
   color: rgb(22, 29, 68);
+  font-size: 40px;
 }
 
 #pagination {
@@ -39,4 +47,24 @@ h2 {
 
 #pagination a:hover {
   text-decoration: underline;
+}
+
+.article-buttons {
+  margin-top: 20px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+}
+
+.article-buttons button {
+  margin: 0 10px; /* Adjust spacing between buttons as needed */
+  padding: 10px 20px;
+  background-color: #007bff; /* Example background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.article-buttons button:hover {
+  background-color: #0056b3; /* Example background color on hover */
 }
