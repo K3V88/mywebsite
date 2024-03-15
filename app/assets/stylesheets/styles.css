@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(230, 213, 213);
+  background-color: rgb(255, 255, 255);
+  margin: 0;
 }
 
 #articles {
@@ -7,8 +8,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 250px;
   border-top: 5px solid rgb(255, 208, 0);
+  margin-top: -100px;
+
+
+   /* Enable vertical scrolling when content overflows */
+}
+
+#articlestop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 
    /* Enable vertical scrolling when content overflows */
@@ -25,7 +36,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(47, 189, 237);
 
 
 }
@@ -39,9 +51,9 @@ body {
   align-items: left;
   justify-content: left;
   margin: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(255, 255, 255);
   border-top: 1px solid rgb(47, 189, 237);
   border-bottom: 1px solid rgb(47, 189, 237);
 
@@ -50,7 +62,7 @@ body {
 
 
 .article p {
-  font-size: 21px; /* Set font size for <p> elements inside .article */
+  font-size: 19px; /* Set font size for <p> elements inside .article */
 }
 
 h2 {
@@ -77,12 +89,13 @@ h2 {
   margin-top: 20px; /* Adjust as needed */
   display: flex;
   justify-content: center;
+
 }
 
 .article-buttons button {
   margin: 0 10px; /* Adjust spacing between buttons as needed */
   padding: 10px 20px;
-  background-color: #007bff; /* Example background color */
+  background-color: rgb(47, 189, 237);/* Example background color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -108,9 +121,25 @@ h2 {
   height: 350px;
 }
 
+.article-imagetop {
+  float: right; /* Float the image to the left */
+  margin-left: 20px; /* Add margin to the right to create space between the image and text */
+  margin-bottom: 5px;
+  margin-top: 15px;
+  height: 550px;
+}
+
+.article-image3 {
+  float: right; /* Float the image to the left */
+  margin-left: 20px; /* Add margin to the right to create space between the image and text */
+  margin-bottom: 5px;
+  margin-top: 5px;
+  height: 250px;
+}
+
 
 .navbar {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
   width: 800px;
   display: flex;
@@ -119,6 +148,7 @@ h2 {
   justify-content: center;
   border-left: 4px solid rgb(47, 189, 237);
   border-right: 4px solid rgb(47, 189, 237);
+  padding-top: 30px;
 }
 
 .navbar a {
@@ -138,4 +168,21 @@ h2 {
 .navbar a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.donate-button {
+  padding: 15px 30px;
+  margin: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ffc107; /* Golden color */
+  color: #fff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.donate-button:hover {
+  background-color: #ffecb3; /* Lighter golden color */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Golden glow effect */
 }
