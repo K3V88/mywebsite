@@ -6,42 +6,44 @@
 <title>Page Navigation</title>
 <link rel="stylesheet" type="text/css" href="/assets/styles.css">
 </head>
+
 <body>
 <div id="articlestop">
   <%= image_tag "goldenrodcity.jpg", class: "article-imagetop" %>
   </div>
 
 <div id="articles">
-<div class="navbar">
+
+    <div class="tracker">
+ <div class="navbar">
     <a href="index">Home</a>
     <a href="#">Pokédex</a>
     <a href="tracker">Pokémon Tracker</a>
     <a href="staff">Our Staff</a>
     <a href="about">About</a>
-</div>
-<div class="article">
-
-    <h2>Pokemon Tracker</h2>
-    <p>The Pokemon Tracker for speedrunners is a user-friendly web page designed to assist players in tracking their progress in capturing Pokemon during speedruns. It features a grid layout displaying all Pokemon sprites, allowing players to easily visualize their collection. The interface allows players to mark a Pokemon as caught by left-clicking on its sprite. Conversely, right-clicking a Pokemon sprite marks it as a target to be caught. This intuitive design streamlines the tracking process, enabling speedrunners to efficiently manage their progress and optimize their gameplay strategies.</p>
-
-<div class="pokebox"> THIS IS WHERE THE POKERMON GO
   </div>
+      <h2>Pokemon Tracker</h2>
+      <p>The Pokemon Tracker for speedrunners is a user-friendly web page designed to assist players in tracking their progress in capturing Pokemon during speedruns. It features a grid layout displaying all Pokemon sprites, allowing players to easily visualize their collection. The interface allows players to mark a Pokemon as caught by left-clicking on its sprite. Conversely, right-clicking a Pokemon sprite marks it as a target to be caught. This intuitive design streamlines the tracking process, enabling speedrunners to efficiently manage their progress and optimize their gameplay strategies.</p>
+      <div class="boxtop"></div>
+      <div class="pokebox"></div>
 
-<h2>Generation 1</h2>
-<%= render partial: 'shared/pokemon_sprites_normal' %>
-<h2>Shiny Generation 1</h2>
-<%= render partial: 'shared/pokemon_sprites_shiny' %>
-<h2>Generation 2</h2>
-<%= render partial: 'shared/pokemon_sprites_normal2' %>
-<h2>Shiny Generation 2</h2>
-<%= render partial: 'shared/pokemon_sprites_shiny2' %>
-<h2>Generation 3</h2>
-<%= render partial: 'shared/pokemon_sprites_normal_rs' %>
-<h2>Shiny Generation 3</h2>
-<%= render partial: 'shared/pokemon_sprites_shiny_rs' %>
+      <h2>Generation 1</h2>
+      <%= render partial: 'shared/pokemon_sprites_normal' %>
+      <h2>Shiny Generation 1</h2>
+      <%= render partial: 'shared/pokemon_sprites_shiny' %>
+      <h2>Generation 2</h2>
+      <%= render partial: 'shared/pokemon_sprites_normal2' %>
+      <h2>Shiny Generation 2</h2>
+      <%= render partial: 'shared/pokemon_sprites_shiny2' %>
+      <h2>Generation 3</h2>
+      <%= render partial: 'shared/pokemon_sprites_normal_rs' %>
+      <h2>Shiny Generation 3</h2>
+    <%= render partial: 'shared/pokemon_sprites_shiny_rs' %>
 
 
 
 
 <button class="donate-button">Donate</button>
 </div>
+  <script src="pokemon.js"></script>
+</body>
