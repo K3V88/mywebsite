@@ -186,3 +186,31 @@ h2 {
   background-color: #ffecb3; /* Lighter golden color */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Golden glow effect */
 }
+
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 3px solid rgb(47, 189, 237);
+  border-bottom: 3px solid rgb(47, 189, 237);
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+}
+
+.pokemon-sprite {
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.pokebox {
+  width: 700px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  padding-top: 30px;
+}

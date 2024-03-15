@@ -1,0 +1,11 @@
+<!-- _pokemon_sprites.html.erb -->
+<div class="pokemon-container">
+  <% (1..151).each do |index| %>
+    <div class="pokemon-sprite">
+      <%= image_tag "sprites/normal/#{index}.png" %>
+    </div>
+    <% if index % 7 == 0 %>
+      <div class="clear"></div>
+    <% end %>
+  <% end %>
+</div>
