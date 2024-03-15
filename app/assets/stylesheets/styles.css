@@ -47,14 +47,15 @@ body {
   border-left: 4px solid rgb(47, 189, 237);
   border-right: 4px solid rgb(47, 189, 237);
   font-family: calibri;
-  width: 900px;
+  width: 996px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
   background-color: rgb(255, 255, 255);
   border-bottom: 2px solid rgb(47, 189, 237);
+  margin-right: -20px;
+  padding-top: 50px;
 
 
 }
@@ -214,18 +215,17 @@ h2 {
 
 .pokemon-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   border-top: 3px solid rgb(47, 189, 237);
   border-bottom: 3px solid rgb(47, 189, 237);
   padding-bottom: 20px;
   padding-top: 20px;
-
 }
 
 .pokemon-sprite {
-  width: 80px;
-  height: 80px;
-  padding-left: 3px;
+  width: 83px;
+  height: 83px;
 }
 
 .clear {
@@ -233,14 +233,47 @@ h2 {
 }
 
 .pokebox {
-  width: 1000px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
-  height: 600px;
+  height: 581px;
   overflow: auto;
+  border-bottom: 1px solid black;
+
+}
+
+.boxtop {
+  background-color: #ffc107;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 5px solid rgb(47, 189, 237);
+  border-bottom: 5px solid rgb(47, 189, 237);
+  border-left: 2px solid rgb(47, 189, 237);
+  border-right: 2px solid rgb(47, 189, 237);
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+.boxtop span {
+  font-size: 22px;
+  color: #333; /* Example color */
+}
+
+.tracker p {
+  font-size: 22px;
+  color: #333; /* Example color */
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+#color-selector {
+  margin-top: 0px;
+  font-size: 22px;
 }

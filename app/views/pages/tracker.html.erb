@@ -5,45 +5,82 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page Navigation</title>
 <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+ <script src="assets/javascripts/pokemon.js"></script>
 </head>
 
 <body>
 <div id="articlestop">
   <%= image_tag "goldenrodcity.jpg", class: "article-imagetop" %>
-  </div>
+</div>
 
 <div id="articles">
 
     <div class="tracker">
- <div class="navbar">
-    <a href="index">Home</a>
-    <a href="#">Pokédex</a>
-    <a href="tracker">Pokémon Tracker</a>
-    <a href="staff">Our Staff</a>
-    <a href="about">About</a>
-  </div>
-      <h2>Pokemon Tracker</h2>
-      <p>The Pokemon Tracker for speedrunners is a user-friendly web page designed to assist players in tracking their progress in capturing Pokemon during speedruns. It features a grid layout displaying all Pokemon sprites, allowing players to easily visualize their collection. The interface allows players to mark a Pokemon as caught by left-clicking on its sprite. Conversely, right-clicking a Pokemon sprite marks it as a target to be caught. This intuitive design streamlines the tracking process, enabling speedrunners to efficiently manage their progress and optimize their gameplay strategies.</p>
-      <div class="boxtop"></div>
-      <div class="pokebox"></div>
+        <div class="navbar">
+            <a href="index">Home</a>
+            <a href="#">Pokédex</a>
+            <a href="tracker">Pokémon Tracker</a>
+            <a href="staff">Our Staff</a>
+            <a href="about">About</a>
+        </div>
+        <h2>Pokémon Tracker</h2>
+        <p>The Pokémon Tracker for speedrunners is a user-friendly web page designed to assist players in tracking their progress in capturing Pokemon during speedruns. It features a grid layout displaying all Pokemon sprites, allowing players to easily visualize their collection. The interface allows players to mark a Pokemon as caught by left-clicking on its sprite. Conversely, right-clicking a Pokemon sprite marks it as a target to be caught. This intuitive design streamlines the tracking process, enabling speedrunners to efficiently manage their progress and optimize their gameplay strategies.</p>
+        <h2>INSTRUCTIONS:</h2>
+        <br>
+        <p><b>Step 1:</b> Refresh the page</p>
+        <br>
+        <p><b>Step 2:</b> Click the Pokémon you want to track</p>
+        <br>
+        <p><b>Step 3:</b> Left click to remove a Pokémon from the box</p>
+        <br>
+        <p><b>Step 4:</b> Right click once to mark a Pokémon as planned</p>
+        <br>
+        <p><b>Step 5:</b> Right click twice to mark a Pokémon as caught</p>
+        <br>
+        <p><b>Step 6:</b> Right click thrice to unmark a Pokémon</p>
+        <br>
+         <div id="color-selector">
+          <label for="background-color"><b>Step 7</b>: Click to pick a color:</label>
+          <input type="color" id="background-color">
+        </div>
 
-      <h2>Generation 1</h2>
-      <%= render partial: 'shared/pokemon_sprites_normal' %>
-      <h2>Shiny Generation 1</h2>
-      <%= render partial: 'shared/pokemon_sprites_shiny' %>
-      <h2>Generation 2</h2>
-      <%= render partial: 'shared/pokemon_sprites_normal2' %>
-      <h2>Shiny Generation 2</h2>
-      <%= render partial: 'shared/pokemon_sprites_shiny2' %>
-      <h2>Generation 3</h2>
-      <%= render partial: 'shared/pokemon_sprites_normal_rs' %>
-      <h2>Shiny Generation 3</h2>
-    <%= render partial: 'shared/pokemon_sprites_shiny_rs' %>
+        <div class="boxtop">
+            <div id="counter-container">
+                <span id="blue-counter"><b>0</b></span> Pokémon planned and
+                <span id="pink-counter"><b>0</b></span> Pokémon caught
+            </div>
+        </div>
 
 
+        <div class="pokebox"></div>
 
+        <h2>Red & Blue - Generation 1</h2>
+        <%= render partial: 'shared/pokemon_sprites_normal' %>
+        <h2>Red & Blue - Shiny Generation 1</h2>
+        <%= render partial: 'shared/pokemon_sprites_shiny' %>
+        <h2>Gold & Silver - Generation 2</h2>
+        <%= render partial: 'shared/pokemon_sprites_normal2' %>
+        <h2>Gold & Silver - Shiny Generation 2</h2>
+        <%= render partial: 'shared/pokemon_sprites_shiny2' %>
+        <h2>Ruby & Sapphire - Generation 3</h2>
+        <%= render partial: 'shared/pokemon_sprites_normal_rs' %>
+        <h2>Ruby & Sapphire - Shiny Generation 3</h2>
+        <%= render partial: 'shared/pokemon_sprites_shiny_rs' %>
 
-<button class="donate-button">Donate</button>
+        <button class="donate-button">Donate</button>
+    </div>
+
 </div>
-  <script src="pokemon.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const pokebox = document.querySelector(".pokebox");
+    const colorSelector = document.getElementById("background-color");
+
+    colorSelector.addEventListener("change", function() {
+      const selectedColor = colorSelector.value;
+      pokebox.style.backgroundColor = selectedColor;
+    });
+  });
+</script>
 </body>
+</html>
