@@ -66,4 +66,24 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
+  // Share buttons
+  const facebookBtn = document.getElementById('facebook-share');
+  const twitterBtn = document.getElementById('twitter-share');
+
+  // Example URL for sharing, replace it with your actual share URL
+  const articleUrl = window.location.href; // Get the URL of the current page
+
+  // Share functionality for Facebook
+  facebookBtn.addEventListener('click', function() {
+    console.log('Facebook share button clicked');
+    const facebookShareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(articleUrl);
+    window.open(facebookShareUrl, '_blank');
+  });
+
+  // Share functionality for Twitter
+  twitterBtn.addEventListener('click', function() {
+    const twitterShareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(articleUrl);
+    window.open(twitterShareUrl, '_blank');
+  });
 });

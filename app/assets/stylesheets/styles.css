@@ -66,7 +66,7 @@ body {
 .headline {
   color: rgb(6, 6, 13);
   font-family: calibri;
-  width: 850px;
+  width: 800px;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -125,6 +125,7 @@ h2 {
 .article-buttons button:hover {
   background-color: #0056b3; /* Example background color on hover */
 }
+
 
 .article-image {
   float: left; /* Float the image to the left */
@@ -265,8 +266,8 @@ h2 {
   padding-bottom: 10px;
   border-top: 5px solid rgb(47, 189, 237);
   border-bottom: 5px solid rgb(47, 189, 237);
-  border-left: 5px solid rgb(47, 189, 237);
-  border-right: 5px solid rgb(47, 189, 237);
+  border-left: 3px solid rgb(47, 189, 237);
+  border-right: 3px solid rgb(47, 189, 237);
   font-size: 22px;
   margin-top: 25px;
 }
@@ -288,4 +289,85 @@ h2 {
 #color-selector {
   margin-top: 0px;
   font-size: 22px;
+}
+
+
+.staff-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.staff-image {
+  width: 250px; /* Adjust as needed */
+}
+
+.staff-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid rgb(47, 189, 237);
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.center-aligned {
+  text-align: right;
+}
+
+.staff-description {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.staff-info {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.staff-info p {
+  margin: 2px; /* Remove margin */
+  padding: 0; /* Remove padding */
+  font-size: 17px;
+}
+
+.staff-name {
+  font-family: "Your Desired Name Font", sans-serif; /* Replace "Your Desired Name Font" with the font for staff names */
+  font-weight: bold; /* Example style for staff names */
+  font-size: 25px;
+}
+
+.staff-role {
+  font-family: "Your Desired Role Font", sans-serif; /* Replace "Your Desired Role Font" with the font for staff roles */
+  font-style: italic; /* Example style for staff roles */
+}
+
+.staff-hometown {
+  font-family: "Your Desired Hometown Font", sans-serif; /* Replace "Your Desired Hometown Font" with the font for staff hometowns */
+  color: #3366cc; /* Example color for staff hometowns */
+}
+
+.staff-favorite {
+  font-family: "Your Desired Favorite Font", sans-serif; /* Replace "Your Desired Favorite Font" with the font for staff favorite Pokemon */
+}
+
+.staff-member .staff-name {
+  font-size: 25px; /* Adjust the font size as needed */
+  font-family: calibri;
+}
+
+.staff-member .staff-role {
+  margin-bottom: 20px;
+  margin-top: 4px;
+  font-size: 19px;
+}
+
+.article-title {
+}
+
+.art-image {
 }
