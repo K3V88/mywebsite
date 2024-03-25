@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page Navigation</title>
 <link rel="stylesheet" type="text/css" href="/assets/styles.css">
- <script src="assets/javascripts/pokemon.js"></script>
 </head>
 
 <body>
@@ -26,18 +25,16 @@
         <h2>Pokémon Tracker</h2>
         <p>The Pokémon Tracker for speedrunners is a user-friendly web page designed to assist players in tracking their progress in capturing Pokemon during speedruns. It features a grid layout displaying all Pokemon sprites, allowing players to easily visualize their collection. The interface allows players to mark a Pokemon as caught by left-clicking on its sprite. Conversely, right-clicking a Pokemon sprite marks it as a target to be caught. This intuitive design streamlines the tracking process, enabling speedrunners to efficiently manage their progress and optimize their gameplay strategies.</p>
         <h2>INSTRUCTIONS:</h2>
+         <br>
+        <p><b>Step 1:</b> Click the Pokémon you want to track</p>
         <br>
-        <p><b>Step 1:</b> Refresh the page</p>
+        <p><b>Step 2:</b> Left click to remove a Pokémon from the box</p>
         <br>
-        <p><b>Step 2:</b> Click the Pokémon you want to track</p>
+        <p><b>Step 3:</b> Right click once to mark a Pokémon as planned</p>
         <br>
-        <p><b>Step 3:</b> Left click to remove a Pokémon from the box</p>
+        <p><b>Step 4:</b> Right click twice to mark a Pokémon as caught</p>
         <br>
-        <p><b>Step 4:</b> Right click once to mark a Pokémon as planned</p>
-        <br>
-        <p><b>Step 5:</b> Right click twice to mark a Pokémon as caught</p>
-        <br>
-        <p><b>Step 6:</b> Right click thrice to unmark a Pokémon</p>
+        <p><b>Step 5:</b> Right click thrice to unmark a Pokémon</p>
         <br>
          <div id="color-selector">
           <label for="background-color"><b>Step 7</b>: Click to pick a color:</label>
@@ -72,6 +69,8 @@
 
 </div>
 <script>
+
+
   document.addEventListener("DOMContentLoaded", function() {
     const pokebox = document.querySelector(".pokebox");
     const colorSelector = document.getElementById("background-color");

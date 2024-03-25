@@ -221,6 +221,18 @@ h2 {
   border-bottom: 3px solid rgb(47, 189, 237);
   padding-bottom: 20px;
   padding-top: 20px;
+  padding-left: 10px;
+}
+
+.pokemon-containerRS {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 3px solid rgb(47, 189, 237);
+  border-bottom: 3px solid rgb(47, 189, 237);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 .pokemon-sprite {
@@ -246,15 +258,15 @@ h2 {
 
 .boxtop {
   background-color: #ffc107;
-  width: 1000px;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 5px solid rgb(47, 189, 237);
   border-bottom: 5px solid rgb(47, 189, 237);
-  border-left: 2px solid rgb(47, 189, 237);
-  border-right: 2px solid rgb(47, 189, 237);
+  border-left: 5px solid rgb(47, 189, 237);
+  border-right: 5px solid rgb(47, 189, 237);
   font-size: 22px;
   margin-top: 25px;
 }
