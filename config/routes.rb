@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/staff', to: 'pages#staff'
   get '/tracker', to: 'pages#tracker'
   get '/index', to: 'pages#index'
+  get '/pokequiz', to: 'pages#pokequiz'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

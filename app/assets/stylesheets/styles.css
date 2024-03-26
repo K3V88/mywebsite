@@ -371,3 +371,112 @@ h2 {
 
 .art-image {
 }
+
+.quiz-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  font-family: calibri;
+  border: 2px solid rgb(47, 189, 237);
+  display: flex;
+  flex-direction: column; /* Ensure restart button is below other content */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.question-container {
+  background-color: #0ac840;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  font-family: calibri;
+}
+
+#question {
+  margin-bottom: 20px;
+  font-family: calibri;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 10px; /* Gap between grid items */
+  justify-content: center;
+  font-family: calibri;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: gold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.option-btn {
+  margin: 10px;
+  padding: 15px 35px !important;
+  font-size: 25px !important;
+  font-style: bolder !important;;
+  background-color: #00d9ff;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease; /* Added transition for smooth effect */
+  /* Button styles */
+}
+
+.option-btn:hover {
+  background-color: #088cb8 !important; /* Change color on hover */
+}
+
+#restart-btn {
+}
+
+@keyframes blink-red {
+  0% {
+    background-color: #ff0000;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    background-color: #f31515;
+  }
+}
+
+@keyframes blink-green {
+  0% {
+    background-color: #00f000; /* Light green */
+  }
+  50% {
+    opacity: 0.5; /* Medium green */
+  }
+  100% {
+    background-color: #0af602; /* Dark green */
+  }
+}
+
+.blink-red {
+  animation: blink-red 3s linear infinite;
+}
+
+.blink-green {
+  animation: blink-green 3s linear infinite;
+}

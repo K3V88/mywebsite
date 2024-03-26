@@ -12,4 +12,7 @@ class PagesController < ApplicationController
 
   def tracker
   end
+
+  def pokequiz
+  end
 end
