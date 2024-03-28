@@ -374,16 +374,18 @@ h2 {
 
 .quiz-container {
   background-color: none;
-  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
   width: 400px;
   font-family: calibri;
   border: 2px solid rgb(47, 189, 237);
   display: flex;
   flex-direction: column; /* Ensure restart button is below other content */
   align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content horizontally */
 }
 
 #question-container {
@@ -394,12 +396,13 @@ h2 {
 }
 
 #question {
+  margin-top: -20px;
   margin-bottom: 20px;
   font-family: calibri;
 }
 
 #result {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 #options {
@@ -408,6 +411,8 @@ h2 {
   gap: 10px; /* Gap between grid items */
   justify-content: center;
   font-family: calibri;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 button {
@@ -428,7 +433,7 @@ button:hover {
 .option-btn {
   margin: 10px;
   padding: 15px 35px !important;
-  font-size: 25px !important;
+  font-size: 17px !important;
   font-style: bolder !important;;
   background-color: rgb(47, 189, 237);
   color: #ffffff !important;
@@ -566,5 +571,16 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+
+.bottom {
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 20px;
 
 }
