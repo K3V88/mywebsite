@@ -508,7 +508,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
-
+  // REMOVE THE CLASSES OF SQUARE 5 AND 6
 
   }
   // Initialize Level 1 quiz when the page loads
@@ -547,7 +547,6 @@ document.addEventListener("DOMContentLoaded", function() {
     resultContainer.style.display = "none";
 
     const levelCompleteText = document.createElement('p');
-    levelCompleteText.textContent = `Level ${currentLevel - 1} Complete!`; // Display the completed level number
 
     // Set background color based on the completed level and add additional messages
     if (currentLevel === 2) {
@@ -564,10 +563,11 @@ document.addEventListener("DOMContentLoaded", function() {
       levelCompleteText.textContent = "Pewter City ✔"; // Additional message for level 4
     } else if (currentLevel === 6) {
       questionContainers[currentLevel - 2].style.backgroundColor = ""; // Level 5 complete, purple background
+      questionContainers[currentLevel - 2].textContent = "";
       levelCompleteText.textContent = ""; // Additional message for final level
     } else if (currentLevel === 7) {
-      questionContainers[currentLevel - 2].style.backgroundColor = "gold"; // Level 6 complete, purple background
-      levelCompleteText.textContent = "Brock Defeated!"; // Additional message for final level
+      questionContainers[currentLevel - 4].style.backgroundColor = "gold"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 4].textContent = "Mt. Moon Complete!"; // Additional message for final level
     } else if (currentLevel === 8) {
       questionContainers[currentLevel - 2].style.backgroundColor = "pink"; // Level 6 complete, purple background
       levelCompleteText.textContent = "Brock Defeated!";
