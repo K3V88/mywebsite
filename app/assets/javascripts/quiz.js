@@ -9,6 +9,25 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.left-square.square5'),
     document.querySelector('.left-square.square6'),
     document.querySelector('.left-square.square7'),
+    document.querySelector('.left-square.square8'),
+    document.querySelector('.left-square.square9'),
+    document.querySelector('.left-square.square10'),
+    document.querySelector('.left-square.square11'),
+    document.querySelector('.left-square.square12'),
+    document.querySelector('.left-square.square13'),
+    document.querySelector('.right-square.square14'),
+    document.querySelector('.right-square.square15'),
+    document.querySelector('.right-square.square16'),
+    document.querySelector('.right-square.square17'),
+    document.querySelector('.right-square.square18'),
+    document.querySelector('.right-square.square19'),
+    document.querySelector('.right-square.square20'),
+    document.querySelector('.right-square.square21'),
+    document.querySelector('.right-square.square22'),
+    document.querySelector('.right-square.square23'),
+    document.querySelector('.right-square.square24'),
+    document.querySelector('.right-square.square25'),
+    document.querySelector('.right-square.square26'),
     // Add more containers if needed for additional levels
   ];
 
@@ -181,204 +200,521 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel6 = [
     {
-      question: "Hello?",
-      options: ["Bye", "Hi", "Henlo", "Ciao"],
-      answer: "Henlo"
+      question: "Which Pokemon can be bought at the Pokemon center before entering Mt. Moon?",
+      options: ["Goldeen", "Magikarp", "Pidgey", "Abra"],
+      answer: "Magikarp"
     },
     {
-      question: "Which Pokémon evolves into Steelix?",
-      options: ["Onix", "Skarmory", "Diglett", "Registeel"],
-      answer: "Onix"
+      question: "Which two fossils will you be able to choose from after defeating the scientist?",
+      options: ["Dome & Helix Fossil", "Old Amber & New Amber", "Moon & Sun Fossil", "Root & Claw Fossil"],
+      answer: "Dome & Helix Fossil"
     },
     {
-      question: "Which Pokémon can be found on Route 1 in Gen 1?",
-      options: ["Ekans & Rattata", "Rattata & Pidgey", "Geodude & Diglett", "Onix & Oddish"],
-      answer: "Rattata & Pidgey"
+      question: "The shards of stars that fall at Mt. Moon are knows as what?",
+      options: ["Moon Stones", "Star Shards", "Water Stones", "Nuggets"],
+      answer: "Moon Stones"
     },
     {
-      question: "What type of Pokemon is Koffing?",
-      options: ["Water", "Poison", "Grass", "Flying"],
-      answer: "Poison"
+      question: "In the final part of the cave, you have a 100% to encounter which Pokemon?",
+      options: ["Paras", "Koffing", "Zubat", "Geodude"],
+      answer: "Paras"
     },
     {
-      question: "Which ball is best for catching low level Pokemon?",
-      options: ["Net ball", "Nest ball", "Master ball", "Love ball"],
-      answer: "Nest ball"
+      question: "Which Pokemon can you catch right before and after Mt. Moon, and can be traded against Farfetch'd?",
+      options: ["Pidgey", "Sandshrew", "Spearow", "Pidgeotto"],
+      answer: "Spearow"
     }
     // Add more questions for the next level...
   ];
 
   const questionsLevel7 = [
     {
-      question: "Hello?",
-      options: ["Bye", "Hi", "Henlo", "Ciao"],
-      answer: "Henlo"
+      question: "After beating all the trainers on Nugget Bridge, what item will you receive?",
+      options: ["Nugget", "Max Revive", "5 Great Balls", "Team Rocket Membership"],
+      answer: "Nugget"
     },
     {
-      question: "Which Pokémon evolves into Steelix?",
-      options: ["Onix", "Skarmory", "Diglett", "Registeel"],
-      answer: "Onix"
+      question: "Which legendary Pokémon is said to roam Cerulean Cave?",
+      options: ["Articuno", "Lugia", "Mewtwo", "Kabutops"],
+      answer: "Mewtwo"
     },
     {
-      question: "Which Pokémon can be found on Route 1 in Gen 1?",
-      options: ["Ekans & Rattata", "Rattata & Pidgey", "Geodude & Diglett", "Onix & Oddish"],
-      answer: "Rattata & Pidgey"
+      question: "Your rival will use one Pokemon that doesn't have offensive moves, which one?",
+      options: ["Abra", "Pidgeotto", "Rattata", "Eevee"],
+      answer: "Abra"
     },
     {
-      question: "What type of Pokemon is Koffing?",
-      options: ["Water", "Poison", "Grass", "Flying"],
-      answer: "Poison"
+      question: "How many trainers do you have to beat before facing the person who gives you the prize?",
+      options: ["4", "5", "6", "7"],
+      answer: "5"
     },
     {
-      question: "Which ball is best for catching low level Pokemon?",
-      options: ["Net ball", "Nest ball", "Master ball", "Love ball"],
-      answer: "Nest ball"
+      question: "What notorious group does the last trainer on the bridge represent?",
+      options: ["Team Magma", "Team Aqua", "Team Rocket", "Team Galactic"],
+      answer: "Team Rocket"
     }
     // Add more questions for the next level...
   ];
 
+
+
   const questionsLevel8 = [
     {
-      question: "Hello?",
-      options: ["Bye", "Hi", "Henlo", "Ciao"],
-      answer: "Henlo"
+      question: "Under what name is the north-eastern part of Cerulean City known?",
+      options: ["Cerulean Old Town", "Cerulean Harbor", "Cerulean Cape", "Cerulean Cave"],
+      answer: "Cerulean Cape"
     },
     {
-      question: "Which Pokémon evolves into Steelix?",
-      options: ["Onix", "Skarmory", "Diglett", "Registeel"],
-      answer: "Onix"
+      question: "Before being able to take on the gym, you have to help a Pokemon researcher, what's his name?",
+      options: ["Bill", "Bob", "Blaine", "Brad"],
+      answer: "Bill"
     },
     {
-      question: "Which Pokémon can be found on Route 1 in Gen 1?",
-      options: ["Ekans & Rattata", "Rattata & Pidgey", "Geodude & Diglett", "Onix & Oddish"],
-      answer: "Rattata & Pidgey"
+      question: "Which important item will you receive after assisting the Pokemon researcher at his house?",
+      options: ["S.S. Ticket", "A gym badge", "HM01 - Cut", "Bicycle"],
+      answer: "S.S. Ticket"
     },
     {
-      question: "What type of Pokemon is Koffing?",
-      options: ["Water", "Poison", "Grass", "Flying"],
-      answer: "Poison"
+      question: "In FireRed/LeafGreen, which Pokemon did the researcher accidentally turn himself into?",
+      options: ["Kadabra", "Oddish", "Jigglypuff", "Clefairy"],
+      answer: "Clefairy"
     },
     {
-      question: "Which ball is best for catching low level Pokemon?",
-      options: ["Net ball", "Nest ball", "Master ball", "Love ball"],
-      answer: "Nest ball"
+      question: "What's the address written on the mailbox in front of the little house in north-eastern Cerulean?",
+      options: ["Sea Cottage", "Beach Condo", "Lakeside House", "Cerulean Gym"],
+      answer: "Sea Cottage"
     }
     // Add more questions for the next level...
   ];
 
   const questionsLevel9 = [
     {
-      question: "Hello?",
-      options: ["Bye", "Hi", "Henlo", "Ciao"],
-      answer: "Henlo"
+      question: "What absurd price is the bike shop owner asking for a bicycle?",
+      options: ["1,000,000", "100,000", "10,000", "1,000"],
+      answer: "1,000,000"
     },
     {
-      question: "Which Pokémon evolves into Steelix?",
-      options: ["Onix", "Skarmory", "Diglett", "Registeel"],
-      answer: "Onix"
+      question: "What hidden item can you find behind the house in the north-west corner of the city?",
+      options: ["Rare Candy", "Nugget", "Ultra Ball", "Full Heal"],
+      answer: "Rare Candy"
     },
     {
-      question: "Which Pokémon can be found on Route 1 in Gen 1?",
-      options: ["Ekans & Rattata", "Rattata & Pidgey", "Geodude & Diglett", "Onix & Oddish"],
-      answer: "Rattata & Pidgey"
+      question: "Which TM will you get from the Rocket Grunt after showing who is boss?",
+      options: ["TM22 - Solar Beam", "TM28 - Dig", "TM05 - Roar", "TM32 - Double Team"],
+      answer: "TM28 - Dig"
     },
     {
-      question: "What type of Pokemon is Koffing?",
-      options: ["Water", "Poison", "Grass", "Flying"],
-      answer: "Poison"
+      question: "In the south of Cerulean city there is a lady, by which Pokemon is she accompanied?",
+      options: ["Gloom", "Pikachu", "Slowpoke", "Goldeen"],
+      answer: "Slowpoke"
     },
     {
-      question: "Which ball is best for catching low level Pokemon?",
-      options: ["Net ball", "Nest ball", "Master ball", "Love ball"],
-      answer: "Nest ball"
+      question: "Who prevents you from entering the burglarized house, before assisting Bill at Cerulean Cape?",
+      options: ["Officer Jenny", "Nurse Joy", "Misty", "A Team Rocket Grunt"],
+      answer: "Officer Jenny"
     }
     // Add more questions for the next level...
   ];
 
   const questionsLevel10 = [
     {
-      question: "Hello?",
-      options: ["Bye", "Hi", "Henlo", "Ciao"],
-      answer: "Henlo"
+      question: "Which move will be super effective against Misty's Starmie, but not against Staryu?",
+      options: ["Bite", "Thundershock", "Vine Whip", "Earthquake"],
+      answer: "Bite"
     },
     {
-      question: "Which Pokémon evolves into Steelix?",
-      options: ["Onix", "Skarmory", "Diglett", "Registeel"],
-      answer: "Onix"
+      question: "What's the signature move of Misty's Pokemon?",
+      options: ["Waterfall", "Water Pulse", "Surf", "Hydro Pump"],
+      answer: "Water Pulse"
     },
     {
-      question: "Which Pokémon can be found on Route 1 in Gen 1?",
-      options: ["Ekans & Rattata", "Rattata & Pidgey", "Geodude & Diglett", "Onix & Oddish"],
-      answer: "Rattata & Pidgey"
+      question: "Which berry would you give your Pokemon to counter the possible side effect of Misty's signature move?",
+      options: ["Pecha Berry", "Chesto Berry", "Rawst Berry", "Persim Berry"],
+      answer: "Persim Berry"
     },
     {
-      question: "What type of Pokemon is Koffing?",
-      options: ["Water", "Poison", "Grass", "Flying"],
-      answer: "Poison"
+      question: "Which starter is probably the worst pick against Misty's Pokemon?",
+      options: ["Charmander", "Bulbasaur", "Squirtle", "They're equally good"],
+      answer: "Charmander"
     },
     {
-      question: "Which ball is best for catching low level Pokemon?",
-      options: ["Net ball", "Nest ball", "Master ball", "Love ball"],
-      answer: "Nest ball"
+      question: "What move will Misty's Starmie to restore it's health?",
+      options: ["Rest", "Recover", "Wish", "Roost"],
+      answer: "Recover"
     }
     // Add more questions for the next level...
   ];
 
   const questionsLevel11 = [
     {
-      question: "Hello?",
-      options: ["Bye", "Hi", "Henlo", "Ciao"],
-      answer: "Henlo"
+      question: "What can you do at the little house on Route 5, south of Cerulean City?",
+      options: ["Have your Pokemon raised", "Teach your Pokemon TM moves", "Change the names of your Pokemon", "Teleport to Pallet Town"],
+      answer: "Have your Pokemon raised"
     },
     {
-      question: "Which Pokémon evolves into Steelix?",
-      options: ["Onix", "Skarmory", "Diglett", "Registeel"],
-      answer: "Onix"
+      question: "The little girl in the house will offer you to trade Pokemon, which one?",
+      options: ["Nidoran", "Spearow", "Onix", "Raichu"],
+      answer: "Nidoran"
     },
     {
-      question: "Which Pokémon can be found on Route 1 in Gen 1?",
-      options: ["Ekans & Rattata", "Rattata & Pidgey", "Geodude & Diglett", "Onix & Oddish"],
-      answer: "Rattata & Pidgey"
+      question: "Which Pokemon found on this route can help you gain additional cash from trainer battles?",
+      options: ["Bellsprout", "Pidgey", "Oddish", "Meowth"],
+      answer: "Meowth"
     },
     {
-      question: "What type of Pokemon is Koffing?",
-      options: ["Water", "Poison", "Grass", "Flying"],
-      answer: "Poison"
+      question: "When playing FireRed, which Pokemon can't be caught on Route 6?",
+      options: ["Bellsprout", "Oddish", "Gyarados", "Magikarp"],
+      answer: "Bellsprout"
     },
     {
-      question: "Which ball is best for catching low level Pokemon?",
-      options: ["Net ball", "Nest ball", "Master ball", "Love ball"],
-      answer: "Nest ball"
+      question: "When fishing with a Good Rod on Route 6, which Pokemon will you most likely encounter?",
+      options: ["Gyarados", "Poliwag", "Poliwhirl", "Slowpoke"],
+      answer: "Poliwag"
     }
     // Add more questions for the next level...
   ];
 
   const questionsLevel12 = [
     {
-      question: "Hello?",
-      options: ["Bye", "Hi", "Henlo", "Ciao"],
-      answer: "Henlo"
+      question: "What useful item can you get on Route 11 after catching 30 Pokemon?",
+      options: ["Itemfinder", "Fame Checker", "Teachy TV", "Good Rod"],
+      answer: "Itemfinder"
     },
     {
-      question: "Which Pokémon evolves into Steelix?",
-      options: ["Onix", "Skarmory", "Diglett", "Registeel"],
-      answer: "Onix"
+      question: "What's the name of the cave between Vermilion City and Route 11?",
+      options: ["Dugtrio's Cave", "Diglett's Cave", "Rock Tunnel", "Vermilion Cave"],
+      answer: "Diglett's Cave"
     },
     {
-      question: "Which Pokémon can be found on Route 1 in Gen 1?",
-      options: ["Ekans & Rattata", "Rattata & Pidgey", "Geodude & Diglett", "Onix & Oddish"],
-      answer: "Rattata & Pidgey"
+      question: "What seems to be the Pokemon of choice for the two Engineer trainers on Route 11?",
+      options: ["Magnemite", "Growlithe", "Ekans", "Arbok"],
+      answer: "Magnemite"
     },
     {
-      question: "What type of Pokemon is Koffing?",
-      options: ["Water", "Poison", "Grass", "Flying"],
-      answer: "Poison"
+      question: "On Route 11, you will have the chance to catch a Psychic-type Pokemon, which one?",
+      options: ["Drowzee", "Alakazam", "Mewtwo", "Espeon"],
+      answer: "Drowzee"
     },
     {
-      question: "Which ball is best for catching low level Pokemon?",
-      options: ["Net ball", "Nest ball", "Master ball", "Love ball"],
-      answer: "Nest ball"
+      question: "Which Pokemon are exclusive to either FireRed or LeafGreen?",
+      options: ["Sandshrew & Ekans", "Drowzee & Hypno", "Spearow & Pidgey", "Krabby & Horsea"],
+      answer: "Sandshrew & Ekans"
     }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel13 = [
+    {
+      question: "In one of the cabins on the S.S. Anne, what service does a lady provide for trainers?",
+      options: ["Teach a unique move", "Heal your Pokemon", "Sell rare items", "Trade rare Pokemon"],
+      answer: "Heal your Pokemon"
+    },
+    {
+      question: "After helping the captain, what will he reward you with?",
+      options: ["HM01 - Cut", "HM07 - Waterfall", "HM05 - Flash", "HM02 - Fly"],
+      answer: "HM01 - Cut"
+    },
+    {
+      question: "What is the issue the captain seems to be having?",
+      options: ["He is feeling sick", "He is being robbed", "The ship is broken", "He lost one of his Pokemon"],
+      answer: "He is feeling sick"
+    },
+    {
+      question: "Which Pokemon will your rival start off with on the S.S. Anne?",
+      options: ["Pidgeotto", "His Starter", "Machop", "Kadabra"],
+      answer: "Pidgeotto"
+    },
+    {
+      question: "Of all types of trainers on the ship, which one will reward you with the most cash?",
+      options: ["Youngster", "Lass", "Sailor", "Gentleman"],
+      answer: "Gentleman"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel14 = [
+    {
+      question: "Which Pokemon is helping the old man flattening the construction site?",
+      options: ["Onix", "Snorlax", "Graveler", "Machop"],
+      answer: "Machop"
+    },
+    {
+      question: "What item will the Pokemon Fan Club Chairman give you after listening to his story?",
+      options: ["Bike Voucher", "Club Membership", "HM05 - Flash", "A Master Ball"],
+      answer: "Bike Voucher"
+    },
+    {
+      question: "In Pokemon Red and Blue, what's the name of the Farfetch'd you can get by trade?",
+      options: ["Dux", "Flux", "Trux", "Ch'ding"],
+      answer: "Dux"
+    },
+    {
+      question: "What color could you classify Vermilion as?",
+      options: ["Red Orange", "Blue Banana", "Green Grape", "Yellow Apple"],
+      answer: "Red Orange"
+    },
+    {
+      question: "Which move does at least one of your Pokemon need to have before challenging Vermilion's Gym Leader?",
+      options: ["Cut", "Slash", "Scratch", "Flash"],
+      answer: "Cut"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel15 = [
+    {
+      question: "What military title does the Gym Leader Surge have?",
+      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
+      answer: "Lieutenant"
+    },
+    {
+      question: "When getting the first switch correct, the second one will be directly next to it, but on which side?",
+      options: ["Left", "Above", "Right", "Random"],
+      answer: "Random"
+    },
+    {
+      question: "Before fighting search, what do you have to search through to find the switches?",
+      options: ["Trash cans", "Bookshelves", "Water puddles", "Stone pillars"],
+      answer: "Trash cans"
+    },
+    {
+      question: "If you beat every single trainer in Vermilion Gym, which of the following will you have encountered?",
+      options: ["4x Pikachu", "2x Raichu", "6x Voltorb", "8x Magnemite"],
+      answer: "4x Pikachu"
+    },
+    {
+      question: "With what move could you probably sweep the entire Vermilion Gym?",
+      options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
+      answer: "Dig"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel16 = [
+    {
+      question: "What move can you use to lighten up the Rock Tunnel?",
+      options: ["Solar Beam", "Flash", "Light Screen", "Flamethrower"],
+      answer: "Flash"
+    },
+    {
+      question: "If you get completely lost in Rock Tunnel, what item can you use to get out?",
+      options: ["Escape Rope", "Super Repel", "Max Revive", "Calcium"],
+      answer: "Escape Rope"
+    },
+    {
+      question: "Which are the two Fighting-type Pokemon you can encounter in the wild in Rock Tunnel?",
+      options: ["Machop & Machoke", "Mankey & Machop", "Mankey & Geodude", "Mankey & Primeape"],
+      answer: "Mankey & Machop"
+    },
+    {
+      question: "Hiker Lenny has 4 Pokemon, 3 Geodude and a ...?",
+      options: ["Machop", "Graveler", "Golem", "Machamp"],
+      answer: "Machop"
+    },
+    {
+      question: "What item does Onix need to evolve into Steelix?",
+      options: ["Metal Coat", "Steel Armor", "Iron Shell", "Steel Stone"],
+      answer: "Metal Coat"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel17 = [
+    {
+      question: "Which Pokémon can be commonly found roaming around inside the Power Plant?",
+      options: ["Voltorb & Magnemite", "Electabuzz & Pikachu", "Electrode & Raichu", "Rattata & Raticate"],
+      answer: "Voltorb & Magnemite"
+    },
+    {
+      question: "What is the primary source of energy generated at the Power Plant?",
+      options: ["Electricity", "Geothermal Energy", "Nuclear Energy", "Kinetic Energy"],
+      answer: "Electricity"
+    },
+    {
+      question: "Which of the legendary birds in found inside the Power Plant?",
+      options: ["Zapdos", "Articuno", "Moltres", "None of them"],
+      answer: "Zapdos"
+    },
+    {
+      question: "One of the TM's you find here is TM17 (Protect), what's the other one?",
+      options: ["TM25 (Thunder)", "TM14 (Blizzard)", "TM36 (Sludge Bomb)", "TM19 (Giga Grain)"],
+      answer: "TM25 (Thunder)"
+    },
+    {
+      question: "On what type of Pokemon will electric moves have no effect on?",
+      options: ["Ground", "Rock", "Ghost", "Flying"],
+      answer: "Ground"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel18 = [
+    {
+      question: "What are the names of the twins you can battle on Route 8?",
+      options: ["Eli & Anne", "Anne & Marie", "Lisa & Marie", "Megan & Marie "],
+      answer: "Eli & Anne"
+    },
+    {
+      question: "In Pokemon FireRed you will be able to catch Growlithe, on LeafGreen you can instead catch ...?",
+      options: ["Vulpix", "Nidorino", "Doduo", "Flareon"],
+      answer: "Vulpix"
+    },
+    {
+      question: "Why won't the guard let you through when you try to proceed east on Route 8?",
+      options: ["The guard is thirsty and needs a drink", "The guard is on break and refuses to move", "You don't have enough gym badges", "There is constrution work going on"],
+      answer: "The guard is thirsty and needs a drink"
+    },
+    {
+      question: "The twin trainer will choose Jigglypuff and Clefairy as their Pokemon, what do they have in common?",
+      options: ["Both learn Metronome", "They can only be female", "They evolve with Moon Stones", "Both are Dragon-type"],
+      answer: "They evolve with Moon Stones"
+    },
+    {
+      question: "Which type of Pokemon would you pick to easily destroy the two bikers riding around on Route 8?",
+      options: ["Psychic", "Bug", "Poison", "Grass"],
+      answer: "Psychic"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel19 = [
+    {
+      question: "What's the most expensive TM you can buy at the Celadon Department Store?",
+      options: ["Hyper Beam", "Roar", "Attract", "Secret Power"],
+      answer: "Hyper Beam"
+    },
+    {
+      question: "What Pokemon can you get from the top floor in the Celadon Mansion?",
+      options: ["Porygon", "Eevee", "Pikachu", "Charmander"],
+      answer: "Eevee"
+    },
+    {
+      question: "What do you need to get in order to play slots in the Game Corner?",
+      options: ["A Coin Case", "A Slot Card", "Erika's Badge", "At least 10 Pokemon"],
+      answer: "A Coin Case"
+    },
+    {
+      question: "What Pokemon is blocking the road to the west of Celadon?",
+      options: ["Snorlax", "Onix", "Mewtwo", "Sudowoodo"],
+      answer: "Snorlax"
+    },
+    {
+      question: "In Pokemon LeafGreen you can buy Porygon at the Game Corner for 6500 coins, in FireRed it costs how much?",
+      options: ["9999 coins", "The same amount", "4500 coins", "6250 coins"],
+      answer: "9999 coins"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel20 = [
+    {
+      question: "What's the only status effect you don't have to fear in Erika's gym?",
+      options: ["Burn", "Sleep", "Poison", "Paralysis"],
+      answer: "Burn"
+    },
+    {
+      question: "What's the name of the Pokemon used by Erika that has no prior evolutions?",
+      options: ["Tangela", "Victreebel", "Vileplume", "Bulbasaur"],
+      answer: "Tangela"
+    },
+    {
+      question: "Which of the following Pokemon will you only encounter once in Erika's gym?",
+      options: ["Ivysaur & Bellsprout", "Exeggcute & Bulbasaur", "Oddish & Weepinbell", "Gloom & Vileplume"],
+      answer: "Exeggcute & Bulbasaur"
+    },
+    {
+      question: "Which starter would make sure you have no trouble beating Erika's gym?",
+      options: ["Pikachu", "Charmander", "Squirtle", "Bulbasaur"],
+      answer: "Charmander"
+    },
+    {
+      question: "When using Sunny Day against Erika, what effects will occur?",
+      options: ["Solar Beam will be instant", "It weakens water moves", "It powers up fire moves", "All of them"],
+      answer: "All of them"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel21 = [
+    {
+      question: "What military title does the Gym Leader Surge have?",
+      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
+      answer: "Lieutenant"
+    },
+    {
+      question: "When getting the first switch correct, the second one will be directly next to it, but on which side?",
+      options: ["Left", "Above", "Right", "Random"],
+      answer: "Random"
+    },
+    {
+      question: "Before fighting search, what do you have to search through to find the switches?",
+      options: ["Trash cans", "Bookshelves", "Water puddles", "Stone pillars"],
+      answer: "Trash cans"
+    },
+    {
+      question: "If you beat every single trainer in Vermilion Gym, which of the following will you have encountered?",
+      options: ["4x Pikachu", "2x Raichu", "6x Voltorb", "8x Magnemite"],
+      answer: "4x Pikachu"
+    },
+    {
+      question: "With what move could you probably sweep the entire Vermilion Gym?",
+      options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
+      answer: "Dig"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel22 = [
+    {
+      question: "What military title does the Gym Leader Surge have?",
+      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
+      answer: "Lieutenant"
+    },
+    {
+      question: "When getting the first switch correct, the second one will be directly next to it, but on which side?",
+      options: ["Left", "Above", "Right", "Random"],
+      answer: "Random"
+    },
+    {
+      question: "Before fighting search, what do you have to search through to find the switches?",
+      options: ["Trash cans", "Bookshelves", "Water puddles", "Stone pillars"],
+      answer: "Trash cans"
+    },
+    {
+      question: "If you beat every single trainer in Vermilion Gym, which of the following will you have encountered?",
+      options: ["4x Pikachu", "2x Raichu", "6x Voltorb", "8x Magnemite"],
+      answer: "4x Pikachu"
+    },
+    {
+      question: "With what move could you probably sweep the entire Vermilion Gym?",
+      options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
+      answer: "Dig"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel23 = [
+    {
+      question: "What military title does the Gym Leader Surge have?",
+      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
+      answer: "Lieutenant"
+    },
+
+    {
+      question: "With what move could you probably sweep the entire Vermilion Gym?",
+      options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
+      answer: "Dig"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel24 = [
+    {
+      question: "What military title does the Gym Leader Surge have?",
+      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
+      answer: "Lieutenant"
+    }
+
     // Add more questions for the next level...
   ];
 
@@ -453,10 +789,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const correctCount = userAnswers.filter((answer, index) => answer === shuffledQuestions[index].answer).length;
 
     // Check if the current level is questionsLevel4
-    if (currentLevel === 4) {
+    if (currentLevel === 4 || currentLevel === 9 || currentLevel === 14 || currentLevel === 19) {
       if (correctCount === shuffledQuestions.length) {
         // All questions are correct
-        resultContainer.innerHTML = `<h2>Awesome, you got all questions correct! Get ready for your first gym leader!</h2><p>You may now proceed to the next level!</p>`;
+        resultContainer.innerHTML = `<h2>Awesome, you got all questions correct! Get ready for the gym leader!</h2><p>You may now proceed to the next level!</p>`;
         nextLevelButton.style.display = 'block';
       } else {
         // Some questions are incorrect
@@ -475,17 +811,17 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
       // Check if the current level is 6
-  if (currentLevel === 5) {
+  if (currentLevel === 5 && correctCount === shuffledQuestions.length) {
     // Merge divs square1, square2, and square3 into one div
     const mergedDiv = document.createElement('div');
     mergedDiv.classList.add('left-square', 'merged');
     // Set height of merged div to accommodate the height of three divs
     const squareHeight = document.querySelector('.left-square.square1').clientHeight;
-    mergedDiv.style.height = (squareHeight * 3) + 'px';
+    mergedDiv.style.height = '150px';
     const square1Content = document.querySelector('.left-square.square1').innerHTML;
     const square2Content = document.querySelector('.left-square.square2').innerHTML;
     const square3Content = document.querySelector('.left-square.square3').innerHTML;
-    mergedDiv.innerHTML = '<p>Brock Defeated!</p>';
+    mergedDiv.innerHTML = '<p><b>Brock Defeated!</b></p>';
 
     // Replace square1 with the merged div
     const square1 = document.querySelector('.left-square.square1');
@@ -506,9 +842,106 @@ document.addEventListener("DOMContentLoaded", function() {
     square5.innerHTML = '';
     square5.style.backgroundColor = '';
 
+
   }
 
-  // REMOVE THE CLASSES OF SQUARE 5 AND 6
+  if (currentLevel === 10) {
+    // Merge divs square1, square2, and square3 into one div
+    const mergedDiv = document.createElement('div');
+    mergedDiv.classList.add('left-square', 'merged2');
+    // Set height of merged div to accommodate the height of three divs
+    const squareHeight = document.querySelector('.left-square.square4').clientHeight;
+    mergedDiv.style.height = '150px';
+    const square4Content = document.querySelector('.left-square.square4').innerHTML;
+    const square5Content = document.querySelector('.left-square.square5').innerHTML;
+    const square6Content = document.querySelector('.left-square.square6').innerHTML;
+    mergedDiv.innerHTML = '<p>Misty Defeated!</p>';
+
+    // Replace square4 with the merged div
+    const square4 = document.querySelector('.left-square.square4');
+    square4.parentNode.insertBefore(mergedDiv, square4);
+    square4.parentNode.removeChild(square4);
+
+    // Remove square5 and square6
+    const square5 = document.querySelector('.left-square.square5');
+    square5.parentNode.removeChild(square5);
+    const square6 = document.querySelector('.left-square.square6');
+    square6.parentNode.removeChild(square6);
+
+    // Empty square4 and square5
+    const square7 = document.querySelector('.left-square.square7');
+    square7.innerHTML = '';
+    square7.style.backgroundColor = '';
+    const square8 = document.querySelector('.left-square.square8');
+    square8.innerHTML = '';
+    square8.style.backgroundColor = '';
+
+
+  }
+
+  if (currentLevel === 15) {
+    // Merge divs square1, square2, and square3 into one div
+    const mergedDiv = document.createElement('div');
+    mergedDiv.classList.add('left-square', 'merged3');
+    // Set height of merged div to accommodate the height of three divs
+    const squareHeight = document.querySelector('.left-square.square7').clientHeight;
+    mergedDiv.style.height = '150px';
+    const square7Content = document.querySelector('.left-square.square7').innerHTML;
+    const square8Content = document.querySelector('.left-square.square8').innerHTML;
+    const square9Content = document.querySelector('.left-square.square9').innerHTML;
+    mergedDiv.innerHTML = '<p>Lt. Surge Defeated!</p>';
+
+    // Replace square4 with the merged div
+    const square7 = document.querySelector('.left-square.square7');
+    square7.parentNode.insertBefore(mergedDiv, square7);
+    square7.parentNode.removeChild(square7);
+
+    // Remove square5 and square6
+    const square8 = document.querySelector('.left-square.square8');
+    square8.parentNode.removeChild(square8);
+    const square9 = document.querySelector('.left-square.square9');
+    square9.parentNode.removeChild(square9);
+
+    // Empty square4 and square5
+    const square10 = document.querySelector('.left-square.square10');
+    square10.innerHTML = '';
+    square10.style.backgroundColor = '';
+    const square11 = document.querySelector('.left-square.square11');
+    square11.innerHTML = '';
+    square11.style.backgroundColor = '';
+
+
+  }
+
+  if (currentLevel === 20) {
+    // Merge divs square1, square2, and square3 into one div
+    const mergedDiv = document.createElement('div');
+    mergedDiv.classList.add('left-square', 'merged4');
+
+    const squareHeight = document.querySelector('.left-square.square10').clientHeight;
+    mergedDiv.style.height = '150px';
+    const square7Content = document.querySelector('.left-square.square10').innerHTML;
+    const square8Content = document.querySelector('.left-square.square11').innerHTML;
+    const square9Content = document.querySelector('.left-square.square12').innerHTML;
+    mergedDiv.innerHTML = '<p>Erika Defeated!</p>';
+
+
+    const square10 = document.querySelector('.left-square.square10');
+    square10.parentNode.insertBefore(mergedDiv, square10);
+    square10.parentNode.removeChild(square10);
+
+    // Remove square11 and square12 and 13
+    const square11 = document.querySelector('.left-square.square11');
+    square11.parentNode.removeChild(square11);
+    const square12 = document.querySelector('.left-square.square12');
+    square12.parentNode.removeChild(square12);
+    const square13 = document.querySelector('.left-square.square13');
+    square13.parentNode.removeChild(square13);
+
+
+  }
+
+
 
   }
   // Initialize Level 1 quiz when the page loads
@@ -537,7 +970,42 @@ document.addEventListener("DOMContentLoaded", function() {
       initializeQuizLevel(currentLevel, questionsLevel6);
     } else if (currentLevel === 7) {
       initializeQuizLevel(currentLevel, questionsLevel7);
+    } else if (currentLevel === 8) {
+      initializeQuizLevel(currentLevel, questionsLevel8);
+    } else if (currentLevel === 9) {
+      initializeQuizLevel(currentLevel, questionsLevel9);
+    } else if (currentLevel === 10) {
+      initializeQuizLevel(currentLevel, questionsLevel10);
+    } else if (currentLevel === 11) {
+      initializeQuizLevel(currentLevel, questionsLevel11);
+    } else if (currentLevel === 12) {
+      initializeQuizLevel(currentLevel, questionsLevel12);
+    } else if (currentLevel === 13) {
+      initializeQuizLevel(currentLevel, questionsLevel13);
+    } else if (currentLevel === 14) {
+      initializeQuizLevel(currentLevel, questionsLevel14);
+    } else if (currentLevel === 15) {
+      initializeQuizLevel(currentLevel, questionsLevel15);
+    } else if (currentLevel === 16) {
+      initializeQuizLevel(currentLevel, questionsLevel16);
+    } else if (currentLevel === 17) {
+      initializeQuizLevel(currentLevel, questionsLevel17);
+    } else if (currentLevel === 18) {
+      initializeQuizLevel(currentLevel, questionsLevel18);
+    } else if (currentLevel === 19) {
+      initializeQuizLevel(currentLevel, questionsLevel19);
+    } else if (currentLevel === 20) {
+      initializeQuizLevel(currentLevel, questionsLevel20);
+    } else if (currentLevel === 21) {
+      initializeQuizLevel(currentLevel, questionsLevel21);
+    } else if (currentLevel === 22) {
+      initializeQuizLevel(currentLevel, questionsLevel22);
+    } else if (currentLevel === 23) {
+      initializeQuizLevel(currentLevel, questionsLevel23);
+    } else if (currentLevel === 24) {
+      initializeQuizLevel(currentLevel, questionsLevel24);
     }
+
 
     // Add more conditions for additional levels if needed
 
@@ -550,14 +1018,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Set background color based on the completed level and add additional messages
     if (currentLevel === 2) {
-      questionContainers[currentLevel - 2].style.backgroundColor = "green"; // Level 1 complete, green background
+      questionContainers[currentLevel - 2].textContent = ""
+      questionContainers[currentLevel - 2].classList.add("pallet-town"); // Level 1 complete, green background
       levelCompleteText.textContent = "Pallet Town ✔"; // Additional message for level 1
+      questionContainers[currentLevel - 1].textContent = "Viridian City"
     } else if (currentLevel === 3) {
-      questionContainers[currentLevel - 2].style.backgroundColor = "red"; // Level 2 complete, red background
+      questionContainers[currentLevel - 2].textContent = ""
+      questionContainers[currentLevel - 2].classList.add("viridian-city"); // Level 1 complete, green background; // Level 2 complete, red background
       levelCompleteText.textContent = "Viridian City ✔"; // Additional message for level 2
+      questionContainers[currentLevel - 1].textContent = "Viridian Forest"
     } else if (currentLevel === 4) {
-      questionContainers[currentLevel - 2].style.backgroundColor = "blue"; // Level 3 complete, blue background
+      questionContainers[currentLevel - 2].textContent = ""
+      questionContainers[currentLevel - 2].classList.add("viridian-forest"); // Level 1 complete, green background; // Level 3 complete, blue background
       levelCompleteText.textContent = "Viridian Forest ✔"; // Additional message for level 3
+      questionContainers[currentLevel - 1].textContent = "Pewter City"
     } else if (currentLevel === 5) {
       questionContainers[currentLevel - 2].style.backgroundColor = "orange"; // Level 4 complete, orange background
       levelCompleteText.textContent = "Pewter City ✔"; // Additional message for level 4
@@ -567,11 +1041,63 @@ document.addEventListener("DOMContentLoaded", function() {
       levelCompleteText.textContent = ""; // Additional message for final level
     } else if (currentLevel === 7) {
       questionContainers[currentLevel - 4].style.backgroundColor = "gold"; // Level 6 complete, purple background
-      questionContainers[currentLevel - 4].textContent = "Mt. Moon Complete!"; // Additional message for final level
+      questionContainers[currentLevel - 4].textContent = "Mt. Moon ✔"; // Additional message for final level
     } else if (currentLevel === 8) {
-      questionContainers[currentLevel - 2].style.backgroundColor = "pink"; // Level 6 complete, purple background
-      levelCompleteText.textContent = "Brock Defeated!";
+      questionContainers[currentLevel - 4].style.backgroundColor = "pink"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 4].textContent = "Nugget Bridge ✔"; // Additional message for final level
+    } else if (currentLevel === 9) {
+      questionContainers[currentLevel - 4].style.backgroundColor = "blue"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 4].textContent = "Rescued Bill ✔"; // Additional message for final level
+    } else if (currentLevel === 10) {
+      questionContainers[currentLevel - 4].style.backgroundColor = "purple"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 4].textContent = "Cerulean City ✔"; // Additional message for final level
+    } else if (currentLevel === 11) {
+      questionContainers[currentLevel - 4].style.backgroundColor = ""; // Level 6 complete, purple background
+      questionContainers[currentLevel - 4].textContent = ""; // Additional message for final level
+    } else if (currentLevel === 12) {
+      questionContainers[currentLevel - 6].style.backgroundColor = "yellow"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 6].textContent = "Route 5 & 6 ✔"; // Additional message for final level
+    } else if (currentLevel === 13) {
+      questionContainers[currentLevel - 6].style.backgroundColor = "green"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 6].textContent = "Route 11 ✔"; // Additional message for final level
+    } else if (currentLevel === 14) {
+      questionContainers[currentLevel - 6].style.backgroundColor = "red"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 6].textContent = "S.S. Anne ✔"; // Additional message for final level
+    } else if (currentLevel === 15) {
+      questionContainers[currentLevel - 6].style.backgroundColor = "pink"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 6].textContent = "Vermilion City ✔"; // Additional message for final level
+    } else if (currentLevel === 16) {
+      questionContainers[currentLevel - 6].style.backgroundColor = ""; // Level 6 complete, purple background
+      questionContainers[currentLevel - 6].textContent = ""; // Additional message for final level
+    } else if (currentLevel === 17) {
+      questionContainers[currentLevel - 8].style.backgroundColor = "brown"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 8].textContent = "Rock Tunnel ✔"; // Additional message for final level
+    } else if (currentLevel === 18) {
+      questionContainers[currentLevel - 8].style.backgroundColor = "green"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 8].textContent = "Power Plant ✔"; // Additional message for final level
+    } else if (currentLevel === 19) {
+      questionContainers[currentLevel - 8].style.backgroundColor = "gold"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 8].textContent = "Route 8 ✔"; // Additional message for final level
+    } else if (currentLevel === 20) {
+      questionContainers[currentLevel - 8].style.backgroundColor = "pink"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 8].textContent = "Celadon City ✔"; // Additional message for final level
+    } else if (currentLevel === 21) {
+      questionContainers[currentLevel - 8].style.backgroundColor = ""; // Level 6 complete, purple background
+      questionContainers[currentLevel - 8].textContent = ""; // Additional message for final level
+    } else if (currentLevel === 22) {
+      questionContainers[currentLevel - 9].style.backgroundColor = "red"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 9].textContent = "Team Rocket Hideout"; // Additional message for final level
+    } else if (currentLevel === 23) {
+      questionContainers[currentLevel - 9].style.backgroundColor = "green"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 9].textContent = "Lavender Town"; // Additional message for final level
+    } else if (currentLevel === 24) {
+      questionContainers[currentLevel - 9].style.backgroundColor = "blue"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 9].textContent = "The Fighting Dojo"; // Additional message for final level
+    } else if (currentLevel === 25) {
+      questionContainers[currentLevel - 9].style.backgroundColor = "purple"; // Level 6 complete, purple background
+      questionContainers[currentLevel - 9].textContent = "Saffron City"; // Additional message for final level
     }
+
 
     // Add the completion message to the completed level container
     questionContainers[currentLevel - 2].appendChild(levelCompleteText);

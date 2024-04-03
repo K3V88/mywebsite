@@ -552,10 +552,7 @@ button:hover {
 
 
 .level-complete {
-  color: white;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .left-column {
@@ -583,4 +580,63 @@ button:hover {
   border-radius: 10px;
   margin-top: 20px;
 
+}
+
+.pallet-town {
+  background-color: #75a873;
+  color: white;
+  font-weight: bold;
+}
+
+.viridian-city {
+  background-color: #0c8008;
+  color: white;
+  font-weight: bold;
+}
+
+.viridian-forest {
+  background-color: #40613f;
+  color: white;
+  font-weight: bold;
+}
+
+.pewter {
+  background-color: #666866;
+  color: white;
+  font-weight: bold;
+}
+
+
+.merged {
+  animation: spin 4s linear forwards; /* 'forwards' ensures the animation remains at its final state */
+  background-image: linear-gradient(to bottom, #71715c, #c5c3ab, #628a83);
+  color: white;
+  }
+
+.merged2 {
+  animation: spin 4s linear forwards; /* 'forwards' ensures the animation remains at its final state */
+  background-color: rgb(37, 196, 241);
+  color: white;
+  font-weight: bold;
+    }
+
+.merged3 {
+  animation: spin 4s linear forwards; /* 'forwards' ensures the animation remains at its final state */
+  background-color: rgb(233, 248, 21);
+  color: white;
+  font-weight: bold;
+    }
+
+.merged4 {
+  animation: spin 4s linear forwards; /* 'forwards' ensures the animation remains at its final state */
+  background-color: rgb(9, 172, 26);
+  color: white;
+  font-weight: bold;
+        }
+
+@keyframes spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+  0% { opacity: 0; } /* Start with fully transparent */
+  100% { opacity: 1; } /* End with fully opaque */
 }
