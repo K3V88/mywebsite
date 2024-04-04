@@ -47,6 +47,16 @@ body {
   height: auto;
 }
 
+.article-card {
+  max-width: 750px;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 20px;
+  display: flex;
+  text-wrap: wrap;
+  border: 1 px solid red;
+}
+
 .tracker {
   color: rgb(6, 6, 13);
   border-left: 4px solid rgb(47, 189, 237);
@@ -76,9 +86,9 @@ body {
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  background-color: rgb(255, 255, 255);
   border-top: 1px solid rgb(47, 189, 237);
   border-bottom: 1px solid rgb(47, 189, 237);
+  overflow: hidden;
 
 
 }
@@ -316,8 +326,10 @@ nav li {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 800px;
+  min-width: 600px;
 }
 
 .staff-image {
@@ -349,6 +361,10 @@ h3 {
 .staff-description {
   margin-left: 40px;
   margin-right: 20px;
+}
+
+.staff-description p {
+  margin: 0;
 }
 
 .staff-info {
@@ -637,8 +653,53 @@ button:hover {
   font-size: 20px;
 }
 
+.articlequiz4 {
+  color: rgb(6, 6, 13);
+  border-left: 4px solid rgb(47, 189, 237);
+  border-right: 4px solid rgb(47, 189, 237);
+  font-family: calibri;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(47, 189, 237);
+  padding-bottom: 200px;
+}
+
+.articlequiz4 p {
+  color: rgb(6, 6, 13);
+  font-family: calibri;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.articlequiz5 {
+  color: rgb(6, 6, 13);
+  border-left: 4px solid rgb(47, 189, 237);
+  border-right: 4px solid rgb(47, 189, 237);
+  font-family: calibri;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(47, 189, 237);
+  padding-bottom: 200px;
+}
+
+.articlequiz4 p {
+  color: rgb(6, 6, 13);
+  font-family: calibri;
+  text-align: left;
+  font-size: 20px;
+}
+
+
 .centered-text {
-  text-align: center;
+  text-align: left;
 }
 
 .rstaff {
