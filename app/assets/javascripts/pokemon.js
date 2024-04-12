@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function()
     blueCounter.textContent = blueSprites.length;
   };
 
+
+
   // Initial update of the counters
   updateCounters();
 

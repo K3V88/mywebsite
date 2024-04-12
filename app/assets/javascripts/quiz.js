@@ -61,27 +61,27 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Blue", "Red", "Green", "Yellow"],
       answer: "Blue"
     },
-    // {
-    //   question: "Which Professor resides in Pallet Town?",
-    //   options: ["Professor Oak", "Professor Elm", "Professor Birch", "Professor Willow"],
-    //   answer: "Professor Oak"
-    // },
-    // {
-    //   question: "In which region is Pallet Town located?",
-    //   options: ["Kanto", "Johto", "Hoenn", "Sinnoh"],
-    //   answer: "Kanto"
-    // },
-    // {
-    //   question: "Which of the following Pokemon CAN'T be chosen as a starter?",
-    //   options: ["Bulbasaur", "Charmander", "Rattata", "Squirtle"],
-    //   answer: "Rattata"
-    // },
-    // {
-    //   question: "Which Pokémon will your rival choose if you take Charmander?",
-    //   options: ["Squirtle", "Bulbasaur", "Eevee", "Pikachu"],
-    //   answer: "Squirtle"
-    // }
-    // MORE QUESTIONS HERE LVL 1
+    {
+      question: "What are the only 2 Pokemon that can be caught on Route 1?",
+      options: ["Rattata & Pidgey", "Spearow & Sandshrew", "Moltres & Zapdos", "Weedle & Caterpie"],
+      answer: "Rattata & Pidgey"
+    },
+    {
+      question: "What's the first Pokemon in the PokeDex?",
+      options: ["Pikachu", "Caterpie", "Bulbasaur", "Charmander"],
+      answer: "Bulbasaur"
+    },
+    {
+      question: "Which Professor resides in Pallet Town?",
+      options: ["Professor Elm", "Professor Birch", "Professor Willow", "Professor Oak"],
+      answer: "Professor Oak"
+    },
+    {
+      question: "Which Pokemon will your rival choose if you take Charmander?",
+      options: ["Eevee", "Bulbasaur", "Pikachu", "Squirtle"],
+      answer: "Squirtle"
+    }
+
   ];
 
   const questionsLevel2 = [
@@ -90,27 +90,27 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Weedle", "Kakuna", "Ponyta", "Bellsprout"],
       answer: "Weedle"
     },
-    // {
-    //   question: "What item will you get at the PokeMart when entering for the first time in Viridian City?",
-    //   options: ["Oak's Parcel", "5 Pokeballs", "Antidote", "Carbos"],
-    //   answer: "Oak's Parcel"
-    // },
-    // {
-    //   question: "Viridian is a shade of which color?",
-    //   options: ["Green", "Red", "Purple", "Blue"],
-    //   answer: "Green"
-    // },
-    // {
-    //   question: "What badge will you receive when you beat Viridian Gym later in the game?",
-    //   options: ["Earth Badge", "Soul Badge", "Boulder Badge", "Volcano Badge"],
-    //   answer: "Earth Badge"
-    // },
-    // {
-    //   question: "What is the only way you can't get out of Viridian City?",
-    //   options: ["North", "East", "South", "West"],
-    //   answer: "East"
-    // }
-    // MORE QUESTIONS HERE LVL 2
+     {
+       question: "What item will you get at the PokeMart when entering for the first time in Viridian City?",
+       options: ["Oak's Parcel", "5 Pokeballs", "Antidote", "Carbos"],
+       answer: "Oak's Parcel"
+     },
+     {
+       question: "Viridian is a shade of which color?",
+       options: ["Green", "Red", "Purple", "Blue"],
+       answer: "Green"
+     },
+     {
+       question: "What badge will you receive when you beat Viridian Gym later in the game?",
+       options: ["Earth Badge", "Soul Badge", "Boulder Badge", "Volcano Badge"],
+       answer: "Earth Badge"
+     },
+     {
+      question: "What is the only way you can't get out of Viridian City?",
+      options: ["North", "East", "South", "West"],
+      answer: "East"
+    }
+    //MORE QUESTIONS HERE LVL 2
   ];
 
   const questionsLevel3 = [
@@ -119,26 +119,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Poison", "Bug", "Grass", "Electric"],
       answer: "Grass"
     },
-    // {
-    //   question: "What is the final form of Weedle?",
-    //   options: ["Beedrill", "Butterfree", "Weepinbell", "Kakuna"],
-    //   answer: "Beedrill"
-    // },
-    // {
-    //   question: "Which of the following Pokemon are you least likely to encounter in Viridian Forest?",
-    //   options: ["Weedle", "Caterpie", "Metapod", "Pikachu"],
-    //   answer: "Pikachu"
-    // },
-    // {
-    //   question: "The final trainer in Viridian Forest has one Pokemon, which one?",
-    //   options: ["Pikachu", "Weedle", "Butterfree", "Raticate"],
-    //   answer: "Weedle"
-    // },
-    // {
-    //   question: "In case Weedle poisons you, which item would you use to heal your status?",
-    //   options: ["Antidote", "Potion", "X Attack", "Super Potion"],
-    //   answer: "Antidote"
-    // }
+     {
+       question: "What is the final form of Weedle?",
+       options: ["Beedrill", "Butterfree", "Weepinbell", "Kakuna"],
+       answer: "Beedrill"
+     },
+     {
+       question: "Which of the following Pokemon are you least likely to encounter in Viridian Forest?",
+       options: ["Weedle", "Caterpie", "Metapod", "Pikachu"],
+       answer: "Pikachu"
+     },
+     {
+       question: "The final trainer in Viridian Forest has one Pokemon, which one?",
+       options: ["Pikachu", "Weedle", "Butterfree", "Raticate"],
+       answer: "Weedle"
+     },
+     {
+       question: "In case Weedle poisons you, which item would you use to heal your status?",
+       options: ["Antidote", "Potion", "X Attack", "Super Potion"],
+       answer: "Antidote"
+     }
     // Add more questions for the next level...
   ];
 
@@ -148,26 +148,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["50", "100", "It's free", "250"],
       answer: "50"
     },
-    // {
-    //   question: "Which HM is required to access the back part of the museum and get the Old Amber?",
-    //   options: ["Cut", "Fly", "Strenght", "Surf"],
-    //   answer: "Cut"
-    // },
-    // {
-    //   question: "Later in the game you will be able to restore the Old Amber into which Pokemon?",
-    //   options: ["Aerodactyl", "Mewtwo", "Moltres", "Snorlax"],
-    //   answer: "Aerodactyl"
-    // },
-    // {
-    //   question: "Pewter is a mixture of ...?",
-    //   options: ["Rocks", "Metals", "Plastics", "Spices"],
-    //   answer: "Metals"
-    // },
-    // {
-    //   question: "In Pokemon FireRed and LeafGreen, which item will you receive after beating Brock and heading east?",
-    //   options: ["Moon Stone", "Running Shoes", "Roller Skates", "Bicycle"],
-    //   answer: "Running Shoes"
-    // }
+     {
+       question: "Which HM is required to access the back part of the museum and get the Old Amber?",
+       options: ["Cut", "Fly", "Strenght", "Surf"],
+       answer: "Cut"
+     },
+     {
+       question: "Later in the game you will be able to restore the Old Amber into which Pokemon?",
+       options: ["Aerodactyl", "Mewtwo", "Moltres", "Snorlax"],
+       answer: "Aerodactyl"
+     },
+     {
+       question: "Pewter is a mixture of ...?",
+       options: ["Rocks", "Metals", "Plastics", "Spices"],
+       answer: "Metals"
+     },
+     {
+       question: "In Pokemon FireRed and LeafGreen, which item will you receive after beating Brock and heading east?",
+       options: ["Moon Stone", "Running Shoes", "Roller Skates", "Bicycle"],
+       answer: "Running Shoes"
+     }
     // Add more questions for the next level...
   ];
 
@@ -177,26 +177,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Liam", "Lenny", "Leo", "Lilly"],
       answer: "Liam"
     },
-    // {
-    //   question: "WHich of the following moves would be super effective against Sandshrew?",
-    //   options: ["Bubble", "Hyper Beam", "Dragon Rage", "Thunderbolt"],
-    //   answer: "Bubble"
-    // },
-    // {
-    //   question: "What's the first Pokemon in Brock's line-up?",
-    //   options: ["Onix", "Dugtrio", "Geodude", "Sandslash"],
-    //   answer: "Geodude"
-    // },
-    // {
-    //   question: "If Onix' Rock Tomb hits, what status effect could take place?",
-    //   options: ["Lower your speed", "Raise your attack", "Lower your defense", "Paralyze you"],
-    //   answer: "Lower your speed"
-    // },
-    // {
-    //   question: "In Pokemon Red and Blue, what's the TM that Brock will give you?",
-    //   options: ["Rock Tomb", "Bide", "Earthquake", "Iron Tail"],
-    //   answer: "Bide"
-    // }
+     {
+       question: "WHich of the following moves would be super effective against Sandshrew?",
+       options: ["Bubble", "Hyper Beam", "Dragon Rage", "Thunderbolt"],
+       answer: "Bubble"
+     },
+     {
+       question: "What's the first Pokemon in Brock's line-up?",
+       options: ["Onix", "Dugtrio", "Geodude", "Sandslash"],
+       answer: "Geodude"
+     },
+     {
+       question: "If Onix' Rock Tomb hits, what status effect could take place?",
+       options: ["Lower your speed", "Raise your attack", "Lower your defense", "Paralyze you"],
+       answer: "Lower your speed"
+     },
+     {
+       question: "In Pokemon Red and Blue, what's the TM that Brock will give you?",
+       options: ["Rock Tomb", "Bide", "Earthquake", "Iron Tail"],
+       answer: "Bide"
+     }
     // Add more questions for the next level...
   ];
 
@@ -206,26 +206,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Goldeen", "Magikarp", "Pidgey", "Abra"],
       answer: "Magikarp"
     },
-    // {
-    //   question: "Which two fossils will you be able to choose from after defeating the scientist?",
-    //   options: ["Dome & Helix Fossil", "Old Amber & New Amber", "Moon & Sun Fossil", "Root & Claw Fossil"],
-    //   answer: "Dome & Helix Fossil"
-    // },
-    // {
-    //   question: "The shards of stars that fall at Mt. Moon are knows as what?",
-    //   options: ["Moon Stones", "Star Shards", "Water Stones", "Nuggets"],
-    //   answer: "Moon Stones"
-    // },
-    // {
-    //   question: "In the final part of the cave, you have a 100% to encounter which Pokemon?",
-    //   options: ["Paras", "Koffing", "Zubat", "Geodude"],
-    //   answer: "Paras"
-    // },
-    // {
-    //   question: "Which Pokemon can you catch right before and after Mt. Moon, and can be traded against Farfetch'd?",
-    //   options: ["Pidgey", "Sandshrew", "Spearow", "Pidgeotto"],
-    //   answer: "Spearow"
-    // }
+     {
+       question: "Which two fossils will you be able to choose from after defeating the scientist?",
+       options: ["Dome & Helix Fossil", "Old Amber & New Amber", "Moon & Sun Fossil", "Root & Claw Fossil"],
+       answer: "Dome & Helix Fossil"
+     },
+     {
+       question: "The shards of stars that fall at Mt. Moon are knows as what?",
+       options: ["Moon Stones", "Star Shards", "Water Stones", "Nuggets"],
+       answer: "Moon Stones"
+     },
+     {
+       question: "In the final part of the cave, you have a 100% to encounter which Pokemon?",
+       options: ["Paras", "Koffing", "Zubat", "Geodude"],
+       answer: "Paras"
+     },
+     {
+       question: "Which Pokemon can you catch right before and after Mt. Moon, and can be traded against Farfetch'd?",
+       options: ["Pidgey", "Sandshrew", "Spearow", "Pidgeotto"],
+       answer: "Spearow"
+     }
     // Add more questions for the next level...
   ];
 
@@ -235,26 +235,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Nugget", "Max Revive", "5 Great Balls", "Team Rocket Membership"],
       answer: "Nugget"
     },
-    // {
-    //   question: "Which legendary Pokémon is said to roam Cerulean Cave?",
-    //   options: ["Articuno", "Lugia", "Mewtwo", "Kabutops"],
-    //   answer: "Mewtwo"
-    // },
-    // {
-    //   question: "Your rival will use one Pokemon that doesn't have offensive moves, which one?",
-    //   options: ["Abra", "Pidgeotto", "Rattata", "Eevee"],
-    //   answer: "Abra"
-    // },
-    // {
-    //   question: "How many trainers do you have to beat before facing the person who gives you the prize?",
-    //   options: ["4", "5", "6", "7"],
-    //   answer: "5"
-    // },
-    // {
-    //   question: "What notorious group does the last trainer on the bridge represent?",
-    //   options: ["Team Magma", "Team Aqua", "Team Rocket", "Team Galactic"],
-    //   answer: "Team Rocket"
-    // }
+     {
+       question: "Which legendary Pokémon is said to roam Cerulean Cave?",
+       options: ["Articuno", "Lugia", "Mewtwo", "Kabutops"],
+       answer: "Mewtwo"
+     },
+     {
+       question: "Your rival will use one Pokemon that doesn't have offensive moves, which one?",
+       options: ["Abra", "Pidgeotto", "Rattata", "Eevee"],
+       answer: "Abra"
+     },
+     {
+       question: "How many trainers do you have to beat before facing the person who gives you the prize?",
+       options: ["4", "5", "6", "7"],
+       answer: "5"
+     },
+     {
+       question: "What notorious group does the last trainer on the bridge represent?",
+       options: ["Team Magma", "Team Aqua", "Team Rocket", "Team Galactic"],
+       answer: "Team Rocket"
+     }
     // Add more questions for the next level...
   ];
 
@@ -266,26 +266,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Cerulean Old Town", "Cerulean Harbor", "Cerulean Cape", "Cerulean Cave"],
       answer: "Cerulean Cape"
     },
-    // {
-    //   question: "Before being able to take on the gym, you have to help a Pokemon researcher, what's his name?",
-    //   options: ["Bill", "Bob", "Blaine", "Brad"],
-    //   answer: "Bill"
-    // },
-    // {
-    //   question: "Which important item will you receive after assisting the Pokemon researcher at his house?",
-    //   options: ["S.S. Ticket", "A gym badge", "HM01 - Cut", "Bicycle"],
-    //   answer: "S.S. Ticket"
-    // },
-    // {
-    //   question: "In FireRed/LeafGreen, which Pokemon did the researcher accidentally turn himself into?",
-    //   options: ["Kadabra", "Oddish", "Jigglypuff", "Clefairy"],
-    //   answer: "Clefairy"
-    // },
-    // {
-    //   question: "What's the address written on the mailbox in front of the little house in north-eastern Cerulean?",
-    //   options: ["Sea Cottage", "Beach Condo", "Lakeside House", "Cerulean Gym"],
-    //   answer: "Sea Cottage"
-    // }
+     {
+       question: "Before being able to take on the gym, you have to help a Pokemon researcher, what's his name?",
+       options: ["Bill", "Bob", "Blaine", "Brad"],
+       answer: "Bill"
+     },
+     {
+       question: "Which important item will you receive after assisting the Pokemon researcher at his house?",
+       options: ["S.S. Ticket", "A gym badge", "HM01 - Cut", "Bicycle"],
+       answer: "S.S. Ticket"
+     },
+     {
+       question: "In FireRed/LeafGreen, which Pokemon did the researcher accidentally turn himself into?",
+       options: ["Kadabra", "Oddish", "Jigglypuff", "Clefairy"],
+       answer: "Clefairy"
+     },
+     {
+       question: "What's the address written on the mailbox in front of the little house in north-eastern Cerulean?",
+       options: ["Sea Cottage", "Beach Condo", "Lakeside House", "Cerulean Gym"],
+       answer: "Sea Cottage"
+     }
     // Add more questions for the next level...
   ];
 
@@ -295,26 +295,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["1,000,000", "100,000", "10,000", "1,000"],
       answer: "1,000,000"
     },
-    // {
-    //   question: "What hidden item can you find behind the house in the north-west corner of the city?",
-    //   options: ["Rare Candy", "Nugget", "Ultra Ball", "Full Heal"],
-    //   answer: "Rare Candy"
-    // },
-    // {
-    //   question: "Which TM will you get from the Rocket Grunt after showing who is boss?",
-    //   options: ["TM22 - Solar Beam", "TM28 - Dig", "TM05 - Roar", "TM32 - Double Team"],
-    //   answer: "TM28 - Dig"
-    // },
-    // {
-    //   question: "In the south of Cerulean city there is a lady, by which Pokemon is she accompanied?",
-    //   options: ["Gloom", "Pikachu", "Slowpoke", "Goldeen"],
-    //   answer: "Slowpoke"
-    // },
-    // {
-    //   question: "Who prevents you from entering the burglarized house, before assisting Bill at Cerulean Cape?",
-    //   options: ["Officer Jenny", "Nurse Joy", "Misty", "A Team Rocket Grunt"],
-    //   answer: "Officer Jenny"
-    // }
+     {
+       question: "What hidden item can you find behind the house in the north-west corner of the city?",
+       options: ["Rare Candy", "Nugget", "Ultra Ball", "Full Heal"],
+       answer: "Rare Candy"
+     },
+     {
+       question: "Which TM will you get from the Rocket Grunt after showing who is boss?",
+       options: ["TM22 - Solar Beam", "TM28 - Dig", "TM05 - Roar", "TM32 - Double Team"],
+       answer: "TM28 - Dig"
+     },
+     {
+       question: "In the south of Cerulean city there is a lady, by which Pokemon is she accompanied?",
+       options: ["Gloom", "Pikachu", "Slowpoke", "Goldeen"],
+       answer: "Slowpoke"
+     },
+     {
+       question: "Who prevents you from entering the burglarized house, before assisting Bill at Cerulean Cape?",
+       options: ["Officer Jenny", "Nurse Joy", "Misty", "A Team Rocket Grunt"],
+       answer: "Officer Jenny"
+     }
     // Add more questions for the next level...
   ];
 
@@ -324,26 +324,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Bite", "Thundershock", "Vine Whip", "Earthquake"],
       answer: "Bite"
     },
-    // {
-    //   question: "What's the signature move of Misty's Pokemon?",
-    //   options: ["Waterfall", "Water Pulse", "Surf", "Hydro Pump"],
-    //   answer: "Water Pulse"
-    // },
-    // {
-    //   question: "Which berry would you give your Pokemon to counter the possible side effect of Misty's signature move?",
-    //   options: ["Pecha Berry", "Chesto Berry", "Rawst Berry", "Persim Berry"],
-    //   answer: "Persim Berry"
-    // },
-    // {
-    //   question: "Which starter is probably the worst pick against Misty's Pokemon?",
-    //   options: ["Charmander", "Bulbasaur", "Squirtle", "They're equally good"],
-    //   answer: "Charmander"
-    // },
-    // {
-    //   question: "What move will Misty's Starmie to restore it's health?",
-    //   options: ["Rest", "Recover", "Wish", "Roost"],
-    //   answer: "Recover"
-    // }
+     {
+       question: "What's the signature move of Misty's Pokemon?",
+       options: ["Waterfall", "Water Pulse", "Surf", "Hydro Pump"],
+       answer: "Water Pulse"
+     },
+     {
+       question: "Which berry would you give your Pokemon to counter the possible side effect of Misty's signature move?",
+       options: ["Pecha Berry", "Chesto Berry", "Rawst Berry", "Persim Berry"],
+       answer: "Persim Berry"
+     },
+     {
+       question: "Which starter is probably the worst pick against Misty's Pokemon?",
+       options: ["Charmander", "Bulbasaur", "Squirtle", "They're equally good"],
+       answer: "Charmander"
+     },
+     {
+       question: "What move will Misty's Starmie to restore it's health?",
+       options: ["Rest", "Recover", "Wish", "Roost"],
+       answer: "Recover"
+     }
     // Add more questions for the next level...
   ];
 
@@ -353,26 +353,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Have your Pokemon raised", "Teach your Pokemon TM moves", "Change the names of your Pokemon", "Teleport to Pallet Town"],
       answer: "Have your Pokemon raised"
     },
-    // {
-    //   question: "The little girl in the house will offer you to trade Pokemon, which one?",
-    //   options: ["Nidoran", "Spearow", "Onix", "Raichu"],
-    //   answer: "Nidoran"
-    // },
-    // {
-    //   question: "Which Pokemon found on this route can help you gain additional cash from trainer battles?",
-    //   options: ["Bellsprout", "Pidgey", "Oddish", "Meowth"],
-    //   answer: "Meowth"
-    // },
-    // {
-    //   question: "When playing FireRed, which Pokemon can't be caught on Route 6?",
-    //   options: ["Bellsprout", "Oddish", "Gyarados", "Magikarp"],
-    //   answer: "Bellsprout"
-    // },
-    // {
-    //   question: "When fishing with a Good Rod on Route 6, which Pokemon will you most likely encounter?",
-    //   options: ["Gyarados", "Poliwag", "Poliwhirl", "Slowpoke"],
-    //   answer: "Poliwag"
-    // }
+     {
+       question: "The little girl in the house will offer you to trade Pokemon, which one?",
+       options: ["Nidoran", "Spearow", "Onix", "Raichu"],
+       answer: "Nidoran"
+     },
+     {
+       question: "Which Pokemon found on this route can help you gain additional cash from trainer battles?",
+       options: ["Bellsprout", "Pidgey", "Oddish", "Meowth"],
+       answer: "Meowth"
+     },
+     {
+       question: "When playing FireRed, which Pokemon can't be caught on Route 6?",
+       options: ["Bellsprout", "Oddish", "Gyarados", "Magikarp"],
+       answer: "Bellsprout"
+     },
+     {
+       question: "When fishing with a Good Rod on Route 6, which Pokemon will you most likely encounter?",
+       options: ["Gyarados", "Poliwag", "Poliwhirl", "Slowpoke"],
+       answer: "Poliwag"
+     }
     // Add more questions for the next level...
   ];
 
@@ -382,26 +382,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Itemfinder", "Fame Checker", "Teachy TV", "Good Rod"],
       answer: "Itemfinder"
     },
-    // {
-    //   question: "What's the name of the cave between Vermilion City and Route 11?",
-    //   options: ["Dugtrio's Cave", "Diglett's Cave", "Rock Tunnel", "Vermilion Cave"],
-    //   answer: "Diglett's Cave"
-    // },
-    // {
-    //   question: "What seems to be the Pokemon of choice for the two Engineer trainers on Route 11?",
-    //   options: ["Magnemite", "Growlithe", "Ekans", "Arbok"],
-    //   answer: "Magnemite"
-    // },
-    // {
-    //   question: "On Route 11, you will have the chance to catch a Psychic-type Pokemon, which one?",
-    //   options: ["Drowzee", "Alakazam", "Mewtwo", "Espeon"],
-    //   answer: "Drowzee"
-    // },
-    // {
-    //   question: "Which Pokemon are exclusive to either FireRed or LeafGreen?",
-    //   options: ["Sandshrew & Ekans", "Drowzee & Hypno", "Spearow & Pidgey", "Krabby & Horsea"],
-    //   answer: "Sandshrew & Ekans"
-    // }
+     {
+       question: "What's the name of the cave between Vermilion City and Route 11?",
+       options: ["Dugtrio's Cave", "Diglett's Cave", "Rock Tunnel", "Vermilion Cave"],
+       answer: "Diglett's Cave"
+     },
+     {
+       question: "What seems to be the Pokemon of choice for the two Engineer trainers on Route 11?",
+       options: ["Magnemite", "Growlithe", "Ekans", "Arbok"],
+       answer: "Magnemite"
+     },
+     {
+       question: "On Route 11, you will have the chance to catch a Psychic-type Pokemon, which one?",
+       options: ["Drowzee", "Alakazam", "Mewtwo", "Espeon"],
+       answer: "Drowzee"
+     },
+     {
+       question: "Which Pokemon are exclusive to either FireRed or LeafGreen?",
+       options: ["Sandshrew & Ekans", "Drowzee & Hypno", "Spearow & Pidgey", "Krabby & Horsea"],
+       answer: "Sandshrew & Ekans"
+     }
     // Add more questions for the next level...
   ];
 
@@ -411,26 +411,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Teach a unique move", "Heal your Pokemon", "Sell rare items", "Trade rare Pokemon"],
       answer: "Heal your Pokemon"
     },
-    // {
-    //   question: "After helping the captain, what will he reward you with?",
-    //   options: ["HM01 - Cut", "HM07 - Waterfall", "HM05 - Flash", "HM02 - Fly"],
-    //   answer: "HM01 - Cut"
-    // },
-    // {
-    //   question: "What is the issue the captain seems to be having?",
-    //   options: ["He is feeling sick", "He is being robbed", "The ship is broken", "He lost one of his Pokemon"],
-    //   answer: "He is feeling sick"
-    // },
-    // {
-    //   question: "Which Pokemon will your rival start off with on the S.S. Anne?",
-    //   options: ["Pidgeotto", "His Starter", "Machop", "Kadabra"],
-    //   answer: "Pidgeotto"
-    // },
-    // {
-    //   question: "Of all types of trainers on the ship, which one will reward you with the most cash?",
-    //   options: ["Youngster", "Lass", "Sailor", "Gentleman"],
-    //   answer: "Gentleman"
-    // }
+     {
+       question: "After helping the captain, what will he reward you with?",
+       options: ["HM01 - Cut", "HM07 - Waterfall", "HM05 - Flash", "HM02 - Fly"],
+       answer: "HM01 - Cut"
+     },
+     {
+       question: "What is the issue the captain seems to be having?",
+       options: ["He is feeling sick", "He is being robbed", "The ship is broken", "He lost one of his Pokemon"],
+       answer: "He is feeling sick"
+     },
+     {
+       question: "Which Pokemon will your rival start off with on the S.S. Anne?",
+       options: ["Pidgeotto", "His Starter", "Machop", "Kadabra"],
+       answer: "Pidgeotto"
+     },
+     {
+       question: "Of all types of trainers on the ship, which one will reward you with the most cash?",
+       options: ["Youngster", "Lass", "Sailor", "Gentleman"],
+       answer: "Gentleman"
+     }
     // Add more questions for the next level...
   ];
 
@@ -440,26 +440,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Onix", "Snorlax", "Graveler", "Machop"],
       answer: "Machop"
     },
-    // {
-    //   question: "What item will the Pokemon Fan Club Chairman give you after listening to his story?",
-    //   options: ["Bike Voucher", "Club Membership", "HM05 - Flash", "A Master Ball"],
-    //   answer: "Bike Voucher"
-    // },
-    // {
-    //   question: "In Pokemon Red and Blue, what's the name of the Farfetch'd you can get by trade?",
-    //   options: ["Dux", "Flux", "Trux", "Ch'ding"],
-    //   answer: "Dux"
-    // },
-    // {
-    //   question: "What color could you classify Vermilion as?",
-    //   options: ["Red Orange", "Blue Banana", "Green Grape", "Yellow Apple"],
-    //   answer: "Red Orange"
-    // },
-    // {
-    //   question: "Which move does at least one of your Pokemon need to have before challenging Vermilion's Gym Leader?",
-    //   options: ["Cut", "Slash", "Scratch", "Flash"],
-    //   answer: "Cut"
-    // }
+     {
+       question: "What item will the Pokemon Fan Club Chairman give you after listening to his story?",
+       options: ["Bike Voucher", "Club Membership", "HM05 - Flash", "A Master Ball"],
+       answer: "Bike Voucher"
+     },
+     {
+       question: "In Pokemon Red and Blue, what's the name of the Farfetch'd you can get by trade?",
+       options: ["Dux", "Flux", "Trux", "Ch'ding"],
+       answer: "Dux"
+     },
+     {
+       question: "What color could you classify Vermilion as?",
+       options: ["Red Orange", "Blue Banana", "Green Grape", "Yellow Apple"],
+       answer: "Red Orange"
+     },
+     {
+       question: "Which move does at least one of your Pokemon need to have before challenging Vermilion's Gym Leader?",
+       options: ["Cut", "Slash", "Scratch", "Flash"],
+       answer: "Cut"
+     }
     // Add more questions for the next level...
   ];
 
@@ -469,26 +469,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
       answer: "Lieutenant"
     },
-    // {
-    //   question: "When getting the first switch correct, the second one will be directly next to it, but on which side?",
-    //   options: ["Left", "Above", "Right", "Random"],
-    //   answer: "Random"
-    // },
-    // {
-    //   question: "Before fighting search, what do you have to search through to find the switches?",
-    //   options: ["Trash cans", "Bookshelves", "Water puddles", "Stone pillars"],
-    //   answer: "Trash cans"
-    // },
-    // {
-    //   question: "If you beat every single trainer in Vermilion Gym, which of the following will you have encountered?",
-    //   options: ["4x Pikachu", "2x Raichu", "6x Voltorb", "8x Magnemite"],
-    //   answer: "4x Pikachu"
-    // },
-    // {
-    //   question: "With what move could you probably sweep the entire Vermilion Gym?",
-    //   options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
-    //   answer: "Dig"
-    // }
+     {
+       question: "When getting the first switch correct, the second one will be directly next to it, but on which side?",
+       options: ["Left", "Above", "Right", "Random"],
+       answer: "Random"
+     },
+     {
+       question: "Before fighting search, what do you have to search through to find the switches?",
+       options: ["Trash cans", "Bookshelves", "Water puddles", "Stone pillars"],
+       answer: "Trash cans"
+     },
+     {
+       question: "If you beat every single trainer in Vermilion Gym, which of the following will you have encountered?",
+       options: ["4x Pikachu", "2x Raichu", "6x Voltorb", "8x Magnemite"],
+       answer: "4x Pikachu"
+     },
+     {
+       question: "With what move could you probably sweep the entire Vermilion Gym?",
+       options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
+       answer: "Dig"
+     }
     // Add more questions for the next level...
   ];
 
@@ -498,26 +498,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Solar Beam", "Flash", "Light Screen", "Flamethrower"],
       answer: "Flash"
     },
-    // {
-    //   question: "If you get completely lost in Rock Tunnel, what item can you use to get out?",
-    //   options: ["Escape Rope", "Super Repel", "Max Revive", "Calcium"],
-    //   answer: "Escape Rope"
-    // },
-    // {
-    //   question: "Which are the two Fighting-type Pokemon you can encounter in the wild in Rock Tunnel?",
-    //   options: ["Machop & Machoke", "Mankey & Machop", "Mankey & Geodude", "Mankey & Primeape"],
-    //   answer: "Mankey & Machop"
-    // },
-    // {
-    //   question: "Hiker Lenny has 4 Pokemon, 3 Geodude and a ...?",
-    //   options: ["Machop", "Graveler", "Golem", "Machamp"],
-    //   answer: "Machop"
-    // },
-    // {
-    //   question: "What item does Onix need to evolve into Steelix?",
-    //   options: ["Metal Coat", "Steel Armor", "Iron Shell", "Steel Stone"],
-    //   answer: "Metal Coat"
-    // }
+     {
+       question: "If you get completely lost in Rock Tunnel, what item can you use to get out?",
+       options: ["Escape Rope", "Super Repel", "Max Revive", "Calcium"],
+       answer: "Escape Rope"
+     },
+     {
+       question: "Which are the two Fighting-type Pokemon you can encounter in the wild in Rock Tunnel?",
+       options: ["Machop & Machoke", "Mankey & Machop", "Mankey & Geodude", "Mankey & Primeape"],
+       answer: "Mankey & Machop"
+     },
+     {
+       question: "Hiker Lenny has 4 Pokemon, 3 Geodude and a ...?",
+       options: ["Machop", "Graveler", "Golem", "Machamp"],
+       answer: "Machop"
+     },
+     {
+       question: "What item does Onix need to evolve into Steelix?",
+       options: ["Metal Coat", "Steel Armor", "Iron Shell", "Steel Stone"],
+       answer: "Metal Coat"
+     }
     // Add more questions for the next level...
   ];
 
@@ -527,7 +527,7 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Voltorb & Magnemite", "Electabuzz & Pikachu", "Electrode & Raichu", "Rattata & Raticate"],
       answer: "Voltorb & Magnemite"
     },
-    /*{
+    {
       question: "What is the primary source of energy generated at the Power Plant?",
       options: ["Electricity", "Geothermal Energy", "Nuclear Energy", "Kinetic Energy"],
       answer: "Electricity"
@@ -541,7 +541,7 @@ document.addEventListener("DOMContentLoaded", function() {
       question: "One of the TM's you find here is TM17 (Protect), what's the other one?",
       options: ["TM25 (Thunder)", "TM14 (Blizzard)", "TM36 (Sludge Bomb)", "TM19 (Giga Grain)"],
       answer: "TM25 (Thunder)"
-    },*/
+    },
     {
       question: "On what type of Pokemon will electric moves have no effect on?",
       options: ["Ground", "Rock", "Ghost", "Flying"],
@@ -556,7 +556,7 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Eli & Anne", "Anne & Marie", "Lisa & Marie", "Megan & Marie "],
       answer: "Eli & Anne"
     },
-    /*{
+    {
       question: "In Pokemon FireRed you will be able to catch Growlithe, on LeafGreen you can instead catch ...?",
       options: ["Vulpix", "Nidorino", "Doduo", "Flareon"],
       answer: "Vulpix"
@@ -575,7 +575,7 @@ document.addEventListener("DOMContentLoaded", function() {
       question: "Which type of Pokemon would you pick to easily destroy the two bikers riding around on Route 8?",
       options: ["Psychic", "Bug", "Poison", "Grass"],
       answer: "Psychic"
-    }*/
+    }
     // Add more questions for the next level...
   ];
 
@@ -585,26 +585,26 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Hyper Beam", "Roar", "Attract", "Secret Power"],
       answer: "Hyper Beam"
     },
-    // {
-    //   question: "What Pokemon can you get from the top floor in the Celadon Mansion?",
-    //   options: ["Porygon", "Eevee", "Pikachu", "Charmander"],
-    //   answer: "Eevee"
-    // },
-    // {
-    //   question: "What do you need to get in order to play slots in the Game Corner?",
-    //   options: ["A Coin Case", "A Slot Card", "Erika's Badge", "At least 10 Pokemon"],
-    //   answer: "A Coin Case"
-    // },
-    // {
-    //   question: "What Pokemon is blocking the road to the west of Celadon?",
-    //   options: ["Snorlax", "Onix", "Mewtwo", "Sudowoodo"],
-    //   answer: "Snorlax"
-    // },
-    // {
-    //   question: "In Pokemon LeafGreen you can buy Porygon at the Game Corner for 6500 coins, in FireRed it costs how much?",
-    //   options: ["9999 coins", "The same amount", "4500 coins", "6250 coins"],
-    //   answer: "9999 coins"
-    // }
+     {
+       question: "What Pokemon can you get from the top floor in the Celadon Mansion?",
+       options: ["Porygon", "Eevee", "Pikachu", "Charmander"],
+       answer: "Eevee"
+     },
+     {
+       question: "What do you need to get in order to play slots in the Game Corner?",
+       options: ["A Coin Case", "A Slot Card", "Erika's Badge", "At least 10 Pokemon"],
+       answer: "A Coin Case"
+     },
+     {
+       question: "What Pokemon is blocking the road to the west of Celadon?",
+       options: ["Snorlax", "Onix", "Mewtwo", "Sudowoodo"],
+       answer: "Snorlax"
+     },
+     {
+       question: "In Pokemon LeafGreen you can buy Porygon at the Game Corner for 6500 coins, in FireRed it costs how much?",
+       options: ["9999 coins", "The same amount", "4500 coins", "6250 coins"],
+       answer: "9999 coins"
+     }
     // Add more questions for the next level...
   ];
 
@@ -614,107 +614,141 @@ document.addEventListener("DOMContentLoaded", function() {
       options: ["Burn", "Sleep", "Poison", "Paralysis"],
       answer: "Burn"
     },
-    // {
-    //   question: "What's the name of the Pokemon used by Erika that has no prior evolutions?",
-    //   options: ["Tangela", "Victreebel", "Vileplume", "Bulbasaur"],
-    //   answer: "Tangela"
-    // },
-    // {
-    //   question: "Which of the following Pokemon will you only encounter once in Erika's gym?",
-    //   options: ["Ivysaur & Bellsprout", "Exeggcute & Bulbasaur", "Oddish & Weepinbell", "Gloom & Vileplume"],
-    //   answer: "Exeggcute & Bulbasaur"
-    // },
-    // {
-    //   question: "Which starter would make sure you have no trouble beating Erika's gym?",
-    //   options: ["Pikachu", "Charmander", "Squirtle", "Bulbasaur"],
-    //   answer: "Charmander"
-    // },
-    // {
-    //   question: "When using Sunny Day against Erika, what effects will occur?",
-    //   options: ["Solar Beam will be instant", "It weakens water moves", "It powers up fire moves", "All of them"],
-    //   answer: "All of them"
-    // }
+     {
+       question: "What's the name of the Pokemon used by Erika that has no prior evolutions?",
+       options: ["Tangela", "Victreebel", "Vileplume", "Bulbasaur"],
+       answer: "Tangela"
+     },
+     {
+       question: "Which of the following Pokemon will you only encounter once in Erika's gym?",
+       options: ["Ivysaur & Bellsprout", "Exeggcute & Bulbasaur", "Oddish & Weepinbell", "Gloom & Vileplume"],
+       answer: "Exeggcute & Bulbasaur"
+     },
+     {
+       question: "Which starter would make sure you have no trouble beating Erika's gym?",
+       options: ["Pikachu", "Charmander", "Squirtle", "Bulbasaur"],
+       answer: "Charmander"
+     },
+     {
+       question: "When using Sunny Day against Erika, what effects will occur?",
+       options: ["Solar Beam will be instant", "It weakens water moves", "It powers up fire moves", "All of them"],
+       answer: "All of them"
+     }
     // Add more questions for the next level...
   ];
 
   const questionsLevel21 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "After beating your rival here, you will be rewarded which Pokemon?",
+      options: ["Lapras", "Alakazam", "Snorlax", "Lickitung"],
+      answer: "Lapras"
     },
-    // {
-    //   question: "When getting the first switch correct, the second one will be directly next to it, but on which side?",
-    //   options: ["Left", "Above", "Right", "Random"],
-    //   answer: "Random"
-    // },
-    // {
-    //   question: "Before fighting search, what do you have to search through to find the switches?",
-    //   options: ["Trash cans", "Bookshelves", "Water puddles", "Stone pillars"],
-    //   answer: "Trash cans"
-    // },
-    // {
-    //   question: "If you beat every single trainer in Vermilion Gym, which of the following will you have encountered?",
-    //   options: ["4x Pikachu", "2x Raichu", "6x Voltorb", "8x Magnemite"],
-    //   answer: "4x Pikachu"
-    // },
-    // {
-    //   question: "With what move could you probably sweep the entire Vermilion Gym?",
-    //   options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
-    //   answer: "Dig"
-    // }
+     {
+       question: "Which item do you need to get to Giovanni in Silph Co.?",
+       options: ["Card Key", "Elevator Card", "Master Key", "Silph Scope"],
+       answer: "Card Key"
+     },
+     {
+       question: "Which Pokemon will your rival have here, if you picked Squirtle as a starter?",
+       options: ["Ivysaur", "Venusaur", "Charizard", "Blastoise"],
+       answer: "Venusaur"
+     },
+     {
+       question: "Giovanni will use one normal type Pokemon when fighting him, which one?",
+       options: ["Kangaskhan", "Nidoqueen", "Lickitung", "Nidorino"],
+       answer: "Kangaskhan"
+     },
+     {
+       question: "What's the name of the Pokeball you will receive after beating Giovanni in Silph Co.?",
+       options: ["Master Ball", "10 x Ultra Ball", "Love Ball", "Rocket Ball"],
+       answer: "Master Ball"
+     }
     // Add more questions for the next level...
   ];
 
   const questionsLevel22 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "In the Japanese version of the game, what could the town be classified as?",
+      options: ["Noble", "Scary", "Ghostly", "Empty"],
+      answer: "Noble"
     },
-    // {
-    //   question: "When getting the first switch correct, the second one will be directly next to it, but on which side?",
-    //   options: ["Left", "Above", "Right", "Random"],
-    //   answer: "Random"
-    // },
-    // {
-    //   question: "Before fighting search, what do you have to search through to find the switches?",
-    //   options: ["Trash cans", "Bookshelves", "Water puddles", "Stone pillars"],
-    //   answer: "Trash cans"
-    // },
-    // {
-    //   question: "If you beat every single trainer in Vermilion Gym, which of the following will you have encountered?",
-    //   options: ["4x Pikachu", "2x Raichu", "6x Voltorb", "8x Magnemite"],
-    //   answer: "4x Pikachu"
-    // },
-    // {
-    //   question: "With what move could you probably sweep the entire Vermilion Gym?",
-    //   options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
-    //   answer: "Dig"
-    // }
+     {
+      question: "Which item that you got in the Rocket Hideout will help you uncover the identity of the Ghosts in Pokemon Tower?",
+      options: ["Silph Scope", "PokeFlute", "Itemfinder", "Ghost Amulet"],
+       answer: "Silph Scope"
+     },
+     {
+       question: "The Name Rater in Lavender can change Pokemon names for you, unless...?",
+       options: ["You obtained it through trade", "The Pokemon has 0 HP", "You already named it", "It's at level 100"],
+       answer: "You obtained it through trade"
+     },
+     {
+       question: "What's the name of the man Team Rocket is holding hostage at the top floor?",
+       options: ["Mr. Fuji", "Mr. Everest", "Mr. Kilimanjaro", "Mr. Moon"],
+       answer: "Mr. Fuji"
+     },
+     {
+       question: "What is the primary purpose of Pokémon Tower in Lavender Town?",
+       options: ["It's the Lavender Town Gym", "Provide a scenic outlook over Lavender", "To serve as a resting place for travellers", "To honor deceased Pokemon"],
+       answer: "To honor deceased Pokemon"
+     }
     // Add more questions for the next level...
   ];
 
   const questionsLevel23 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
+      question: "Who is the leader at the Fighting Dojo?",
+      options: ["Bruno", "Chuck", "Brawly", "Kiyo"],
       answer: "Lieutenant"
     },
-
-    // {
-    //   question: "With what move could you probably sweep the entire Vermilion Gym?",
-    //   options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
-    //   answer: "Dig"
-    // }
+     {
+      question: "From which Pokemon will you be able to choose if you beat the Dojo?",
+      options: ["Hitmonlee & Hitmonchan", "Hitmontop & Hitmonchan", "Hitmonlee & Hitmontop", "Machamp & Primeape"],
+      answer: "Hitmonlee & Hitmonchan"
+     },
+     {
+      question: "What will hatch from an egg if you breed Hitmonchan/Hitmonlee with Ditto?",
+      options: ["Tyrogue", "Tyrone", "Tyronitar", "Tyros"],
+      answer: "Tyrogue"
+    },
+    {
+      question: "At level 20, your Pokemon can evolve into Hitmontop with a certain stat condition, which one?",
+      options: ["Attack = Defense", "Attack > Defense", "Defense > Attack", "Speed > Attack & Defense"],
+      answer: "Attack = Defense"
+    },
+    {
+      question: "What's one main differences between Red/Blue and FireRed/LeafGreen in the Fighting Dojo?",
+      options: ["Gift Pokemon are 5 levels higher in Red/Blue", "Trainers no longer have fighting Pokemon", "You can choose from 3 gift Pokemon", "The Dojo is closed for renovation"],
+      answer: "Gift Pokemon are 5 levels higher in Red/Blue"
+    }
     // Add more questions for the next level...
   ];
 
   const questionsLevel24 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "What's the girl known as who repeats everything you say?",
+      options: ["Mimic Girl", "Parrot Girl", "Mirror Move Girl", "Lisa"],
+      answer: "Mimic Girl"
+    },
+    {
+      question: "According to mythology, Saffron is the color of ...?",
+      options: ["Sunset and Fire", "Sunrise and Sky", "Azure Waters and Tranquility", "Moonlight and Dreams"],
+      answer: "Sunset and Fire"
+    },
+    {
+      question: "What's the name of Saffron City's gym leader?",
+      options: ["Sara", "Sabrina", "Erika", "May"],
+      answer: "Sabrina"
+    },
+    {
+      question: "How is the Team Rocket hideout in Saffron City called?",
+      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
+      answer: "Silph Co."
+    },
+    {
+      question: "Mr. Psychic will give you a useful TM, which statement is not true?",
+      options: ["It contains the move Psychic", "It's TM29", "It has 100% accuracy", "The move has 25PP"],
+      answer: "The move has 25PP"
     }
 
     // Add more questions for the next level...
@@ -722,9 +756,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel25 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "At level 20, your Pokemon can evolve into Hitmontop with a certain stat condition, which one?",
+      options: ["Attack = Defense", "Attack > Defense", "Defense > Attack", "Speed > Attack & Defense"],
+      answer: "Attack = Defense"
+    },
+    {
+      question: "How is the Team Rocket hideout in Saffron City called?",
+      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
+      answer: "Silph Co."
+    },
+    {
+      question: "How is the Team Rocket hideout in Saffron City called?",
+      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
+      answer: "Silph Co."
+    },
+    {
+      question: "How is the Team Rocket hideout in Saffron City called?",
+      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
+      answer: "Silph Co."
+    },
+    {
+      question: "How is the Team Rocket hideout in Saffron City called?",
+      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
+      answer: "Silph Co."
     }
 
     // Add more questions for the next level...
@@ -1545,10 +1599,10 @@ document.addEventListener("DOMContentLoaded", function() {
       questionContainers[currentLevel - 7].textContent = "Erika 🔒";
     } else if (currentLevel === 21) {
       questionContainers[currentLevel - 7].style.backgroundColor = ""; // Level 6 complete, purple background
-      questionContainers[currentLevel - 7].textContent = "Rocket Hideout 🔒";
+      questionContainers[currentLevel - 7].textContent = "Silph Co. 🔒";
     } else if (currentLevel === 22) {
       questionContainers[currentLevel - 8].classList.add("rocket");
-      questionContainers[currentLevel - 8].textContent = "Rocket Hideout ✔"; // Additional message for final level
+      questionContainers[currentLevel - 8].textContent = "Silph Co. ✔"; // Additional message for final level
       questionContainers[currentLevel - 7].textContent = "Lavender Town 🔒";
     } else if (currentLevel === 23) {
       questionContainers[currentLevel - 8].classList.add("lavender");
