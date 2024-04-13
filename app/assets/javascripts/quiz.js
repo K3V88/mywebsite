@@ -699,7 +699,7 @@ document.addEventListener("DOMContentLoaded", function() {
     {
       question: "Who is the leader at the Fighting Dojo?",
       options: ["Bruno", "Chuck", "Brawly", "Kiyo"],
-      answer: "Lieutenant"
+      answer: "Kiyo"
     },
      {
       question: "From which Pokemon will you be able to choose if you beat the Dojo?",
@@ -1129,7 +1129,7 @@ document.addEventListener("DOMContentLoaded", function() {
         mergedDiv.classList.add('left-square', 'merged', 'background-transition'); // Added 'background-transition' class
         // Set height of merged div to accommodate the height of three divs
         const squareHeight = document.querySelector('.left-square.square1').clientHeight;
-        mergedDiv.style.height = '150px';
+        mergedDiv.style.height = '25%';
         const square1Content = document.querySelector('.left-square.square1').innerHTML;
         const square2Content = document.querySelector('.left-square.square2').innerHTML;
         const square3Content = document.querySelector('.left-square.square3').innerHTML;
@@ -1167,7 +1167,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mergedDiv.classList.add('left-square', 'merged2', 'background-transition');
     // Set height of merged div to accommodate the height of three divs
     const squareHeight = document.querySelector('.left-square.square4').clientHeight;
-    mergedDiv.style.height = '150px';
+    mergedDiv.style.height = '25%';
     const square4Content = document.querySelector('.left-square.square4').innerHTML;
     const square5Content = document.querySelector('.left-square.square5').innerHTML;
     const square6Content = document.querySelector('.left-square.square6').innerHTML;
@@ -1204,7 +1204,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mergedDiv.classList.add('left-square', 'merged3', 'background-transition');
     // Set height of merged div to accommodate the height of three divs
     const squareHeight = document.querySelector('.left-square.square7').clientHeight;
-    mergedDiv.style.height = '150px';
+    mergedDiv.style.height = '25%';
     const square7Content = document.querySelector('.left-square.square7').innerHTML;
     const square8Content = document.querySelector('.left-square.square8').innerHTML;
     const square9Content = document.querySelector('.left-square.square9').innerHTML;
@@ -1241,7 +1241,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mergedDiv.classList.add('left-square', 'merged4', 'background-transition');
 
     const squareHeight = document.querySelector('.left-square.square10').clientHeight;
-    mergedDiv.style.height = '150px';
+    mergedDiv.style.height = '25%';
     const square7Content = document.querySelector('.left-square.square10').innerHTML;
     const square8Content = document.querySelector('.left-square.square11').innerHTML;
     const square9Content = document.querySelector('.left-square.square12').innerHTML;
@@ -1271,7 +1271,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mergedDiv.classList.add('right-square', 'merged5', 'background-transition');
 
     const squareHeight = document.querySelector('.right-square.square15').clientHeight;
-    mergedDiv.style.height = '150px';
+    mergedDiv.style.height = '25%';
     const square15Content = document.querySelector('.right-square.square15').innerHTML;
     const square16Content = document.querySelector('.right-square.square16').innerHTML;
     const square17Content = document.querySelector('.right-square.square17').innerHTML;
@@ -1306,7 +1306,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mergedDiv.classList.add('right-square', 'merged6', 'background-transition');
 
     const squareHeight = document.querySelector('.right-square.square18').clientHeight;
-    mergedDiv.style.height = '150px';
+    mergedDiv.style.height = '25%';
     const square18Content = document.querySelector('.right-square.square18').innerHTML;
     const square19Content = document.querySelector('.right-square.square19').innerHTML;
     const square20Content = document.querySelector('.right-square.square20').innerHTML;
@@ -1341,7 +1341,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mergedDiv.classList.add('right-square', 'merged7', 'background-transition');
 
     const squareHeight = document.querySelector('.right-square.square21').clientHeight;
-    mergedDiv.style.height = '150px';
+    mergedDiv.style.height = '25%';
     const square21Content = document.querySelector('.right-square.square21').innerHTML;
     const square22Content = document.querySelector('.right-square.square22').innerHTML;
     const square23Content = document.querySelector('.right-square.square23').innerHTML;
@@ -1379,7 +1379,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mergedDiv.classList.add('right-square', 'merged8', 'background-transition');
 
     const squareHeight = document.querySelector('.right-square.square24').clientHeight;
-    mergedDiv.style.height = '150px';
+    mergedDiv.style.height = '25%';
     const square24Content = document.querySelector('.right-square.square24').innerHTML;
     const square25Content = document.querySelector('.right-square.square25').innerHTML;
     const square26Content = document.querySelector('.right-square.square26').innerHTML;

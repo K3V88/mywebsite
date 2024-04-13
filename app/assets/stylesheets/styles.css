@@ -213,19 +213,24 @@ nav li {
   flex-wrap: wrap;
   border-top: 3px solid rgb(47, 189, 237);
   border-bottom: 3px solid rgb(47, 189, 237);
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  align-items: center;
+  margin: 0;
 }
 
+.pokemon-containerRS img {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+}
 .pokemon-sprite {
   margin: 0;
   height: auto;
   width: auto;
 }
 
-.clear {
-  clear: both;
-}
 
 .articlecard {
   width: 70vh;
@@ -329,8 +334,6 @@ h3 {
 }
 
 .staff-description {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .staff-description p {
@@ -342,33 +345,33 @@ h3 {
 }
 
 .staff-info p {
-  margin: 2px; /* Remove margin */
-  padding: 0; /* Remove padding */
+  margin: 2px;
+  padding: 0;
   font-size: 17px;
 }
 
 .staff-name {
-  font-family: "Your Desired Name Font", sans-serif; /* Replace "Your Desired Name Font" with the font for staff names */
-  font-weight: bold; /* Example style for staff names */
+  font-family: "Your Desired Name Font", sans-serif;
+  font-weight: bold;
   font-size: 25px;
 }
 
 .staff-role {
-  font-family: "Your Desired Role Font", sans-serif; /* Replace "Your Desired Role Font" with the font for staff roles */
-  font-style: italic; /* Example style for staff roles */
+  font-family: "Your Desired Role Font", sans-serif;
+  font-style: italic;
 }
 
 .staff-hometown {
-  font-family: "Your Desired Hometown Font", sans-serif; /* Replace "Your Desired Hometown Font" with the font for staff hometowns */
-  color: #3366cc; /* Example color for staff hometowns */
+  font-family: "Your Desired Hometown Font", sans-serif;
+  color: #3366cc;
 }
 
 .staff-favorite {
-  font-family: "Your Desired Favorite Font", sans-serif; /* Replace "Your Desired Favorite Font" with the font for staff favorite Pokemon */
+  font-family: "Your Desired Favorite Font", sans-serif;
 }
 
 .staff-member .staff-name {
-  font-size: 25px; /* Adjust the font size as needed */
+  font-size: 25px;
   font-family: calibri;
 }
 
@@ -527,8 +530,20 @@ button:hover {
   height: 400px;
 }
 
+.articlequiz4 .article-image,
+.articlequiz4 .article-image2,
+.articlequiz4 .article-image3,
+.articlequiz4 .article-image4 {
+  float: none; /* Remove the float property */
+  margin: 0; /* Reset the margin */
+  padding: 0; /* Reset the padding */
+}
+
 img {
   width: 100%;
+  float: none; /* Remove the float property */
+  margin: none;
+  padding: none;
 }
 
 h3 {
@@ -552,7 +567,9 @@ h3 {
   flex-direction: column;
 }
 
+.staff-description p {
 
+}
 
 .staff-details p {
   margin-left: -25px;
