@@ -299,7 +299,6 @@ nav li {
 
 .staff-member {
   display: flex;
-  align-items: center;
   margin-bottom: 20px;
   margin-left: 50px;
   margin-right: 50px;
@@ -308,8 +307,12 @@ nav li {
 }
 
 .staff-image {
-  width: 250px; /* Adjust as needed */
-  padding: 20px;
+  width: 200px; /* Adjust as needed */
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  border: 2px solid transparent; /* Set initial border */
+  margin: 10px;
 }
 
 h3 {
@@ -319,35 +322,80 @@ h3 {
 
 .staff-details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  border: 2px solid rgb(47, 189, 237);
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  border: 2px solid transparent; /* Set initial border */
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 20px;
   margin-bottom: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  ;
 }
 
 .center-aligned {
   text-align: right;
 }
 
-.staff-description {
+.elite-member {
+  display: none;
+  width: 25%;
+  background-position: center; /* Center the background image */
+  background-size: cover;
+  opacity: 0.2;
 }
+
+.elite-member-1 {
+  background-image: url(./assets/lorelei.png);
+  animation: spin 3s linear;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  opacity: 1;
+}
+
+.elite-member-2 {
+  background-image: url(./assets/bruno2.png);
+  background-color: rgba(255, 255, 255, 0.3); /* Set the background color with 0.3 opacity */
+}
+
+.elite-member-3 {
+  background-image: url(./assets/agatha.png);
+  background-color: rgba(255, 255, 255, 0.3); /* Set the background color with 0.3 opacity */
+}
+
+.elite-member-4 {
+  background-image: url(./assets/lance.png);
+  border-top-right-radius: 10px;
+  border-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3); /* Set the background color with 0.3 opacity */
+}
+
+
 
 .staff-description p {
   margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.staff-details .staff-description p {
+  margin: 0;
+  color: rgb(33, 23, 23);
 }
 
 .staff-info {
   margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
 }
 
 .staff-info p {
   margin: 2px;
   padding: 0;
   font-size: 17px;
+  justify-content: center;
 }
 
 .staff-name {
@@ -459,7 +507,7 @@ button:hover {
   font-size: 17px !important;
   font-style: bolder !important;;
   background-color: rgb(47, 189, 237);
-  color: #ffffff !important;
+  color: #f1bfbf !important;
   border: none !important;
   border-radius: 10px !important;
   cursor: pointer !important;
@@ -469,9 +517,6 @@ button:hover {
 
 .option-btn:hover {
   background-color: #088cb8 /* Change color on hover */
-}
-
-#restart-btn {
 }
 
 #next-level-btn {
@@ -556,7 +601,7 @@ h3 {
 .container .pokebox .pokemon-container .pokemon-containerRS .articlequiz4 .articlequiz3 .pokebox .boxtop .bottom {
   width: 50vh;
   display: flex;
-  margin: 0 auto; /* Center the container horizontally */
+  margin: 10px; /* Center the container horizontally */
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -567,8 +612,13 @@ h3 {
   flex-direction: column;
 }
 
-.staff-description p {
+.container p {
+margin: 10px;
 
+}
+
+.articlecard {
+  margin: 10px;
 }
 
 .staff-details p {
@@ -578,7 +628,7 @@ h3 {
 }
 
 .articlequiz4 p {
-  max-width: 35vh;
+  max-width: 30vh;
   text-align: center;
 }
 
@@ -745,8 +795,26 @@ nav {
 }
 
 
-.level-complete {
+.champion {
+  background-color: rgb(224, 224, 224);
+  background-image: url(./assets/champion.png);
+  opacity: 0;
+}
 
+
+
+.elite-member-defeated::after {
+  content: 'X';
+  color: red;
+  position: relative;
+  font-size: 25em;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #proceedToEliteButton {
@@ -793,12 +861,10 @@ nav {
   background-color: rgb(224, 224, 224);
   display: flex;
   flex-direction: row;
-  width: 95%;
+  width: 96%;
   height: 30px;
   border-radius: 10px;
   margin-top: 15px;
-
-
 }
 
 .pallet-town {

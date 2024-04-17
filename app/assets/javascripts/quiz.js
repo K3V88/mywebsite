@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  let currentLevel = 1; // Initialize current level
+  let currentLevel = 39; // Initialize current level
 
   const questionContainers = [
     document.querySelector('.left-square.square1'),
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const resultContainer = document.getElementById('result');
   const restartButton = document.getElementById('restart-btn');
   const nextLevelButton = document.getElementById('next-level-btn');
+  const proceedToEliteButton = document.getElementById('proceedToEliteButton');
 
   // Define questions for each level
   const questionsLevel1 = [
@@ -60,27 +61,27 @@ document.addEventListener("DOMContentLoaded", function() {
       question: "Who is the protagonist's rival in Pallet Town?",
       options: ["Blue", "Red", "Green", "Yellow"],
       answer: "Blue"
-    },
-    {
-      question: "What are the only 2 Pokemon that can be caught on Route 1?",
-      options: ["Rattata & Pidgey", "Spearow & Sandshrew", "Moltres & Zapdos", "Weedle & Caterpie"],
-      answer: "Rattata & Pidgey"
-    },
-    {
-      question: "What's the first Pokemon in the PokeDex?",
-      options: ["Pikachu", "Caterpie", "Bulbasaur", "Charmander"],
-      answer: "Bulbasaur"
-    },
-    {
-      question: "Which Professor resides in Pallet Town?",
-      options: ["Professor Elm", "Professor Birch", "Professor Willow", "Professor Oak"],
-      answer: "Professor Oak"
-    },
-    {
-      question: "Which Pokemon will your rival choose if you take Charmander?",
-      options: ["Eevee", "Bulbasaur", "Pikachu", "Squirtle"],
-      answer: "Squirtle"
     }
+   // {
+   //   question: "What are the only 2 Pokemon that can be caught on Route 1?",
+  //    options: ["Rattata & Pidgey", "Spearow & Sandshrew", "Moltres & Zapdos", "Weedle & Caterpie"],
+ //     answer: "Rattata & Pidgey"
+  //  },
+ //   {
+  //    question: "What's the first Pokemon in the PokeDex?",
+  //    options: ["Pikachu", "Caterpie", "Bulbasaur", "Charmander"],
+  //    answer: "Bulbasaur"
+ //   },
+   // {
+  //    question: "Which Professor resides in Pallet Town?",
+  //    options: ["Professor Elm", "Professor Birch", "Professor Willow", "Professor Oak"],
+  //    answer: "Professor Oak"
+  //  },
+  //  {
+   //   question: "Which Pokemon will your rival choose if you take Charmander?",
+  //    options: ["Eevee", "Bulbasaur", "Pikachu", "Squirtle"],
+ //     answer: "Squirtle"
+ //   }
 
   ];
 
@@ -934,6 +935,16 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add more questions for the next level...
   ];
 
+  const questionsLevel41 = [
+    {
+      question: "What military title does the Gym Leader Surge have?",
+      options: ["level41", "Major", "Colonel", "Sergeant"],
+      answer: "level41"
+    }
+
+    // Add more questions for the next level...
+  ];
+
   // Function to shuffle an array
   function shuffleArray(array) {
     const shuffledArray = array.map(item => ({ ...item })); // Create a shallow copy of the array
@@ -1054,7 +1065,7 @@ document.addEventListener("DOMContentLoaded", function() {
             restartButton.style.display = 'block';
             nextLevelButton.innerText = "Next Level";
         }
-    } else if (currentLevel === 5 || currentLevel === 10 || currentLevel === 15 || currentLevel === 20 || currentLevel === 25 || currentLevel === 30 || currentLevel === 35 || currentLevel === 40) {
+    } else if (currentLevel === 5 || currentLevel === 10 || currentLevel === 15 || currentLevel === 20 || currentLevel === 25 || currentLevel === 30 || currentLevel === 35 || currentLevel === 40 || currentLevel === 41) {
         if (correctCount === shuffledQuestions.length) {
             // All questions are correct
             let gymLeaderBeatenImage;
@@ -1084,6 +1095,7 @@ document.addEventListener("DOMContentLoaded", function() {
               gymLeaderBeatenImage = 'earth.png';
               gymLeaderText2 = "You've beaten Giovanni! <br>You have beaten all gym leaders!";
               resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
+
               setTimeout(() => {
                   // Fade out the previous message
                   resultContainer.style.transition = 'opacity 1s';
@@ -1097,7 +1109,46 @@ document.addEventListener("DOMContentLoaded", function() {
                       resultContainer.style.opacity = '1';
                   }, 1000);
               }, 2000); // Wait for 2 seconds (2000 milliseconds) before fading out the message
+            } else if (currentLevel === 41) {
+              gymLeaderBeatenImage = 'earth.png';
+              gymLeaderText2 = "You've beaten Loreilei!";
+              resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
+
+              // Handle level 41 logic here
+
           }
+
+          let proceedToEliteClicked = false;
+
+          proceedToEliteButton.addEventListener('click', function() {
+              if (!proceedToEliteClicked) {
+                  // Increment the current level
+                  currentLevel++;
+
+                  // Initialize the appropriate quiz level based on the current level
+                  // Add your initialization logic here
+
+                  // Reset display styles for question and options containers
+                  questionContainer.style.display = "none";
+                  optionsContainer.style.display = "none";
+                  resultContainer.innerHTML = `<h2>Lorelei is up first, get ready!</h2>`;
+                  proceedToEliteButton.style.display = "";
+
+
+                  proceedToEliteClicked = true;
+              } else {
+                  // Initialize quiz level 41
+                  currentLevel = 41;
+                  // Add initialization logic for level 41 here
+
+                  // Reset display styles for question and options containers
+                  questionContainer.style.display = "";
+                  optionsContainer.style.display = "";
+                  resultContainer.style.display = "none";
+                  proceedToEliteButton.style.display = "none";
+                  initializeQuizLevel(currentLevel, questionsLevel41);
+              }
+          });
             resultContainer.innerHTML = `<h2>Congratulations!</h2>
               <img src="./assets/${gymLeaderBeatenImage}" alt="Gym Leader Beaten" style="width: 150px; height: auto;" />
               <p>${gymLeaderText2}</p>`;
@@ -1159,6 +1210,8 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {
             mergedDiv.classList.add('reveal-background');
         }, 200); // Adjust the delay as needed
+
+
     }
 
   if (currentLevel === 10 && correctCount === shuffledQuestions.length) {
@@ -1402,24 +1455,89 @@ document.addEventListener("DOMContentLoaded", function() {
     const square28 = document.querySelector('.right-square.square28');
     square28.parentNode.removeChild(square28);
     const bottomDiv = document.querySelector('.bottom');
+    const eliteMemberDivs = Array.from(document.querySelectorAll('.elite-member'));
     const finalHeight = 400; // Final height you want to achieve
 
     function expandBottomDiv() {
-        let height = bottomDiv.clientHeight;
-        const interval = setInterval(function() {
-            height += 10; // Increment height gradually
-            bottomDiv.style.height = height + 'px';
-            if (height >= finalHeight) {
-                clearInterval(interval); // Stop the interval when final height is reached
-            }
-        }, 100); // Adjust the interval timing as needed
-    }
+      let height = bottomDiv.clientHeight;
+      const interval = setInterval(function() {
+          height += 10; // Increment height gradually
+          bottomDiv.style.height = height + 'px';
+          if (height >= finalHeight) {
+              clearInterval(interval); // Stop the interval when final height is reached
 
-    expandBottomDiv(); // Call the function to expand the bottom div
+              // Show elite member divs one after the other with a delay
+              eliteMemberDivs.forEach(function(div, index) {
+                  setTimeout(function() {
+                      div.style.display = 'inline-block';
+                      div.classList.add(`elite-member-${index + 1}`); // Add class based on index
+                  }, 500 * index); // Set the delay for each div
+              });
+          }
+      }, 100); // Adjust the interval timing as needed
+  }
+
+  expandBottomDiv(); // Call the function to expand the bottom div
+}
+
+if (currentLevel === 41 && correctCount === shuffledQuestions.length) {
+  const eliteMember1 = document.querySelector('.bottom .elite-member-1');
+  eliteMember1.classList.add("elite-member-defeated");
+  const eliteMember2 = document.querySelector('.bottom .elite-member-2')
+  eliteMember2.style.opacity = '1';
+}
+
+if (currentLevel === 42 && correctCount === shuffledQuestions.length) {
+  const eliteMember2 = document.querySelector('.bottom .elite-member-2');
+  eliteMember2.classList.add("elite-member-defeated");
+  const eliteMember3 = document.querySelector('.bottom .elite-member-3')
+  eliteMember3.style.opacity = '1';
+
+}
+
+if (currentLevel === 43 && correctCount === shuffledQuestions.length) {
+  const eliteMember3 = document.querySelector('.bottom .elite-member-3');
+  eliteMember3.classList.add("elite-member-defeated");
+  const eliteMember4 = document.querySelector('.bottom .elite-member-4')
+  eliteMember4.style.opacity = '1';
+}
+
+if (currentLevel === 44 && correctCount === shuffledQuestions.length) {
+  const eliteMember4 = document.querySelector('.bottom .elite-member-4');
+  eliteMember4.classList.add("elite-member-defeated");
+
+  // Get all elite member elements
+  const eliteMembers = document.querySelectorAll('.bottom .elite-member');
+
+  // Apply fade out transition to all elements simultaneously
+  eliteMembers.forEach(eliteMember => {
+    eliteMember.style.transition = 'opacity 5s';
+    eliteMember.style.opacity = '0'; // Fade out the element
+});
+
+// Remove all elite member elements from the DOM after fading out
+setTimeout(() => {
+  eliteMembers.forEach(eliteMember => {
+      eliteMember.remove();
+ });
+  const bottomDiv = document.querySelector('.bottom');
+
+  // Add .champion class to bottomDiv
+  bottomDiv.classList.add('champion');
+
+  // Add a delay before fading in the champion div
+  setTimeout(() => {
+      // Apply transition and opacity to fade in the champion div
+      bottomDiv.style.transition = 'opacity 4s';
+      bottomDiv.style.opacity = '1';
+  }, 50); // Adjust timing to your preference
+}, 3000); // Adjust timing to match the previous setTimeout
 }
 
 
   }
+
+
   // Initialize Level 1 quiz when the page loads
   initializeQuizLevel(1, questionsLevel1);
 
@@ -1512,7 +1630,18 @@ document.addEventListener("DOMContentLoaded", function() {
       initializeQuizLevel(currentLevel, questionsLevel39);
     } else if (currentLevel === 40) {
       initializeQuizLevel(currentLevel, questionsLevel40);
+    } else if (currentLevel === 41) {
+      initializeQuizLevel(currentLevel, questionsLevel41);
+    } else if (currentLevel === 42) {
+      initializeQuizLevel(currentLevel, questionsLevel41);
+    } else if (currentLevel === 43) {
+      initializeQuizLevel(currentLevel, questionsLevel41);
+    } else if (currentLevel === 44) {
+      initializeQuizLevel(currentLevel, questionsLevel41);
+    } else if (currentLevel === 45) {
+      initializeQuizLevel(currentLevel, questionsLevel41);
     }
+
 
 
     // Add more conditions for additional levels if needed
@@ -1679,4 +1808,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   });
+
+
 });
