@@ -1,5 +1,8 @@
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
-  let currentLevel = 39; // Initialize current level
+  let currentLevel = 1; // Initialize current level
 
   const questionContainers = [
     document.querySelector('.left-square.square1'),
@@ -1007,6 +1010,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1500);
   }
 
+
+
   // Function to display quiz result
   function showResult() {
     questionContainer.style.display = 'none';
@@ -1053,19 +1058,51 @@ document.addEventListener("DOMContentLoaded", function() {
                 gymLeaderImage = 'giovanni.png';
                 gymLeaderText = "Giovanni, the Shady Leader of Team Rocket, stands between you and victory!";
                 gymLeaderName = "Giovanni";
-            }
-            resultContainer.innerHTML = `<h2>Awesome, you got all questions correct!</h2>
+
+          }
+          const messages = [
+            "Congratulations, you've aced every question!",
+            "Incredible! You've answered all questions correctly!",
+            "Outstanding! Every question has been conquered!",
+            "Fantastic job! You've mastered every question!",
+            "Amazing! You got every question right!",
+            "Impressive work! You've aced the entire quiz!",
+            "Brilliant! All questions have been answered flawlessly!",
+            "Superb performance! You've nailed every question!",
+            "Remarkable! You've flawlessly completed every question!",
+            "Terrific job! You've aced every single question!",
+            "Exceptional work! Every question has been conquered!",
+            "Well done! You've answered every question perfectly!",
+            "Phenomenal effort! You've aced all the questions!",
+            "Stellar performance! You've conquered every question!",
+            "Incredible achievement! Every question is correct!",
+            "Bravo! You've mastered all the questions!",
+            "Excellent work! You've answered every question right!",
+            "Splendid job! You've aced all the questions!",
+            "Magnificent! Every question has been answered flawlessly!",
+            "Congratulations! You've flawlessly completed every question!"
+            // Add the rest of the messages here
+        ];
+
+        // Get a random index from the array
+            const randomIndex = Math.floor(Math.random() * messages.length);
+
+        // Use the random index to get a random congratulatory message
+            const randomMessage = messages[randomIndex];
+
+            resultContainer.innerHTML = `<h2>${randomMessage}</h2>
               <img src="./assets/${gymLeaderImage}" alt="Gym Leader" style="width: 150px; height: auto;" />
               <p>${gymLeaderText}</p>`;
             nextLevelButton.style.display = 'block';
             nextLevelButton.innerText = `Challenge ${gymLeaderName}!`;
+
         } else {
             // Some questions are incorrect
             resultContainer.innerHTML = `<h2>Oh, you only got ${correctCount} out of ${shuffledQuestions.length} correct.</h2><p>Press restart to try again!</p>`;
             restartButton.style.display = 'block';
             nextLevelButton.innerText = "Next Level";
         }
-    } else if (currentLevel === 5 || currentLevel === 10 || currentLevel === 15 || currentLevel === 20 || currentLevel === 25 || currentLevel === 30 || currentLevel === 35 || currentLevel === 40 || currentLevel === 41) {
+    } else if (currentLevel === 5 || currentLevel === 10 || currentLevel === 15 || currentLevel === 20 || currentLevel === 25 || currentLevel === 30 || currentLevel === 35 || currentLevel === 40 || currentLevel === 41 || currentLevel === 42 || currentLevel === 43 || currentLevel === 44 || currentLevel === 45) {
         if (correctCount === shuffledQuestions.length) {
             // All questions are correct
             let gymLeaderBeatenImage;
@@ -1096,6 +1133,9 @@ document.addEventListener("DOMContentLoaded", function() {
               gymLeaderText2 = "You've beaten Giovanni! <br>You have beaten all gym leaders!";
               resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
 
+
+
+
               setTimeout(() => {
                   // Fade out the previous message
                   resultContainer.style.transition = 'opacity 1s';
@@ -1109,13 +1149,173 @@ document.addEventListener("DOMContentLoaded", function() {
                       resultContainer.style.opacity = '1';
                   }, 1000);
               }, 2000); // Wait for 2 seconds (2000 milliseconds) before fading out the message
+
+
             } else if (currentLevel === 41) {
-              gymLeaderBeatenImage = 'earth.png';
-              gymLeaderText2 = "You've beaten Loreilei!";
+              gymLeaderBeatenImage = 'brunosprite.png';
+              gymLeaderText2 = "You've beaten Loreilei<br>Bruno is up next!";
               resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
 
-              // Handle level 41 logic here
 
+              // Handle level 41 logic here
+            } else if (currentLevel === 42) {
+              gymLeaderBeatenImage = 'agathasprite.png';
+              gymLeaderText2 = "You've beaten Bruno<br>Agatha is up next! The Ghost-type trainer is next!";
+              resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
+              // Handle level 41 logic here
+            } else if (currentLevel === 43) {
+              gymLeaderBeatenImage = 'lancesprite.png';
+              gymLeaderText2 = "You've beaten Agatha<br>Lance is up next!";
+              resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
+              // Handle level 41 logic here
+            } else if (currentLevel === 44) {
+              gymLeaderBeatenImage = 'championsprite.png';
+              gymLeaderText2 = "You've beaten Lance<br>Up next is your final battle against the champion!";
+              resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
+              // Handle level 41 logic here
+            } else if (currentLevel === 45) {
+              gymLeaderBeatenImage = 'championsprite.png';
+              gymLeaderText2 = "You have reached the end of the quiz";
+              resultContainer.innerHTML = `<h2>You have reached the end of the quiz!</h2><p>You answered all questions correctly!</p>`;
+              nextLevelButton.style.display = 'none'; // Hide the next level button immediately
+
+              // Select the .wrapper and .bottom .champion divs
+              const wrapperDiv = document.querySelector('.wrapper');
+              const bottomDiv = document.querySelector('.bottom');
+
+              // Fade out the .wrapper and .bottom .champion divs
+              wrapperDiv.style.transition = 'opacity 4s';
+              wrapperDiv.style.opacity = '0';
+
+              bottomDiv.style.transition = 'opacity 4s';
+              bottomDiv.style.opacity = '0';
+
+              // After 4 seconds (4000 milliseconds), fade out the elements and display the certificate
+              setTimeout(() => {
+                  // Hide the current elements
+                  wrapperDiv.style.display = 'none';
+                  bottomDiv.style.display = 'none';
+
+                  // Create a new wrapper for the certificate
+                  const certificateWrapper = document.createElement('div');
+                  certificateWrapper.classList.add('certwrapper'); // Add class certwrapper
+                  certificateWrapper.style.opacity = '0'; // Start with opacity 0
+                  certificateWrapper.style.transition = 'opacity 4s'; // Transition for fading in
+                  const congratsDiv = document.querySelector('.congrats');
+                  congratsDiv.style.display = "block";
+
+                  // Add the certificate message
+                  const adverbs = [
+                    "Great",
+                    "Amazing",
+                    "Excellent",
+                    "Fantastic",
+                    "Outstanding",
+                    "Remarkable",
+                    "Impressive",
+                    "Incredible",
+                    "Superb",
+                    "Exceptional",
+                    "Terrific",
+                    "Wonderful",
+                    "Magnificent",
+                    "Fabulous",
+                    "Stellar",
+                    "Phenomenal",
+                    "Extraordinary",
+                    "Brilliant",
+                    "Splendid",
+                    "Marvelous"
+                ];
+
+                // Get a random adverb from the array
+                const randomAdverb = adverbs[Math.floor(Math.random() * adverbs.length)];
+
+                const certificateEndings = [
+                    "Mastery",
+                    "Achievement",
+                    "Excellence",
+                    "Proficiency",
+                    "Distinction",
+                    "Aptitude",
+                    "Brilliance",
+                    "Skill",
+                    "Expertise",
+                    "Wisdom",
+                    "Accomplishment",
+                    "Prowess",
+                    "Success",
+                    "Brilliance",
+                    "Ingenuity",
+                    "Brilliance",
+                    "Valor",
+                    "Dedication",
+                    "Innovation",
+                    "Superiority"
+                ];
+
+                // Get a random index from the array
+                const randomIndex = Math.floor(Math.random() * certificateEndings.length);
+
+                // Use the random index to get a random certificate ending
+                const randomCertificateEnding = certificateEndings[randomIndex];
+
+                // Certificate text with the random ending
+                const certificateText = `
+                    <h2>Certificate of ${randomAdverb} ${randomCertificateEnding}</h2>
+                    <p>You've beaten all the Gym Leaders and the Elite Four!</p>
+                    <div class="badges">
+                    <img src="./assets/boulder.png" style="width: 50px; height: auto" alt="Boulder Badge">
+                    <img src="./assets/cascade.png" style="width: 50px; height: auto" alt="Cascade Badge">
+                    <img src="./assets/thunder.png" style="width: 50px; height: auto" alt="Thunder Badge">
+                    <img src="./assets/rainbow.png" style="width: 50px; height: auto" alt="Rainbow Badge">
+                    <img src="./assets/marsh.png" style="width: 50px; height: auto" alt="Marsh Badge">
+                    <img src="./assets/soul.png" style="width: 50px; height: auto" alt="Soul Badge">
+                    <img src="./assets/fire.png" style="width: 50px; height: auto" alt="Fire Badge">
+                    <img src="./assets/earth.png" style="width: 50px; height: auto" alt="Earth Badge">
+                    </div>
+
+                    <p>Completing this Pokémon quiz isn't just about answering questions—it's a journey that reflects your deep connection with the Pokémon universe. From the very first question to the final challenge, each step has been a testament to your dedication, knowledge, and passion for all things Pokémon.
+                    </p>
+                    <p>As you delved into the quiz, you couldn't help but feel a rush of excitement, reminiscent of the countless adventures you've embarked on in the Pokémon games, the thrill of battling opponents in the trading card game, and the nostalgia of watching the animated series. With each question, you found yourself immersed in memories of exploring new regions, capturing elusive Pokémon, and forming bonds with beloved characters.
+                    </p>
+                    <p>Some questions were easy, tapping into your wellspring of Pokémon knowledge effortlessly. Others, however, posed a real challenge, requiring you to dig deep into your memory, carefully analyze the options, and trust your instincts to select the right answer. But through it all, you persevered, fueled by your unwavering determination to conquer every obstacle in your path.
+                    <div class="signatures">
+                    <p>The Golden Times<br> <img src="./assets/signature2.png" style="width: 100px; height: auto" alt="Ho-oh"></p> <img src="./assets/hooh.png" style="width: 150px; height: auto" alt="Ho-oh"><p>Your Signature</p>
+                    </div>
+                    </p>
+
+
+                `;
+
+
+
+                // Set the certificate text to the certificateWrapper
+                certificateWrapper.innerHTML = certificateText;
+
+                  // Append the new wrapper to the parent container (articlequiz3 div)
+                  const articlequiz3Div = document.querySelector('.articlequiz3');
+                  articlequiz3Div.appendChild(certificateWrapper);
+
+                  // Fade in the new wrapper
+                  setTimeout(() => {
+                      certificateWrapper.style.opacity = '1';
+                  }, 100); // Start fading in after a short delay to ensure the new wrapper is appended
+                  certificateWrapper.addEventListener('click', () => {
+                    // Store the current HTML content of the body
+                    const originalBodyContent = document.body.innerHTML;
+
+                    // Replace the body content with the certificateWrapper content
+                    document.body.innerHTML = certificateWrapper.outerHTML;
+
+                    // Print the certificateWrapper content
+                    window.print();
+
+                    // Restore the original body content
+                    document.body.innerHTML = originalBodyContent;
+                });
+                  // You can also add further actions here, such as downloading the certificate
+              }, 4000); // Wait for the transition duration
           }
 
           let proceedToEliteClicked = false;
@@ -1131,7 +1331,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   // Reset display styles for question and options containers
                   questionContainer.style.display = "none";
                   optionsContainer.style.display = "none";
-                  resultContainer.innerHTML = `<h2>Lorelei is up first, get ready!</h2>`;
+                  resultContainer.innerHTML = `<h2>Lorelei is up first!</h2><img src="./assets/loreleisprite.png" style="width: 150px; height: auto" alt="Lorelei Sprite"><br><p>Good luck on the Elite Four, the final part of the quiz!`;
                   proceedToEliteButton.style.display = "";
 
 
@@ -1162,8 +1362,36 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     } else {
         if (correctCount === shuffledQuestions.length) {
+          const messages = [
+            "Congratulations, you've aced every question!",
+            "Incredible! You've answered all questions correctly!",
+            "Outstanding! Every question has been conquered!",
+            "Fantastic job! You've mastered every question!",
+            "Amazing! You got every question right!",
+            "Impressive work! You've aced the entire quiz!",
+            "Brilliant! All questions have been answered flawlessly!",
+            "Superb performance! You've nailed every question!",
+            "Remarkable! You've flawlessly completed every question!",
+            "Terrific job! You've aced every single question!",
+            "Exceptional work! Every question has been conquered!",
+            "Well done! You've answered every question perfectly!",
+            "Phenomenal effort! You've aced all the questions!",
+            "Stellar performance! You've conquered every question!",
+            "Incredible achievement! Every question is correct!",
+            "Bravo! You've mastered all the questions!",
+            "Excellent work! You've answered every question right!",
+            "Splendid job! You've aced all the questions!",
+            "Magnificent! Every question has been answered flawlessly!",
+            "Congratulations! You've flawlessly completed every question!"
+        ];
             // All questions are correct
-            resultContainer.innerHTML = `<h2>Awesome, you got all questions correct!</h2><p>You may now proceed to the next level!</p>`;
+            const randomIndex = Math.floor(Math.random() * messages.length);
+
+            // Use the random index to get a random congratulatory message
+            const randomMessage = messages[randomIndex];
+
+            // Set the congratulatory message to the result container
+            resultContainer.innerHTML = `<h2>${randomMessage}</h2><p>You may now proceed to the next level!</p>`;
             nextLevelButton.style.display = 'block';
             nextLevelButton.innerText = 'Next Level';
         } else {
@@ -1179,11 +1407,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const mergedDiv = document.createElement('div');
         mergedDiv.classList.add('left-square', 'merged', 'background-transition'); // Added 'background-transition' class
         // Set height of merged div to accommodate the height of three divs
-        const squareHeight = document.querySelector('.left-square.square1').clientHeight;
-        mergedDiv.style.height = '25%';
-        const square1Content = document.querySelector('.left-square.square1').innerHTML;
-        const square2Content = document.querySelector('.left-square.square2').innerHTML;
-        const square3Content = document.querySelector('.left-square.square3').innerHTML;
+
+        mergedDiv.style.height = '170px';
+
 
 
         // Replace square1 with the merged div
@@ -1219,11 +1445,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const mergedDiv = document.createElement('div');
     mergedDiv.classList.add('left-square', 'merged2', 'background-transition');
     // Set height of merged div to accommodate the height of three divs
-    const squareHeight = document.querySelector('.left-square.square4').clientHeight;
-    mergedDiv.style.height = '25%';
-    const square4Content = document.querySelector('.left-square.square4').innerHTML;
-    const square5Content = document.querySelector('.left-square.square5').innerHTML;
-    const square6Content = document.querySelector('.left-square.square6').innerHTML;
+
+    mergedDiv.style.height = '170px';
+
 
 
     // Replace square4 with the merged div
@@ -1256,11 +1480,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const mergedDiv = document.createElement('div');
     mergedDiv.classList.add('left-square', 'merged3', 'background-transition');
     // Set height of merged div to accommodate the height of three divs
-    const squareHeight = document.querySelector('.left-square.square7').clientHeight;
-    mergedDiv.style.height = '25%';
-    const square7Content = document.querySelector('.left-square.square7').innerHTML;
-    const square8Content = document.querySelector('.left-square.square8').innerHTML;
-    const square9Content = document.querySelector('.left-square.square9').innerHTML;
+
+    mergedDiv.style.height = '170px';
 
     // Replace square4 with the merged div
     const square7 = document.querySelector('.left-square.square7');
@@ -1293,11 +1514,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const mergedDiv = document.createElement('div');
     mergedDiv.classList.add('left-square', 'merged4', 'background-transition');
 
-    const squareHeight = document.querySelector('.left-square.square10').clientHeight;
-    mergedDiv.style.height = '25%';
-    const square7Content = document.querySelector('.left-square.square10').innerHTML;
-    const square8Content = document.querySelector('.left-square.square11').innerHTML;
-    const square9Content = document.querySelector('.left-square.square12').innerHTML;
+    mergedDiv.style.height = '170px';
+
 
     const square10 = document.querySelector('.left-square.square10');
     square10.parentNode.insertBefore(mergedDiv, square10);
@@ -1323,11 +1541,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const mergedDiv = document.createElement('div');
     mergedDiv.classList.add('right-square', 'merged5', 'background-transition');
 
-    const squareHeight = document.querySelector('.right-square.square15').clientHeight;
-    mergedDiv.style.height = '25%';
-    const square15Content = document.querySelector('.right-square.square15').innerHTML;
-    const square16Content = document.querySelector('.right-square.square16').innerHTML;
-    const square17Content = document.querySelector('.right-square.square17').innerHTML;
+
+    mergedDiv.style.height = '170px';
+
 
     const square15 = document.querySelector('.right-square.square15');
     square15.parentNode.insertBefore(mergedDiv, square15);
@@ -1358,11 +1574,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const mergedDiv = document.createElement('div');
     mergedDiv.classList.add('right-square', 'merged6', 'background-transition');
 
-    const squareHeight = document.querySelector('.right-square.square18').clientHeight;
-    mergedDiv.style.height = '25%';
-    const square18Content = document.querySelector('.right-square.square18').innerHTML;
-    const square19Content = document.querySelector('.right-square.square19').innerHTML;
-    const square20Content = document.querySelector('.right-square.square20').innerHTML;
+
+    mergedDiv.style.height = '170px';
+
 
     const square18 = document.querySelector('.right-square.square18');
     square18.parentNode.insertBefore(mergedDiv, square18);
@@ -1393,11 +1607,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const mergedDiv = document.createElement('div');
     mergedDiv.classList.add('right-square', 'merged7', 'background-transition');
 
-    const squareHeight = document.querySelector('.right-square.square21').clientHeight;
-    mergedDiv.style.height = '25%';
-    const square21Content = document.querySelector('.right-square.square21').innerHTML;
-    const square22Content = document.querySelector('.right-square.square22').innerHTML;
-    const square23Content = document.querySelector('.right-square.square23').innerHTML;
+
+    mergedDiv.style.height = '170px';
 
     const square21 = document.querySelector('.right-square.square21');
     square21.parentNode.insertBefore(mergedDiv, square21);
@@ -1431,11 +1642,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const mergedDiv = document.createElement('div');
     mergedDiv.classList.add('right-square', 'merged8', 'background-transition');
 
-    const squareHeight = document.querySelector('.right-square.square24').clientHeight;
-    mergedDiv.style.height = '25%';
-    const square24Content = document.querySelector('.right-square.square24').innerHTML;
-    const square25Content = document.querySelector('.right-square.square25').innerHTML;
-    const square26Content = document.querySelector('.right-square.square26').innerHTML;
+
+    mergedDiv.style.height = '170px';
+
 
     const square24 = document.querySelector('.right-square.square24');
     square24.parentNode.insertBefore(mergedDiv, square24);
@@ -1636,6 +1845,7 @@ setTimeout(() => {
       initializeQuizLevel(currentLevel, questionsLevel41);
     } else if (currentLevel === 43) {
       initializeQuizLevel(currentLevel, questionsLevel41);
+
     } else if (currentLevel === 44) {
       initializeQuizLevel(currentLevel, questionsLevel41);
     } else if (currentLevel === 45) {
