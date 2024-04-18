@@ -2,7 +2,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  let currentLevel = 1; // Initialize current level
+  let currentLevel = 39; // Initialize current level
 
   const questionContainers = [
     document.querySelector('.left-square.square1'),
@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.right-square.square26'),
     document.querySelector('.right-square.square27'),
     document.querySelector('.right-square.square28'),
-    // Add more containers if needed for additional levels
   ];
 
   // Function to initialize questions for a given level
@@ -1100,7 +1099,6 @@ document.addEventListener("DOMContentLoaded", function() {
             // Some questions are incorrect
             resultContainer.innerHTML = `<h2>Oh, you only got ${correctCount} out of ${shuffledQuestions.length} correct.</h2><p>Press restart to try again!</p>`;
             restartButton.style.display = 'block';
-            nextLevelButton.innerText = "Next Level";
         }
     } else if (currentLevel === 5 || currentLevel === 10 || currentLevel === 15 || currentLevel === 20 || currentLevel === 25 || currentLevel === 30 || currentLevel === 35 || currentLevel === 40 || currentLevel === 41 || currentLevel === 42 || currentLevel === 43 || currentLevel === 44 || currentLevel === 45) {
         if (correctCount === shuffledQuestions.length) {
@@ -1154,6 +1152,8 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (currentLevel === 41) {
               gymLeaderBeatenImage = 'brunosprite.png';
               gymLeaderText2 = "You've beaten Loreilei<br>Bruno is up next!";
+              nextLevelButton.style.display = 'block';
+              nextLevelButton.innerText = 'Next Level';
               resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
 
 
@@ -1161,33 +1161,41 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (currentLevel === 42) {
               gymLeaderBeatenImage = 'agathasprite.png';
               gymLeaderText2 = "You've beaten Bruno<br>Agatha is up next! The Ghost-type trainer is next!";
+              nextLevelButton.style.display = 'block';
+              nextLevelButton.innerText = 'Next Level';
               resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
               // Handle level 41 logic here
             } else if (currentLevel === 43) {
               gymLeaderBeatenImage = 'lancesprite.png';
               gymLeaderText2 = "You've beaten Agatha<br>Lance is up next!";
+              nextLevelButton.style.display = 'block';
+              nextLevelButton.innerText = 'Next Level';
               resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
               // Handle level 41 logic here
             } else if (currentLevel === 44) {
               gymLeaderBeatenImage = 'championsprite.png';
               gymLeaderText2 = "You've beaten Lance<br>Up next is your final battle against the champion!";
               resultContainer.innerHTML = `<h2>Congratulations!</h2><p>You answered all questions correctly!</p>`;
+              nextLevelButton.style.display = 'block';
+              nextLevelButton.innerText = 'Next Level';
               // Handle level 41 logic here
             } else if (currentLevel === 45) {
               gymLeaderBeatenImage = 'championsprite.png';
               gymLeaderText2 = "You have reached the end of the quiz";
-              resultContainer.innerHTML = `<h2>You have reached the end of the quiz!</h2><p>You answered all questions correctly!</p>`;
-              nextLevelButton.style.display = 'none'; // Hide the next level button immediately
+              nextLevelButton.style.display = 'none';
+              nextLevelButton.innerText = 'Next Level';
+              resultContainer.innerHTML = `<h2>You have reached the end of the quiz!</h2>
+                                          <p>You answered all questions correctly!</p>`;
 
               // Select the .wrapper and .bottom .champion divs
               const wrapperDiv = document.querySelector('.wrapper');
               const bottomDiv = document.querySelector('.bottom');
 
               // Fade out the .wrapper and .bottom .champion divs
-              wrapperDiv.style.transition = 'opacity 4s';
+              wrapperDiv.style.transition = 'opacity 8s';
               wrapperDiv.style.opacity = '0';
 
-              bottomDiv.style.transition = 'opacity 4s';
+              bottomDiv.style.transition = 'opacity 6s';
               bottomDiv.style.opacity = '0';
 
               // After 4 seconds (4000 milliseconds), fade out the elements and display the certificate
@@ -1225,7 +1233,25 @@ document.addEventListener("DOMContentLoaded", function() {
                     "Extraordinary",
                     "Brilliant",
                     "Splendid",
-                    "Marvelous"
+                    "Marvelous",
+                    "Spectacular",
+                    "Awe-inspiring",
+                    "Astonishing",
+                    "Sensational",
+                    "Mind-blowing",
+                    "Unforgettable",
+                    "Jaw-dropping",
+                    "Sublime",
+                    "Epic",
+                    "Glorious",
+                    "Dazzling",
+                    "Exhilarating",
+                    "Thrilling",
+                    "Enthralling",
+                    "Electrifying",
+                    "Mesmerizing",
+                    "Captivating",
+                    "Enchanting",
                 ];
 
                 // Get a random adverb from the array
@@ -1251,7 +1277,24 @@ document.addEventListener("DOMContentLoaded", function() {
                     "Valor",
                     "Dedication",
                     "Innovation",
-                    "Superiority"
+                    "Superiority",
+                    "Craftsmanship",
+                    "Competence",
+                    "Talent",
+                    "Artistry",
+                    "Virtuosity",
+                    "Flair",
+                    "Skillfulness",
+                    "Precision",
+                    "Perfection",
+                    "Quality",
+                    "Proficiency",
+                    "Capability",
+                    "Finesse",
+                    "Versatility",
+                    "Elegance",
+                    "Sophistication",
+
                 ];
 
                 // Get a random index from the array
@@ -1313,6 +1356,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     // Restore the original body content
                     document.body.innerHTML = originalBodyContent;
+                    certificateWrapper.addEventListener('click');
+
                 });
                   // You can also add further actions here, such as downloading the certificate
               }, 4000); // Wait for the transition duration
@@ -1349,11 +1394,11 @@ document.addEventListener("DOMContentLoaded", function() {
                   initializeQuizLevel(currentLevel, questionsLevel41);
               }
           });
+
             resultContainer.innerHTML = `<h2>Congratulations!</h2>
               <img src="./assets/${gymLeaderBeatenImage}" alt="Gym Leader Beaten" style="width: 150px; height: auto;" />
               <p>${gymLeaderText2}</p>`;
-            nextLevelButton.style.display = 'block';
-            nextLevelButton.innerText = 'Next Level';
+
         } else {
             // Some questions are incorrect
             resultContainer.innerHTML = `<h2>Oh, you only got ${correctCount} out of ${shuffledQuestions.length} correct.</h2><p>Press restart to try again!</p>`;
@@ -1850,8 +1895,8 @@ setTimeout(() => {
       initializeQuizLevel(currentLevel, questionsLevel41);
     } else if (currentLevel === 45) {
       initializeQuizLevel(currentLevel, questionsLevel41);
-    }
 
+    }
 
 
     // Add more conditions for additional levels if needed

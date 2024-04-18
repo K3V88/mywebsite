@@ -15,6 +15,12 @@ body {
    /* Enable vertical scrolling when content overflows */
 }
 
+.congrats p {
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
 .article {
   color: rgb(6, 6, 13);
   border-left: 4px solid rgb(47, 189, 237);
