@@ -701,6 +701,23 @@ nav {
   padding-right: 100px !important;
 }
 
+.certwrapper h2 {
+  color:#090630 !important;
+  font-size: 5em;
+  padding: 0 !important;
+  padding-top: 30px !important;
+
+  margin: 0 !important;
+}
+
+.certwrapper h3 {
+  color:#090630 !important;
+  font-size: 2em;
+  padding: 0 !important;
+  font-family: 'Old English Text MT';
+  margin: 0 !important;
+}
+
 .signatures {
   display: flex;
   justify-content: center;

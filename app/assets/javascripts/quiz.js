@@ -1180,7 +1180,7 @@ document.addEventListener("DOMContentLoaded", function() {
               nextLevelButton.innerText = 'Next Level';
               // Handle level 41 logic here
             } else if (currentLevel === 45) {
-              gymLeaderBeatenImage = 'championsprite.png';
+              gymLeaderBeatenImage = 'oak.png';
               gymLeaderText2 = "You have reached the end of the quiz";
               nextLevelButton.style.display = 'none';
               nextLevelButton.innerText = 'Next Level';
@@ -1245,6 +1245,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     "Epic",
                     "Glorious",
                     "Dazzling",
+                    "Inspirational",
+                    "Unbelievable",
+                    "Unreal",
+                    "Wondrous",
+                    "Unfathomable",
+                    "Incomparable",
+                    "Unparalleled",
+                    "Majestic",
+                    "Miraculous",
+                    "Surreal",
+                    "Enigmatic",
                     "Exhilarating",
                     "Thrilling",
                     "Enthralling",
@@ -1294,6 +1305,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     "Versatility",
                     "Elegance",
                     "Sophistication",
+                    "Adequacy",
+                    "Genius",
+                    "Prodigy",
+                    "Fulfillment",
+                    "Grandeur",
 
                 ];
 
@@ -1305,7 +1321,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // Certificate text with the random ending
                 const certificateText = `
-                    <h2>Certificate of ${randomAdverb} ${randomCertificateEnding}</h2>
+                    <h2 style="font-family: 'Old English Text MT', serif;">Certificate</h2><br><h3> of<br> ${randomAdverb} ${randomCertificateEnding}</h3>
                     <p>You've beaten all the Gym Leaders and the Elite Four!</p>
                     <div class="badges">
                     <img src="./assets/boulder.png" style="width: 50px; height: auto" alt="Boulder Badge">
@@ -1688,7 +1704,7 @@ document.addEventListener("DOMContentLoaded", function() {
     mergedDiv.classList.add('right-square', 'merged8', 'background-transition');
 
 
-    mergedDiv.style.height = '170px';
+    mergedDiv.style.height = '25%';
 
 
     const square24 = document.querySelector('.right-square.square24');
