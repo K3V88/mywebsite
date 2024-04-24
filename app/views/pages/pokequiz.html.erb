@@ -28,10 +28,18 @@
   <a href="https://www.serebii.net/pokemon/" target="_blank" class="gradient-link">Serebii</a><br>
   <a href="https://strategywiki.org/wiki/Pok%C3%A9mon_FireRed_and_LeafGreen" target="_blank" class="gradient-link">Strategy Wiki</a><br>
   <div class="congrats" style="display: none;"><p>Congratulations on finishing the quiz!<br>You can click on the certificate to print it</p></div>
+<label for="username" id="userLabel">Hello Trainer! What's your first name?</label>
+<input type="text" id="usernameInput" maxlength="20">
+<button onclick="submitName()" id="userButton">Start Quiz!</button>
+
+
+  <div class="left-column">
+    <!-- Your left-column content here -->
+  </div>
 
 
 
-      <div class="wrapper">
+      <div class="wrapper" style="display: none;">
          <div class="left-column">
             <div class="left-square square14"></div>
             <div class="left-square square13"></div>
@@ -78,7 +86,7 @@
          </div>
 
        </div>
-       <div class="bottom">
+       <div class="bottom" style="display: none;">
             <div class="elite-member"></div>
             <div class="elite-member"></div>
             <div class="elite-member"></div>

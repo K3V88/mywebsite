@@ -10,9 +10,19 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
 
+#userLabel {
+  padding: 10px;
+}
 
-   /* Enable vertical scrolling when content overflows */
+#userButton {
+  background: linear-gradient(to bottom right, gold, #f9ef65);
+}
+
+#usernameInput{
+ margin-bottom: 20px;
+ padding: 10px;
 }
 
 .congrats p {

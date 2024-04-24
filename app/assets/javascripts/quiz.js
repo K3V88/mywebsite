@@ -1,3 +1,34 @@
+let username;
+
+function submitName() {
+  const usernameInput = document.getElementById("usernameInput");
+  const wrapper = document.querySelector(".wrapper");
+  const bottom = document.querySelector(".bottom");
+
+
+  // Get the value from the input field
+  username = usernameInput.value;
+
+  // Check if the username is not empty
+  if (username.trim() !== "") {
+    // Hide the input field
+    usernameInput.style.display = "none";
+    userButton.style.display = "none";
+    userLabel.style.display = "none";
+
+
+
+    // Optionally, you can display a confirmation message
+    console.log(`Welcome, ${username}!`);
+
+    // Make the wrapper visible
+    wrapper.style.display = "";
+    bottom.style.display = "";
+  } else {
+    // Optionally, you can prompt the user to enter a name
+    console.log("Please enter your name.");
+  }
+}
 
 
 
@@ -1605,7 +1636,7 @@ document.addEventListener("DOMContentLoaded", function() {
                "30nidorina.png", "33nidorino.png", "36clefable.png", "40wigglytuff.png", "42golbat.png", "44gloom.png", "47parasect.png", "49venomoth.png", "51dugtrio.png", "53persian.png", "55golduck.png",
                "57primeape.png", "61poliwhirl.png", "64kadabra.png", "70weepinbell.png", "75graveler.png", "82magneton.png", "83farfetchd.png", "85dodrio.png", "87dewgong.png", "89muk.png", "93haunter.png",
                "95onix.png", "97hypno.png", "99kingler.png", "101electrode.png", "103exeggutor.png", "105marowak.png", "110weezing.png", "111rhyhorn.png", "115tangela.png", "117seadra.png", "119seaking.png",
-               "121starmie.png", "138omanyte.png", "140kabuto.png", "147dratini.png"]; // Example image names, replace with actual names
+               "121starmie.png", "138omanyte.png", "140kabuto.png", "147dratini.png"];
               } else if (randomRoll <= 95) {
               imageFolder = "./assets/cert/15percent/";
               imageNames = ["2ivysaur.png", "5charmeleon.png", "8wartortle.png", "31nidoqueen.png", "34nidoking.png", "38ninetales.png", "45vileplume.png", "59arcanine.png", "62poliwrath.png", "67machoke.png",
@@ -1649,7 +1680,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>Some questions were easy, tapping into your wellspring of Pokémon knowledge effortlessly. Others, however, posed a real challenge, requiring you to dig deep into your memory, carefully analyze the options, and trust your instincts to select the right answer. But through it all, you persevered, fueled by your unwavering determination to conquer every obstacle in your path.</p>
             <div class="signatures">
             <p>The Golden Times<br> <img src="./assets/signature2.png" style="width: 100px; height: auto" alt="Ho-oh"></p>
-            ${randomImage}<p>Your Signature</p>
+            ${randomImage}<p>${username}</p>
             </div>
           `;
 
