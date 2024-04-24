@@ -2,7 +2,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  let currentLevel = 39; // Initialize current level
+  let currentLevel = 44; // Initialize current level
 
   const questionContainers = [
     document.querySelector('.left-square.square1'),
@@ -759,29 +759,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel25 = [
     {
-      question: "At level 20, your Pokemon can evolve into Hitmontop with a certain stat condition, which one?",
-      options: ["Attack = Defense", "Attack > Defense", "Defense > Attack", "Speed > Attack & Defense"],
-      answer: "Attack = Defense"
+      question: "What is the highest stat of Alakazam, Sabrina's strongest Pokémon?",
+      options: ["Attack", "Special Attack", "Defense", "Special Defense"],
+      answer: "Special Attack"
     },
     {
-      question: "How is the Team Rocket hideout in Saffron City called?",
-      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
-      answer: "Silph Co."
+      question: "Which of these Pokémon evolves into Alakazam when traded?",
+      options: ["Abra", "Kadabra", "Mr. Mime", "Drowzee"],
+      answer: "Kadabra"
     },
     {
-      question: "How is the Team Rocket hideout in Saffron City called?",
-      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
-      answer: "Silph Co."
+      question: "Which of these status conditions can be caused by Psychic-type moves?",
+      options: ["Burn", "Poison", "Paralysis", "Confusion"],
+      answer: "Confusion"
     },
     {
-      question: "How is the Team Rocket hideout in Saffron City called?",
-      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
-      answer: "Silph Co."
+      question: "Which move is super effective against Psychic-type Pokémon?",
+      options: ["Leech Life", "Fire Blast", "Rock Throw", "Mach Punch"],
+      answer: "Leech Life"
     },
     {
-      question: "How is the Team Rocket hideout in Saffron City called?",
-      options: ["Silph Co.", "Game Corner", "Saffron Cave", "Rocket HQ"],
-      answer: "Silph Co."
+      question: " Alakazam's ability is Synchronize, what effect does it have?",
+      options: ["Reflects status conditions back to the opponent", "Increases the power of Psychic-type moves", "Boosts Alakazam's Speed stat", "Steals the held item from the opponent"],
+      answer: "Reflects status conditions back to the opponent"
     }
 
     // Add more questions for the next level...
@@ -789,9 +789,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel26 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "What type of Pokemon do the majority of trainers on the Cycling Road use?",
+      options: ["Fighting & Poison", "Electric & Ground", "Bug & Grass", "Fire & Ice"],
+      answer: "Fighting & Poison"
+    },
+    {
+      question: "Which bird Pokemon can't be found on the Cylcling Road?",
+      options: ["Pidgey", "Fearow", "Spearow", "Doduo"],
+      answer: "Pidgey"
+    },
+    {
+      question: "Compared to Pokemon Red/Blue, what can you no longer do at the Cycling Road?",
+      options: ["Fishing", "Cycling", "Find Hidden Items", "Fight Other Trainers"],
+      answer: "Fishing"
+    },
+    {
+      question: "One of the bikers has a different type of Pokemon than the rest, namely two ...?",
+      options: ["Grimer", "Primeape", "Koffing", "Voltorb"],
+      answer: "Voltorb"
+    },
+    {
+      question: "In 'Pokemon: Let's Go', the Cylcing Road is called 'Pokemon Road' instead, why?",
+      options: ["Only Pokemon are allowed", "You can't get a bike in this game", "You can catch almost all Pokemon here", "To avoid trademark issues"],
+      answer: "You can't get a bike in this game"
     }
 
     // Add more questions for the next level...
@@ -799,9 +819,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel27 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "What's the only Pokemon you will encounter here while surfing?",
+      options: ["Magikarp", "Gyarados", "Tentacool", "Goldeen"],
+      answer: "Tentacool"
+    },
+    {
+      question: "What fishing rod will you get from the Fishing Guru on this route?",
+      options: ["Old Rod", "Good Rod", "Super Rod", "Golden Rod"],
+      answer: "Super Rod"
+    },
+    {
+      question: "What Pokemon can you show the Fishing Guru to get Net Balls as a reward?",
+      options: ["Magikarp", "Goldeen", "Horsea", "Lapras"],
+      answer: "Magikarp"
+    },
+    {
+      question: "In both FireRed and LeafGreen, on Route 13 you have a 5% chance to encounter ...?",
+      options: ["Weepinbell", "Gloom", "Ditto", "Tauros"],
+      answer: "Ditto"
+    },
+    {
+      question: "On Route 12 you will find a Pokemon that you can only catch twice in the game, which one?",
+      options: ["Mr. Mime", "Snorlax", "Gyarados", "Scyther"],
+      answer: "Snorlax"
     }
 
     // Add more questions for the next level...
@@ -809,9 +849,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel28 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "What's the item the Warden wants you to retrieve from the Safari Zone?",
+      options: ["Gold Teeth", "Silver Eyes", "Bronze Leg", "Platinum Hand"],
+      answer: "Gold Teeth"
+    },
+    {
+      question: "What statement about using bait is true?",
+      options: ["The chance to flee decreases", "The catch rate increases", "The Pokemon can't flee after baiting", "The Pokemon will be eating for maximum 3 turns"],
+      answer: "The chance to flee decreases"
+    },
+    {
+      question: "At what point will you be kicked out of the Safari Zone?",
+      options: ["After 600 steps", "After catching 6 Pokemon", "After 15 minutes", "After finding all required items"],
+      answer: "After 600 steps"
+    },
+    {
+      question: "Which of the following Pokemon can be found in the Safari Zone?",
+      options: ["Dragonair", "Jynx", "Nidoking", "Exeggutor"],
+      answer: "Dragonair"
+    },
+    {
+      question: "When playing LeafGreen, which Pokemon will you not encounter in the Safari Zone?",
+      options: ["Kangaskhan", "Chansey", "Pinsir", "Scyther"],
+      answer: "Scyther"
     }
 
     // Add more questions for the next level...
@@ -819,9 +879,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel29 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "What's the slogan of Fuchsia City in Generations I - III?",
+      options: ["Behold! It's Passion Pink!", "Discover the Magic of Fuchsia!", "Observe! It's Pokemon Passion!", "Fuchsia City: Where Legends Await!"],
+      answer: "Behold! It's Passion Pink!"
+    },
+    {
+      question: "Which item will you receive after helping the Safari Zone Warden out?",
+      options: ["HM04 - Strength", "TM28 - Tombstony", "A Rare Candy", "30 Safari Balls"],
+      answer: "HM04 - Strength"
+    },
+    {
+      question: "What Pokemon will appear in the Fuchsia City Zoo if you picked the Helix Fossil in Mt. Moon?",
+      options: ["Kabuto", "Omanyte", "Cradily", "Aerodactyl"],
+      answer: "Kabuto"
+    },
+    {
+      question: "In Fuchsia City there is a Move Deleter, which of the following is true?",
+      options: ["It's the only way do delete HM moves", "You can't delete the last move of a Pokemon", "Deleting moves is free", "All statements are true"],
+      answer: "All statements are true"
+    },
+    {
+      question: "Which of the following Pokemon can't be found in the Fuchsia Zoo?",
+      options: ["Lapras", "Kangaskhan", "Dragonite", "Chansey"],
+      answer: "Dragonite"
     }
 
     // Add more questions for the next level...
@@ -829,9 +909,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel30 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "In Fuchsia Gym you have to find a way through a maze of ...?",
+      options: ["Poisonous Gas", "Invisible Walls", "Camouflaged Pokemon", "Fire"],
+      answer: "Invisible Walls"
+    },
+    {
+      question: "Why shouldn't you use Ground moves against Koga's Koffing and Weezing?",
+      options: ["It will instantly self-destruct", "It has no effect on them", "It boosts their Poison attacks", "They become immune to all other moves"],
+      answer: "It has no effect on them"
+    },
+    {
+      question: "What move does TM06 contain, which you will get after defeating Koga?",
+      options: ["Toxic", "Poison Gas", "Sludge Bomb", "Explosion"],
+      answer: "Toxic"
+    },
+    {
+      question: "What Pokémon of Koga's is the only one that can Selfdestruct in battle?",
+      options: ["Koffing", "Weezing", "Muk", "Venomoth"],
+      answer: "Koffing"
+    },
+    {
+      question: "Which of Koga's Muk's move is the only one that's not Poison-type?",
+      options: ["Acid Armor", "Toxic", "Sludge Bomb", "Minimize"],
+      answer: "Minimize"
     }
 
     // Add more questions for the next level...
@@ -839,9 +939,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel31 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "In FireRed you have a 4% chance to encounter Seadra on Route 20 with the Super Rod, in LeafGreen it's the same for ...?",
+      options: ["Kingler", "Gyarados", "Horsea", "Kingdra"],
+      answer: "Kingler"
+    },
+    {
+      question: "Which type of Pokemon do none of the trainers have along Route 19 & 20?",
+      options: ["Water", "Ice", "Flying", "Fire"],
+      answer: "Fire"
+    },
+    {
+      question: "Which of the Pokemon found on these routes evolve by level up, and not by evolution stone?",
+      options: ["Staryu", "Poliwhirl", "Shellder", "Goldeen"],
+      answer: "Goldeen"
+    },
+    {
+      question: "Which of the following moves is super effective against Tentacool, but not against Seadra?",
+      options: ["Thundershock", "Razor Leaf", "Ice Punch", "Confusion"],
+      answer: "Confusion"
+    },
+    {
+      question: "When surfing west on Route 20, which islands will you run into first?",
+      options: ["Seafoam Islands", "Cinnabar Island", "Sevii Islands", "Birth Island"],
+      answer: "Seafoam Islands"
     }
 
     // Add more questions for the next level...
@@ -849,9 +969,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel32 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "What are the Seafoam islands called in the Japanese version of the game?",
+      options: ["Twin Islands", "Triplet Islands", "Single Island", "Quadruplet Islands"],
+      answer: "Twin Islands"
+    },
+    {
+      question: "Why is it impossible to Surf before solving the puzzle inside the Seafoam Islands?",
+      options: ["Fast currents", "Dangerous Pokemon", "Strong Waves", "Invisible Barriers"],
+      answer: "Fast currents"
+    },
+    {
+      question: "What HM do you need to solve the puzzle in Seafoam Islands?",
+      options: ["Waterfall", "Cut", "Fly", "Strength"],
+      answer: "Strength"
+    },
+    {
+      question: "What type of Pokémon is Articuno, the legendary bird residing in the Seafoam Islands?",
+      options: ["Ice/Flying", "Water/Flying", "Dragon/Flying", "Normal/Flying"],
+      answer: "Ice/Flying"
+    },
+    {
+      question: "Which of the following gym leaders comes to Seafoam Islands to train?",
+      options: ["Koga", "Misty", "Brock", "Your Rival"],
+      answer: "Misty"
     }
 
     // Add more questions for the next level...
@@ -859,9 +999,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel33 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "What item do you need to find in the mansion in order to enter Cinnabar Gym?",
+      options: ["Secret Key", "Blaine's Glasses", "Max Lure", "Courage Candy"],
+      answer: "Secret Key"
+    },
+    {
+      question: "Which Pokemon can be caught here in Pokemon Blue, but not in FireRed/LeafGreen?",
+      options: ["Growlithe", "Ditto", "Vulpix", "Magmar"],
+      answer: "Magmar"
+    },
+    {
+      question: "How can you unlock doors inside the Pokémon Mansion?",
+      options: ["Using a special key", "Solving puzzles", "Defeating trainers", "Pressing hidden switches"],
+      answer: "Pressing hidden switches"
+    },
+    {
+      question: "Which type of trainer will you NOT encounter in the Mansion?",
+      options: ["Burglar", "Scientist", "Youngster", "Channeler"],
+      answer: "Channeler"
+    },
+    {
+      question: "Which legendary Pokemon is rumoured to have been created at the Pokemon Mansion?",
+      options: ["Mewtwo", "Zapdos", "Moltres", "Groudon"],
+      answer: "Mewtwo"
     }
 
     // Add more questions for the next level...
@@ -869,9 +1029,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel34 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "In the lab on Cinnabar Island, you can trade Raichu for ...?",
+      options: ["Electabuzz", "Electrode", "Jynx", "Tangela"],
+      answer: "Electrode"
+    },
+    {
+      question: "What happened to Cinnabar Island after the events of Gen I and Gen III?",
+      options: ["A volcano destroys the island", "The islands sinks into the sea", "Team Rocket take over the island", "The Cinnabar Gym Leader is now Brock"],
+      answer: "A volcano destroys the island"
+    },
+    {
+      question: "According to a report found in Silph Co., which Pokemon was created in the lab?",
+      options: ["Eevee", "Porygon", "Kangaskhan", "Mr. Mime"],
+      answer: "Porygon"
+    },
+    {
+      question: "What's the name of the Tangela you can obtain here by trade?",
+      options: ["Tangaroo", "Tangeny", "Tanglax", "Tangrowth"],
+      answer: "Tangeny"
+    },
+    {
+      question: "You can revive fossils in the lab, which of the following is true?",
+      options: ["Helix Fossil > Aerodactyl", "Dome Fossil > Kabuto", "Old Amber > Omanyte", "Root Fossil > Onix"],
+      answer: "Dome Fossil > Kabuto"
     }
 
     // Add more questions for the next level...
@@ -879,9 +1059,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel35 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "Which of these is the Spitfire Pokémon?",
+      options: ["Magmar", "Arcanine", "Moltres", "Charizard"],
+      answer: "Magmar"
+    },
+    {
+      question: "Tell me... who is the leader of Cinnabar Gym?!",
+      options: ["A Fire-type Pokémon pro", "A hotheaded quiz master", "A moustached old man", "An old guy in sunglasses"],
+      answer: ["A Fire-type Pokémon pro", "A hotheaded quiz master", "A moustached old man", "An old guy in sunglasses"]
+    },
+    {
+      question: "All of Blaine's Pokemon have one move in common, which one?",
+      options: ["Stomp", "Take Down", "Fire Blast", "Bite"],
+      answer: "Fire Blast"
+    },
+    {
+      question: "A Steel-type move used on a Fire-type Pokémon will ...?",
+      options: ["Be super effective", "Be not very effective", "Have no effect", "Do normal damage"],
+      answer: "Be not very effective"
+    },
+    {
+      question: "What do you need to do in order to proceed through the rooms in Cinnabar Gym?",
+      options: ["Battle the trainers", "Answer questions correctly", "Use Rock Smash on the doors", "Swim through lava"],
+      answer: ["Battle the trainers", "Answer questions correctly"]
     }
 
     // Add more questions for the next level...
@@ -889,19 +1089,61 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel36 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
-    }
+      question: "Who runs the Pokemon Network Center on One Island?",
+      options: ["Celio", "Mr. Fuji", "Daisy", "Professor Elm"],
+      answer: "Celio"
+    },
+    {
+      question: "The man inside the Game Corner on Two Island will ask you to find his missing ...?",
+      options: ["Pokemon", "Daughter", "Gym Badges", "Lava Cookie"],
+      answer: "Daughter"
+    },
+    {
+      question: "Which games can be played in the Game Corner on Two Island?",
+      options: ["Pokemon Jump", "Doduo Berry Picking", "Pidgeot Poker", "Rapidash Roulette"],
+      answer: "Pokemon Jump"
+    },
+    {
+      question: "Who seems to have invaded Three Island?",
+      options: ["A gang of bikers", "A group of tourists", "A flock of Pidgey", "A group of hikers"],
+      answer: "A gang of bikers"
+    },
+    {
+      question: "After completing the Ruby and Sapphire, you will be able to buy 3 new items at the stall, what is not one of them?",
+      options: ["Lava Cookie", "Moomoo Milk", "Timer Ball", "Repeat Ball"],
+      answer: "Moomoo Milk"
+    },
 
     // Add more questions for the next level...
   ];
 
   const questionsLevel37 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "Your quest in Berry Forest is to find the missing daughter, what's here name?",
+      options: ["Aveline", "Lysandra", "Lostelle", "Galatea"],
+      answer: "Lostelle"
+    },
+    {
+      question: "What Pokemon do you need to defeat in order for the little girl to return home?",
+      options: ["Hypno", "Venomoth", "Golbat", "Victreebel"],
+      answer: "Hypno"
+    },
+
+    {
+      question: "Berry Forest is the only place in Pokemon FireRed/LeafGreen where ...?",
+      options: ["Berries regenerate", "You can catch Venonat", "You will find a Full Heal", "You can't use Fishing Rods"],
+      answer: "Berries regenerate"
+    },
+
+    {
+      question: "Which Pokemon can be caught here, that can be caught in Safari Zone as well?",
+      options: ["Exeggcute", "Weepinbell", "Rhyhorn", "Dratini"],
+      answer: "Exeggcute"
+    },
+    {
+      question: "Depending on your version of the game, while surfing you have 5% to encounter ...?",
+      options: ["Golduck or Slowbro", "Seaking or Seadra", "Psyduck or Slowpoke", "Horsea or Goldeen"],
+      answer: "Golduck or Slowbro"
     }
 
     // Add more questions for the next level...
@@ -909,10 +1151,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel38 = [
     {
+      question: "What's the name of the spa on Kindle Road where you can heal your Pokemon?",
+      options: ["Ember Spa", "Flamethrower Springs", "Inferno Oasis", "Pyro Retreat"],
+      answer: "Lieutenant"
+    },
+    {
+      question: "An old man at the spa will give you a useful item, which one?",
+      options: ["HM06 - Rock Smash", "TM28 - Tombstony", "HM07 - Waterfall", "TM25 - Thunder"],
+      answer: "Lieutenant"
+    },
+    {
       question: "What military title does the Gym Leader Surge have?",
       options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
       answer: "Lieutenant"
-    }
+    },
+    {
+      question: "What military title does the Gym Leader Surge have?",
+      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
+      answer: "Lieutenant"
+    },
+    {
+      question: "What military title does the Gym Leader Surge have?",
+      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
+      answer: "Lieutenant"
+    },
 
     // Add more questions for the next level...
   ];
@@ -1319,35 +1581,77 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Use the random index to get a random certificate ending
                 const randomCertificateEnding = certificateEndings[randomIndex];
 
-                // Certificate text with the random ending
-                const certificateText = `
-                    <h2 style="font-family: 'Old English Text MT', serif;">Certificate</h2><br><h3> of<br> ${randomAdverb} ${randomCertificateEnding}</h3>
-                    <p>You've beaten all the Gym Leaders and the Elite Four!</p>
-                    <div class="badges">
-                    <img src="./assets/boulder.png" style="width: 50px; height: auto" alt="Boulder Badge">
-                    <img src="./assets/cascade.png" style="width: 50px; height: auto" alt="Cascade Badge">
-                    <img src="./assets/thunder.png" style="width: 50px; height: auto" alt="Thunder Badge">
-                    <img src="./assets/rainbow.png" style="width: 50px; height: auto" alt="Rainbow Badge">
-                    <img src="./assets/marsh.png" style="width: 50px; height: auto" alt="Marsh Badge">
-                    <img src="./assets/soul.png" style="width: 50px; height: auto" alt="Soul Badge">
-                    <img src="./assets/fire.png" style="width: 50px; height: auto" alt="Fire Badge">
-                    <img src="./assets/earth.png" style="width: 50px; height: auto" alt="Earth Badge">
-                    </div>
-
-                    <p>Completing this Pokémon quiz isn't just about answering questions—it's a journey that reflects your deep connection with the Pokémon universe. From the very first question to the final challenge, each step has been a testament to your dedication, knowledge, and passion for all things Pokémon.
-                    </p>
-                    <p>As you delved into the quiz, you couldn't help but feel a rush of excitement, reminiscent of the countless adventures you've embarked on in the Pokémon games, the thrill of battling opponents in the trading card game, and the nostalgia of watching the animated series. With each question, you found yourself immersed in memories of exploring new regions, capturing elusive Pokémon, and forming bonds with beloved characters.
-                    </p>
-                    <p>Some questions were easy, tapping into your wellspring of Pokémon knowledge effortlessly. Others, however, posed a real challenge, requiring you to dig deep into your memory, carefully analyze the options, and trust your instincts to select the right answer. But through it all, you persevered, fueled by your unwavering determination to conquer every obstacle in your path.
-                    <div class="signatures">
-                    <p>The Golden Times<br> <img src="./assets/signature2.png" style="width: 100px; height: auto" alt="Ho-oh"></p> <img src="./assets/hooh.png" style="width: 150px; height: auto" alt="Ho-oh"><p>Your Signature</p>
-                    </div>
-                    </p>
+                function getRandomInt(min, max) {
+                  return Math.floor(Math.random() * (max - min + 1)) + min;
+              }
 
 
-                `;
+              const randomRoll = Math.random() * 100;
+              console.log("Random Roll:", randomRoll);
 
+              // Determine the image folder and range based on the random roll
+              let imageFolder;
+              let imageNames;
+              if (randomRoll <= 50) {
+              imageFolder = "./assets/cert/49percent/";
+              imageNames = ["10caterpie.png", "11metapod.png", "13weedle.png", "14kakuna.png", "16pidgey.png", "17pidgeotto.png", "19rattata.png", "20raticate.png",
+               "21spearow.png", "22fearow.png", "23ekans.png", "27sandshrew.png", "29nidoranf.png", "32nidoranm.png", "35clefairy.png", "37vulpix.png", "39jigglypuff.png",
+               "41zubat.png", "43oddish.png", "46paras.png", "48venonat.png", "50diglett.png", "52meowth.png", "54psyduck.png", "56mankey.png", "58growlithe.png",
+               "60poliwag.png", "63abra.png", "66machop.png", "69bellsprout.png", "72tentacool.png", "74geodude.png", "77ponyta.png", "79slowpoke.png", "81magnemite.png", "84doduo.png", "86seel.png", "88grimer.png",
+               "90shellder.png", "92ghastly.png", "96drowzee.png", "98krabby.png", "100voltorb.png", "102exeggcute.png", "104cubone.png", "109koffing.png", "116horsea.png", "118goldeen.png", "120staryu.png", "129magikarp.png"];
+              } else if (randomRoll <= 80) {
+              imageFolder = "./assets/cert/30percent/";
+              imageNames = ["1bulbasaur.png", "4charmander.png", "7squirtle.png", "12butterfree.png", "15beedrill.png", "18pidgeot.png", "24arbok.png", "25pikachu.png", "26raichu.png", "28sandslash.png",
+               "30nidorina.png", "33nidorino.png", "36clefable.png", "40wigglytuff.png", "42golbat.png", "44gloom.png", "47parasect.png", "49venomoth.png", "51dugtrio.png", "53persian.png", "55golduck.png",
+               "57primeape.png", "61poliwhirl.png", "64kadabra.png", "70weepinbell.png", "75graveler.png", "82magneton.png", "83farfetchd.png", "85dodrio.png", "87dewgong.png", "89muk.png", "93haunter.png",
+               "95onix.png", "97hypno.png", "99kingler.png", "101electrode.png", "103exeggutor.png", "105marowak.png", "110weezing.png", "111rhyhorn.png", "115tangela.png", "117seadra.png", "119seaking.png",
+               "121starmie.png", "138omanyte.png", "140kabuto.png", "147dratini.png"]; // Example image names, replace with actual names
+              } else if (randomRoll <= 95) {
+              imageFolder = "./assets/cert/15percent/";
+              imageNames = ["2ivysaur.png", "5charmeleon.png", "8wartortle.png", "31nidoqueen.png", "34nidoking.png", "38ninetales.png", "45vileplume.png", "59arcanine.png", "62poliwrath.png", "67machoke.png",
+               "71victreebell.png", "73tentacruel.png", "76golem.png", "78rapidash.png", "80slowbro.png", "91cloyster.png", "106hitmonlee.png", "107hitmonchan.png", "108lickitung.png", "112rhydon.png",
+               "122mrmime.png", "130gyarados.png", "132ditto.png", "133eevee.png", "139omastar.png", "141kabutops.png", "148dragonair.png"]; // Example image names, replace with actual names
+              } else if (randomRoll <= 99) {
+              imageFolder = "./assets/cert/5percent/";
+              imageNames = ["3venusaur.png", "6charizard.png", "9blastoise.png", "65alakazam.png", "68machamp.png", "94gengar.png", "113chansey.png", "114kangaskhan.png", "123scyther.png", "124jynx.png", "125electabuzz.png", "126magmar.png", "127pinsir.png",
+               "128tauros.png", "131lapras.png", "134vaporeon.png", "135jolteon.png", "136flareon.png", "137porygon.png", "142aerodactyl.png", "143snorlax.png", "149dragonite.png"];
+              } else {
+              imageFolder = "./assets/cert/1percent/";
+              imageNames = ["150mewtwo.png", "hooh.png", "151mew.png", "146moltres.png", "144articuno.png", "145zapdos.png", "25pikachurare.png"];
+              }
 
+            // Generate a random index within the range of available image names
+            const randomImageIndex = getRandomInt(0, imageNames.length - 1);
+
+            // Get the random image name from the array
+            const imageName = imageNames[randomImageIndex];
+
+            // Generate the HTML for the image
+            const randomImage = `<img src="${imageFolder}${imageName}" style="width: 150px; height: auto" alt="Random Image">`;
+
+            // Certificate text with the random image
+            const certificateText = `
+            <h2 style="font-family: 'Old English Text MT', serif;">Certificate</h2><br>
+            <h3> of<br>${randomAdverb} ${randomCertificateEnding}</h3>
+            <p>You've beaten all the Gym Leaders and the Elite Four!</p>
+            <div class="badges">
+            <img src="./assets/boulder.png" style="width: 50px; height: auto" alt="Boulder Badge">
+            <img src="./assets/cascade.png" style="width: 50px; height: auto" alt="Cascade Badge">
+            <img src="./assets/thunder.png" style="width: 50px; height: auto" alt="Thunder Badge">
+            <img src="./assets/rainbow.png" style="width: 50px; height: auto" alt="Rainbow Badge">
+            <img src="./assets/marsh.png" style="width: 50px; height: auto" alt="Marsh Badge">
+            <img src="./assets/soul.png" style="width: 50px; height: auto" alt="Soul Badge">
+            <img src="./assets/fire.png" style="width: 50px; height: auto" alt="Fire Badge">
+            <img src="./assets/earth.png" style="width: 50px; height: auto" alt="Earth Badge">
+            </div>
+            <p>Completing this Pokémon quiz isn't just about answering questions—it's a journey that reflects your deep connection with the Pokémon universe.</p>
+            <p>As you delved into the quiz, you couldn't help but feel a rush of excitement, reminiscent of the countless adventures you've embarked on in the Pokémon games, the thrill of battling opponents in the trading card game, and the nostalgia of watching the animated series. With each question, you found yourself immersed in memories of exploring new regions, capturing elusive Pokémon, and forming bonds with beloved characters.</p>
+            <p>Some questions were easy, tapping into your wellspring of Pokémon knowledge effortlessly. Others, however, posed a real challenge, requiring you to dig deep into your memory, carefully analyze the options, and trust your instincts to select the right answer. But through it all, you persevered, fueled by your unwavering determination to conquer every obstacle in your path.</p>
+            <div class="signatures">
+            <p>The Golden Times<br> <img src="./assets/signature2.png" style="width: 100px; height: auto" alt="Ho-oh"></p>
+            ${randomImage}<p>Your Signature</p>
+            </div>
+          `;
 
                 // Set the certificate text to the certificateWrapper
                 certificateWrapper.innerHTML = certificateText;
@@ -1372,7 +1676,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     // Restore the original body content
                     document.body.innerHTML = originalBodyContent;
-                    certificateWrapper.addEventListener('click');
+                    certificateWrapper.addEventListener('click',);
 
                 });
                   // You can also add further actions here, such as downloading the certificate
@@ -2018,11 +2322,11 @@ setTimeout(() => {
       questionContainers[currentLevel - 7].textContent = "Sabrina 🔒";
     } else if (currentLevel === 26) {
       questionContainers[currentLevel - 9].style.backgroundColor = ""; // Level 6 complete, purple background
-      questionContainers[currentLevel - 9].textContent = "Bike Path 🔒"; // Additional message for final level
+      questionContainers[currentLevel - 9].textContent = "Cycling Road 🔒"; // Additional message for final level
 
     } else if (currentLevel === 27) {
       questionContainers[currentLevel - 10].classList.add("bike-path");
-      questionContainers[currentLevel - 10].textContent = "Bike Path ✔"; // Additional message for final level
+      questionContainers[currentLevel - 10].textContent = "Cycling Road ✔"; // Additional message for final level
       questionContainers[currentLevel - 9].textContent = "Route 12 & 13 🔒";
     } else if (currentLevel === 28) {
       questionContainers[currentLevel - 10].classList.add("route1213");
@@ -2065,10 +2369,10 @@ setTimeout(() => {
     } else if (currentLevel === 38) {
       questionContainers[currentLevel - 14].classList.add("berry");
       questionContainers[currentLevel - 14].textContent = "Berry Forest ✔"; // Additional message for final level
-      questionContainers[currentLevel - 13].textContent = "Kindle Road/Mt. Ember 🔒";
+      questionContainers[currentLevel - 13].textContent = "Mt. Ember 🔒";
     } else if (currentLevel === 39) {
       questionContainers[currentLevel - 14].classList.add("kindle-road");
-      questionContainers[currentLevel - 14].textContent = "Kindle Road ✔"; // Additional message for final level
+      questionContainers[currentLevel - 14].textContent = "Mt. Ember ✔"; // Additional message for final level
       questionContainers[currentLevel - 13].textContent = "Viridian City II 🔒";
     } else if (currentLevel === 40) {
       questionContainers[currentLevel - 14].classList.add("viridian2");
