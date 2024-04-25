@@ -1,6 +1,6 @@
 <div class="container">
     <div class="content">
-        <div class="articlecard">
+        <div class="articlecard" id="article1">
             <h2 class="article-title">Team Rocket Foiled Again! Ash and Pikachu Save Cerulean City Gym!</h2>
             <div class="headline"><p>The Golden Times - Cerulean City • Today, 11:05</p></div>
             <p><b>In the heart of Cerulean City, where the shimmering waters of the city's famous gym glistened under the sunlight, an attempted heist by the notorious Team Rocket sent shockwaves through the tranquil streets.</b>
@@ -10,7 +10,7 @@
               <%= render partial: 'shared/article_buttons' %>
         </div>
 
-        <div class="articlecard">
+        <div class="articlecard" id="article2">
             <h2 class="article-title">Fuchsia City's Shiny Spectacle: Trainers Flock to Special Day Celebrating Rare Pokémon!</h2>
             <div class="headline"><p>The Golden Times - Cerulean City • Today, 11:05</p></div>
             <p><b>In the heart of Fuchsia City, with its vibrant colors and surrounding forests, an atmosphere of excitement and anticipation filled the air. Today marked a special occasion, one eagerly awaited by trainers and Pokémon enthusiasts from far and wide – the annual Shiny Pokémon Celebration Day.</b><br><br>
@@ -22,7 +22,7 @@
             <%= render partial: 'shared/article_buttons' %>
         </div>
 
-        <div class="articlecard">
+        <div class="articlecard" id="article3" style="display:none">
             <h2 class="article-title">Umbreon Emerges from Ecruteak City Shadows – Dark Elegance Shines!</h2>
             <div class="headline"><p>The Golden Times - Cerulean City • Today, 11:05</p></div>
             <p>In the heart of Ecruteak City, where the shadows whispered ancient tales and the moonlight danced through the leaves of towering trees, a rare and mysterious sight unfolded. Luna, a young trainer with a curiosity that often led her to unexpected encounters, found herself wandering the tranquil streets of the historic city. As she passed by the imposing Tin Tower, Luna noticed a flicker of movement amidst the shadows. Intrigued, she approached cautiously, her senses on high alert. There, emerging from the darkness, was a magnificent Umbreon, its sleek black fur gleaming in the moonlight.<br><br>
@@ -33,7 +33,7 @@
             <%= render partial: 'shared/article_buttons' %>
         </div>
 
-        <div class="articlecard">
+        <div class="articlecard" id="article4" style="display:none">
             <h2 class="article-title">Shiny Snorlax Slumbers Through Celadon City Park</h2>
             <div class="headline"><p>The Golden Times - Cerulean City • Today, 11:05</p></div>
             <p>In the bustling city of Celadon, where the streets thrummed with energy and the air was thick with the scent of flowers, an unexpected event unfolded one sunny afternoon. Cooltrainer Jay, known for his daring battles and love for challenges, had awoken the legendary Shiny Snorlax on Route 16 with the mystical Pokeflute.
@@ -46,9 +46,10 @@
               <%= render partial: 'shared/article_buttons' %>
           </div>
 
-        <div class="articlecard">
-            <h2>TEST</h2>
-            <p>Article 5</p>
-        </div>
+        <div class="pagination">
+        <button id="previousButton" onclick="previousPage()">Previous</button>
+        <span id="pageNumber"></span>
+        <button id="nextButton" onclick="nextPage()">Next</button>
+    </div>
     </div>
 </div>
