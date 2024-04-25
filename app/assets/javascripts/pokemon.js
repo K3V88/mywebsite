@@ -1,3 +1,14 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+  const pokebox = document.querySelector(".pokebox");
+  const colorSelector = document.getElementById("background-color");
+
+  colorSelector.addEventListener("change", function() {
+    const selectedColor = colorSelector.value;
+    pokebox.style.backgroundColor = selectedColor;
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function()
  {
   const pokemonSprites = document.querySelectorAll(".pokemon-sprite");
@@ -16,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function()
     pinkCounter.textContent = pinkSprites.length;
     blueCounter.textContent = blueSprites.length;
   };
-
 
 
   // Initial update of the counters

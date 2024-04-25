@@ -1,42 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Page Navigation</title>
-<meta name ="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="/assets/styles.css">
-</head>
-<body>
-  <div id="articlestop">
-    <%= image_tag "goldenrodcity.jpg", class: "article-imagetop" %>
-    </div>
-    <nav>
-          <a href="index">News</a>
-          <a href="pokequiz">PokéQuiz</a>
-          <a href="tracker">Pokémon Tracker</a>
-          <a href="staff">Our Staff</a>
-          <a href="about">About</a>
-        </nav>
+
 <div class="container">
-
-      <div class="articlequiz3">
-
-      <h2>PokéQuiz</h2>
+      <div class="content">
+      <h2 class="mt-5 mb-5">PokéQuiz</h2>
       <p>Answer questions correctly in every town to proceed to the next one.<br>All questions are about FireRed and LeafGreen, unless defined otherwise.<br>Choose and read the questions carefully, if you make a mistake, you have to start over!<p><b>IF</b> you manage to beat the quiz, you will receive a printable certificate<br> with a randomly chosen Pokemon, some more rare than others.<br>There are close to 136.000 unique certificates!</p>
-       <p>Some useful websites that you can use to aid you in this quiz: <br>(will open in a new window) <br>
-        <br> <a href="https://bulbapedia.bulbagarden.net/" target="_blank" class="gradient-link">Bulbapedia</a><br>
-  <a href="https://www.serebii.net/pokemon/" target="_blank" class="gradient-link">Serebii</a><br>
-  <a href="https://strategywiki.org/wiki/Pok%C3%A9mon_FireRed_and_LeafGreen" target="_blank" class="gradient-link">Strategy Wiki</a><br>
-  <div class="congrats" style="display: none;"><p>Congratulations on finishing the quiz!<br>You can click on the certificate to print it</p></div>
-<label for="username" id="userLabel">Hello Trainer! What's your first name?</label>
-<input type="text" id="usernameInput" maxlength="20">
-<button onclick="submitName()" id="userButton">Start Quiz!</button>
+      <p>Some useful websites that you can use to aid you in this quiz: <br>(will open in a new window) <br>
+      <br><a href="https://bulbapedia.bulbagarden.net/" target="_blank" class="gradient-link">Bulbapedia</a><br>
+      <a href="https://www.serebii.net/pokemon/" target="_blank" class="gradient-link">Serebii</a><br>
+      <a href="https://strategywiki.org/wiki/Pok%C3%A9mon_FireRed_and_LeafGreen" target="_blank" class="gradient-link">Strategy Wiki</a><br>
 
-
-  <div class="left-column">
-    <!-- Your left-column content here -->
-  </div>
-
+      <div class="congrats" style="display: none;"><p>Congratulations on finishing the quiz!<br>You can click on the certificate to print it</p></div>
+      <label for="username" id="userLabel">Hello Trainer! What's your first name?</label>
+      <input type="text" id="usernameInput" maxlength="20">
+        <button onclick="submitName()" id="userButton">Start Quiz!</button>
 
 
       <div class="wrapper" style="display: none;">
@@ -94,6 +69,4 @@
        </div>
     </div>
    </div>
-
 </div>
-</body>

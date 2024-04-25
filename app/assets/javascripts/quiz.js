@@ -1658,7 +1658,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const imageName = imageNames[randomImageIndex];
 
             // Generate the HTML for the image
-            const randomImage = `<img src="${imageFolder}${imageName}" style="width: 150px; height: auto" alt="Random Image">`;
+            const randomImage = `<img src="${imageFolder}${imageName}" style="width: 200px; height: auto" alt="Random Image">`;
 
             // Certificate text with the random image
             const certificateText = `
@@ -1679,8 +1679,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>As you delved into the quiz, you couldn't help but feel a rush of excitement, reminiscent of the countless adventures you've embarked on in the Pokémon games, the thrill of battling opponents in the trading card game, and the nostalgia of watching the animated series. With each question, you found yourself immersed in memories of exploring new regions, capturing elusive Pokémon, and forming bonds with beloved characters.</p>
             <p>Some questions were easy, tapping into your wellspring of Pokémon knowledge effortlessly. Others, however, posed a real challenge, requiring you to dig deep into your memory, carefully analyze the options, and trust your instincts to select the right answer. But through it all, you persevered, fueled by your unwavering determination to conquer every obstacle in your path.</p>
             <div class="signatures">
-            <p>The Golden Times<br> <img src="./assets/signature2.png" style="width: 100px; height: auto" alt="Ho-oh"></p>
-            ${randomImage}<p>${username}</p>
+            <div style="display: inline-block;">
+            <p>The Golden Times<br> <img src="./assets/signature2.png" style="width: 100px; height: auto" alt="signature"></p></div>
+            ${randomImage}<div style="display: inline-block; min-width: 130px;"><p>${username}</p></div>
             </div>
           `;
 
@@ -1688,8 +1689,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 certificateWrapper.innerHTML = certificateText;
 
                   // Append the new wrapper to the parent container (articlequiz3 div)
-                  const articlequiz3Div = document.querySelector('.articlequiz3');
-                  articlequiz3Div.appendChild(certificateWrapper);
+                  const contentDiv = document.querySelector('.content');
+                  contentDiv.appendChild(certificateWrapper);
 
                   // Fade in the new wrapper
                   setTimeout(() => {

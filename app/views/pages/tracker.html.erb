@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Navigation</title>
-<link rel="stylesheet" type="text/css" href="/assets/styles.css">
-</head>
-
-<body>
-  <div id="articlestop">
-    <%= image_tag "goldenrodcity.jpg", class: "article-imagetop" %>
-  </div>
-      <nav>
-            <a href="index">News</a>
-            <a href="pokequiz">PokéQuiz</a>
-            <a href="#">Pokémon Tracker</a>
-            <a href="staff">Our Staff</a>
-            <a href="about">About</a>
-         </nav>
       <div class="container">
-        <div class="articlequiz3">
-        <h2>Pokémon Tracker</h2>
+        <div class="content2">
+        <h2 class="mt-4">Pokémon Tracker</h2>
         <p>The Pokémon Tracker for speedrunners is a user-friendly web page designed to assist players in tracking their progress in capturing Pokemon during speedruns. It features a grid layout displaying all Pokemon sprites, allowing players to easily visualize their collection. The interface allows players to mark a Pokemon as caught by left-clicking on its sprite. Conversely, right-clicking a Pokemon sprite marks it as a target to be caught. This intuitive design streamlines the tracking process, enabling speedrunners to efficiently manage their progress and optimize their gameplay strategies.</p>
         <h2>INSTRUCTIONS:</h2>
          <br>
@@ -63,18 +43,3 @@
     </div>
   </div>
 </div>
-<script>
-
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const pokebox = document.querySelector(".pokebox");
-    const colorSelector = document.getElementById("background-color");
-
-    colorSelector.addEventListener("change", function() {
-      const selectedColor = colorSelector.value;
-      pokebox.style.backgroundColor = selectedColor;
-    });
-  });
-</script>
-</body>
-</html>
