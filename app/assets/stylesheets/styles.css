@@ -200,10 +200,6 @@ nav {
   font-size: 1.3em;
 }
 
-nav i {
-  font-size: 30px;
-}
-
 /* Increased specificity for targeting icons */
 
 nav a {
@@ -213,8 +209,11 @@ nav a {
   text-align: center;
   font-weight: bolder;
   margin: 5px;
-  text-decoration: none;
   border-radius: 10px;
+}
+
+.socialicon {
+  width: 30px;
 }
 
 nav a:hover {
@@ -587,7 +586,7 @@ button:hover {
 
 @media only screen and (max-width: 768px) {
   /* Adjust layout for smaller screens */
-.article-imagetop {
+#articlestop {
   display: none;
 }
 
