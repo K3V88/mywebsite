@@ -212,6 +212,12 @@ nav a {
   width: 30px;
 }
 
+#pageNumber {
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
 nav a:hover {
   background-image: linear-gradient(to right, gold, rgb(254, 210, 128));
   padding-left: 20px;
