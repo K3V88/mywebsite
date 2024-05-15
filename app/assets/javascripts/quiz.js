@@ -33,7 +33,7 @@ function submitName() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  let currentLevel = 44; // Initialize current level
+  let currentLevel = 1; // Initialize current level
 
   const questionContainers = [
     document.querySelector('.left-square.square1'),
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "Liam"
     },
      {
-       question: "WHich of the following moves would be super effective against Sandshrew?",
+       question: "Which of the following moves would be super effective against Sandshrew?",
        options: ["Bubble", "Hyper Beam", "Dragon Rage", "Thunderbolt"],
        answer: "Bubble"
      },
@@ -509,7 +509,7 @@ document.addEventListener("DOMContentLoaded", function() {
        answer: "Random"
      },
      {
-       question: "Before fighting search, what do you have to search through to find the switches?",
+       question: "Before fighting Surge, what do you have to search through to find the switches?",
        options: ["Trash cans", "Bookshelves", "Water puddles", "Stone pillars"],
        answer: "Trash cans"
      },
@@ -519,7 +519,7 @@ document.addEventListener("DOMContentLoaded", function() {
        answer: "4x Pikachu"
      },
      {
-       question: "With what move could you probably sweep the entire Vermilion Gym?",
+       question: "What move is super effective against the majority of Pokemon in Vermilion Gym?",
        options: ["Dig", "Thundershock", "Wing Attack", "Water Gun"],
        answer: "Dig"
      }
@@ -751,7 +751,7 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "Attack = Defense"
     },
     {
-      question: "What's one main differences between Red/Blue and FireRed/LeafGreen in the Fighting Dojo?",
+      question: "What's a main difference between Red/Blue and FireRed/LeafGreen?",
       options: ["Gift Pokemon are 5 levels higher in Red/Blue", "Trainers no longer have fighting Pokemon", "You can choose from 3 gift Pokemon", "The Dojo is closed for renovation"],
       answer: "Gift Pokemon are 5 levels higher in Red/Blue"
     }
@@ -960,7 +960,7 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "Koffing"
     },
     {
-      question: "Which of Koga's Muk's move is the only one that's not Poison-type?",
+      question: "Which of Koga's Muk's moves is the only one that's not Poison-type?",
       options: ["Acid Armor", "Toxic", "Sludge Bomb", "Minimize"],
       answer: "Minimize"
     }
@@ -1184,37 +1184,57 @@ document.addEventListener("DOMContentLoaded", function() {
     {
       question: "What's the name of the spa on Kindle Road where you can heal your Pokemon?",
       options: ["Ember Spa", "Flamethrower Springs", "Inferno Oasis", "Pyro Retreat"],
-      answer: "Lieutenant"
+      answer: "Ember Spa"
     },
     {
       question: "An old man at the spa will give you a useful item, which one?",
       options: ["HM06 - Rock Smash", "TM28 - Tombstony", "HM07 - Waterfall", "TM25 - Thunder"],
-      answer: "Lieutenant"
+      answer: "HM06 - Rock Smash"
     },
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "Trainers on this route mainly use Fighting Pokemon, which Pokemon can't be hit by this type of move?",
+      options: ["Haunter", "Rapidash", "Zapdos", "Blastoise"],
+      answer: "Haunter"
     },
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "Which Pokemon resides at the top of Mt. Ember?",
+      options: ["Moltres", "Magmortar", "Charizard", "Torkoal"],
+      answer: "Moltres"
     },
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
-    },
+      question: "Which item that's needed to complete Celio's quest is found in Mt. Ember?",
+      options: ["Ruby", "Sapphire", "Gold Bar", "Silver Bar"],
+      answer: "Ruby"
+    }
 
     // Add more questions for the next level...
   ];
 
   const questionsLevel39 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "What infamous glitch Pokemon can be caught after talking to the Old Man in Viridian?",
+      options: ["Missingno.", "Mew", "Porygon 3", "Glitchazard"],
+      answer: "Missingno."
+    },
+    {
+      question: "Who takes over Viridian gym after the events of FireRed/Leafgreen?",
+      options: ["Prof. Oak", "Your Rival", "Team Rocket", "Lance"],
+      answer: "Your Rival"
+    },
+    {
+      question: "Which move can you get from the Move Tutor in Viridian City?",
+      options: ["Dream Eater", "Nightmare", "Mega Punch", "Fire Blast"],
+      answer: "Dream Eater"
+    },
+    {
+      question: "What has to be done in order to gain access to the Viridian City gym?",
+      options: ["Rock Smash the door", "Defeat the Elite Four", "Get 7 gym badges", "Collect at least 75 Pokemon"],
+      answer: "Get 7 gym badges"
+    },
+    {
+      question: "The Old man blocks your way until he had his coffee, whereas in the Japanese version he is ...?",
+      options: ["Drunk and passed out", "Lost in thought", "Counting Pokemon", "Hungry and waiting for food"],
+      answer: "Drunk and passed out"
     }
 
     // Add more questions for the next level...
@@ -1222,9 +1242,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel40 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["Lieutenant", "Major", "Colonel", "Sergeant"],
-      answer: "Lieutenant"
+      question: "Which type of Pokemon do the none of trainers in this gym use?",
+      options: ["Ground", "Poison", "Normal", "Water"],
+      answer: "Water"
+    },
+    {
+      question: "All of Giovanni's Pokemon have one move in common, which one?",
+      options: ["Horn Drill", "Earthquake", "Screech", "Poison Jab"],
+      answer: "Earthquake"
+    },
+    {
+      question: "Up to which level will your Pokemon obey you after beating Giovanni?",
+      options: ["Level 70", "Level 80", "Level 90", "Level 100"],
+      answer: "Level 100"
+    },
+    {
+      question: "After Giovanni disappears, you can use the itemfinder on that spot and find a ...?",
+      options: ["Macho Brace", "King's Rock", "Lucky Egg", "Focus Band"],
+      answer: "Macho Brace"
+    },
+    {
+      question: "What Pokemon did Giovanni is no longer on Giovanni's team, compared to Pokemon Red/Blue?",
+      options: ["Rhyhorn", "Nidoking", "Nidoking", "Kangaskhan"],
+      answer: "Kangaskhan"
     }
 
     // Add more questions for the next level...
@@ -1232,11 +1272,146 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel41 = [
     {
-      question: "What military title does the Gym Leader Surge have?",
-      options: ["level41", "Major", "Colonel", "Sergeant"],
-      answer: "level41"
+      question: "Which off the following moves will have no effect if Lorelei's Dewgong uses Safeguard?",
+      options: ["Hypnosis", "Horn Drill", "Razor Leaf", "Flamethrower"],
+      answer: "Hypnosis"
+    },
+    {
+      question: "Lorelei's second Pokemon is Cloyster, which has a particularly high ...?",
+      options: ["Defense", "Special Attack", "Special Defense", "Speed"],
+      answer: "Defense"
+    },
+    {
+      question: "Which move does Slowbro use to put your Pokemon to sleep?",
+      options: ["Yawn", "Sing", "Sleep Powder", "Hypnosis"],
+      answer: "Yawn"
+    },
+    {
+      question: "Jynx is the only Pokemon on Lorelei's team that doesn't have which type?",
+      options: ["Water", "Ice", "Psychic", "Ghost"],
+      answer: "Water"
+    },
+    {
+      question: "Lapras' attacks can result in various status effects, which is not one of them?",
+      options: ["Confusion", "Paralysis", "Freezing", "Poison"],
+      answer: "Poison"
     }
+    // Add more questions for the next level...
+  ];
 
+  const questionsLevel42 = [
+    {
+      question: "Which Pokemon appears twice on Bruno's team?",
+      options: ["Onix", "Machoke", "Machamp", "Hitmonlee"],
+      answer: "Onix"
+    },
+    {
+      question: "What ability prevents Onix from taking recoil damage from Double-Edge?",
+      options: ["Rock Head", "Sturdy", "Battle Armor", "Sand Veil"],
+      answer: "Rock Head"
+    },
+    {
+      question: "Why should you be careful with burning, poisoning or paralyzing Hitmonlee?",
+      options: ["Facade will do double damage", "It will use a berry to heal its status", "It doesn't affect Hitmonlee", "Your Pokemon will get the same status effect"],
+      answer: "Facade will do double damage"
+    },
+    {
+      question: "Which move does Hitmonchan use to send Physical Attacks back at the opponent with twice the power?",
+      options: ["Counter", "Mach Punch", "Mirror Move", "Sky Uppercut"],
+      answer: "Counter"
+    },
+    {
+      question: "Which of Machamp's moves does not have the chance to affect Machamp's or your own stats?",
+      options: ["Cross Chop", "Rock Tomb", "Bulk Up", "Scary Face"],
+      answer: "Cross Chop"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel43 = [
+    {
+      question: "What move(s) will Agatha's first Gengar use to frustrate you without immediately doing damage?",
+      options: ["Toxic", "Double Team", "Confuse Ray", "All of them"],
+      answer: "All of them"
+    },
+    {
+      question: "Which of Haunter's moves is useless without using Hypnosis first?",
+      options: ["Dream Eater", "Curse", "Shadow Punch", "Lick"],
+      answer: "Dream Eater"
+    },
+    {
+      question: "Why would it be a good idea to have a Pecha berry equipped against Golbat?",
+      options: ["To heal after getting poisoned from Poison Fang", "To heal confusion after it uses Confuse Ray", "It prevents flinching after it uses Bite", "It restores HP if you're close to fainting"],
+      answer: "To heal after getting poisoned from Poison Fang"
+    },
+    {
+      question: "Arbok also uses a move that could poison you, which one?",
+      options: ["Poison Fang", "Poison Jab", "Poison Sting", "Sludge Bomb"],
+      answer: "Sludge Bomb"
+    },
+    {
+      question: "What item is the second Gengar holding to restore its HP?",
+      options: ["Sitrus Berry", "Hyper Potion", "Lum Berry", "Max Potion"],
+      answer: "Sitrus Berry"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel44 = [
+    {
+      question: "What's Lance's 'only' Pokemon that doesn't have the Flying type?",
+      options: ["Dragonair", "Gyarados", "Aerodactyl", "Dragonite"],
+      answer: "Hypnosis"
+    },
+    {
+      question: "Blizzard will be super effective against each of Lance's Pokemon, except?",
+      options: ["Dragonair", "Aerodactyl", "Dragonite", "Gyarados"],
+      answer: "Gyarados"
+    },
+    {
+      question: "Aerodactyl's Ancient Power has a chance to increase it's stats except for one, which is ...?",
+      options: ["HP", "Speed", "Attack", "Special Defense"],
+      answer: "HP"
+    },
+    {
+      question: "Dragonair's move Safeguard is pretty useless because of its ...?",
+      options: ["Ability; Shed Skin", "High HP", "Held item; Lum Berry", "Low Special Defense"],
+      answer: "Ability; Shed Skin"
+    },
+    {
+      question: "Which of the following moves is double super effective on Lance's Dragonite?",
+      options: ["Thunder", "Ice Punch", "Solarbeam", "High Jump Kick"],
+      answer: "Ice Punch"
+    }
+    // Add more questions for the next level...
+  ];
+
+  const questionsLevel45 = [
+    {
+      question: "Which of the following statements about the Champion is true, when compared to the Elite 4?",
+      options: ["Only trainer with 6 Pokemon", "Only trainer with a Flying type", "Only trainer with a Psychic type", "All of his Pokemon are over level 60"],
+      answer: "Only trainer with 6 Pokemon"
+    },
+    {
+      question: "What move does Alakazam use to make up for its horrible defense?",
+      options: ["Light Screen", "Future Sight", "Reflect", "Withdraw"],
+      answer: "Reflect"
+    },
+    {
+      question: "Rhydon has the ability Rock Head, which prevents recoil damage from its move ...?",
+      options: ["Wild Charge", "Take Down", "Double Edge", "Submission"],
+      answer: "Take Down"
+    },
+    {
+      question: "Which Pokemon will always be on the Champion's team, no matter which starter you picked?",
+      options: ["Alakazam & Rhydon", "Pidgeot & Exeggutor", "Arcanine & Alakazam", "Gyarados & Pidgeot"],
+      answer: "Alakazam & Rhydon"
+    },
+    {
+      question: "Which of Pidgeot's move is the worst to get after increasing stats using X items?",
+      options: ["Whirlwind", "Aerial Ace", "Sand Attack", "Wing Attack"],
+      answer: "Whirlwind"
+    }
     // Add more questions for the next level...
   ];
 
@@ -1358,7 +1533,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "Outstanding! Every question has been conquered!",
             "Fantastic job! You've mastered every question!",
             "Amazing! You got every question right!",
-            "Impressive work! You've aced the entire quiz!",
+            "Impressive work! You've aced this part of the quiz!",
             "Brilliant! All questions have been answered flawlessly!",
             "Superb performance! You've nailed every question!",
             "Remarkable! You've flawlessly completed every question!",
@@ -1398,6 +1573,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // All questions are correct
             let gymLeaderBeatenImage;
             let gymLeaderText2;
+            nextLevelButton.style.display = 'block';
+            nextLevelButton.innerText = "Next Level";
             if (currentLevel === 5) {
                 gymLeaderBeatenImage = 'boulder.png';
                 gymLeaderText2 = "You've beaten Brock! <br>Congratulations!";
@@ -2239,14 +2416,14 @@ setTimeout(() => {
     } else if (currentLevel === 41) {
       initializeQuizLevel(currentLevel, questionsLevel41);
     } else if (currentLevel === 42) {
-      initializeQuizLevel(currentLevel, questionsLevel41);
+      initializeQuizLevel(currentLevel, questionsLevel42);
     } else if (currentLevel === 43) {
-      initializeQuizLevel(currentLevel, questionsLevel41);
+      initializeQuizLevel(currentLevel, questionsLevel43);
 
     } else if (currentLevel === 44) {
-      initializeQuizLevel(currentLevel, questionsLevel41);
+      initializeQuizLevel(currentLevel, questionsLevel44);
     } else if (currentLevel === 45) {
-      initializeQuizLevel(currentLevel, questionsLevel41);
+      initializeQuizLevel(currentLevel, questionsLevel45);
 
     }
 

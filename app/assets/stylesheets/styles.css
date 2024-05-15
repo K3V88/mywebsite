@@ -141,13 +141,13 @@ h2 {
 
 .article-image {
   float: left; /* Float the image to the left */
-  margin: 20px;
+  margin: 5px;
   max-width: 100%;
 }
 
 .article-image2 {
   float: right; /* Float the image to the left */
-  margin: 20px;
+  margin: 5px;
   max-width: 100%;
 }
 
@@ -162,13 +162,13 @@ h2 {
 
 .article-image3 {
   float: right; /* Float the image to the left */
-  margin: 20px;
+  margin: 5px;
   max-width: 100%;
 }
 
 .article-image4 {
   float: left; /* Float the image to the left */
-  margin: 20px;
+  margin: 5px;
   max-width: 100%;
 }
 
@@ -604,6 +604,7 @@ button:hover {
 
 }
 
+
 .wrapper {
   width: 50%;
   display: flex;
@@ -672,7 +673,7 @@ margin: 10px;
   }
 
 .articlecard {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -688,6 +689,8 @@ margin: 10px;
   justify-content: center;
   align-items: center;
   padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 
 }
 

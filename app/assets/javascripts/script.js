@@ -1,6 +1,6 @@
-function shareArticle(platform) {
-  // Get the parent article element of the clicked share button
-  const article = document.querySelector('.articlecard');
+function shareArticle(platform, shareButton) {
+  // Get the parent article card element of the clicked share button
+  const article = shareButton.closest('.articlecard');
   const articleTitle = article.querySelector('h2').innerText;
   const articleUrl = encodeURIComponent(window.location.href);
 
