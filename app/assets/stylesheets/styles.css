@@ -596,12 +596,28 @@ button:hover {
 
 .content {
   border: none !important;
+
 }
 
 .content p {
   margin: 0 !important;
- padding: 0 !important;
+  padding: 0 !important;
+}
 
+.quiz-container {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.staff-member {
+  width: 95%;
+}
+
+#question {
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -675,15 +691,14 @@ margin: 10px;
 .articlecard {
   margin-top: 20px;
   width: 100%;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 15px;
+
 }
 
 .content .articlecard p {
   text-align: center;
   justify-content: center;
   align-items: center;
-
 
 }
 
