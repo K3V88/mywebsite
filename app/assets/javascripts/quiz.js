@@ -1110,9 +1110,9 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "Be not very effective"
     },
     {
-      question: "What do you need to do in order to proceed through the rooms in Cinnabar Gym?",
+      question: "Besides battling the trainers what can you do in order to proceed through the rooms in Cinnabar Gym?",
       options: ["Battle the trainers", "Answer questions correctly", "Use Rock Smash on the doors", "Swim through lava"],
-      answer: ["Battle the trainers", "Answer questions correctly"]
+      answer: ["Answer questions correctly"]
     }
 
     // Add more questions for the next level...
