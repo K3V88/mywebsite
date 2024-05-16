@@ -599,6 +599,11 @@ button:hover {
 
 }
 
+.content2 {
+  max-width: 400px;
+
+}
+
 .content p {
   margin: 0 !important;
   padding: 0 !important;
@@ -613,6 +618,7 @@ button:hover {
 
 .staff-member {
   width: 95%;
+
 }
 
 #question {
@@ -622,7 +628,7 @@ button:hover {
 
 
 .wrapper {
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: column;
 }
@@ -640,15 +646,17 @@ button:hover {
 .content .article-image3,
 .content .article-image4 {
   float: none; /* Remove the float property */
-  margin: 0; /* Reset the margin */
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding: 0; /* Reset the padding */
 }
 
 img {
   width: 100%;
   float: none; /* Remove the float property */
-  margin: none;
+
   padding: none;
+
 }
 
 h3 {
@@ -657,7 +665,7 @@ h3 {
   text-align: center;
 }
 
- .pokebox .pokemon-container .content .pokebox .boxtop .bottom  {
+ .pokebox .pokemon-container .content .pokebox .boxtop  {
   width: 50vh;
   display: flex;
   margin: 10px; /* Center the container horizontally */
@@ -675,6 +683,7 @@ h3 {
 .bottom {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
 }
 
 .container p {
@@ -712,9 +721,9 @@ margin: 10px;
 
 }
 
-.staff-details p {
+.staff-details {
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 

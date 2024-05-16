@@ -1096,8 +1096,8 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       question: "Tell me... who is the leader of Cinnabar Gym?!",
-      options: ["A Fire-type Pokémon pro", "A hotheaded quiz master", "A moustached old man", "An old guy in sunglasses"],
-      answer: ["A Fire-type Pokémon pro", "A hotheaded quiz master", "A moustached old man", "An old guy in sunglasses"]
+      options: ["A Steel-type Pokémon pro", "A hotheaded quiz master", "A moustached young man", "An old woman in sunglasses"],
+      answer: "A hotheaded quiz master"
     },
     {
       question: "All of Blaine's Pokemon have one move in common, which one?",
@@ -1110,9 +1110,9 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "Be not very effective"
     },
     {
-      question: "Besides battling the trainers what can you do in order to proceed through the rooms in Cinnabar Gym?",
-      options: ["Battle the trainers", "Answer questions correctly", "Use Rock Smash on the doors", "Swim through lava"],
-      answer: ["Answer questions correctly"]
+      question: "How can you proceed through the rooms besides battling the trainers?",
+      options: ["Answer questions correctly", "Use teleporting tiles", "Swim through lava", "Rock Smash the doors"],
+      answer: "Answer questions correctly"
     }
 
     // Add more questions for the next level...
@@ -1140,7 +1140,7 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "A gang of bikers"
     },
     {
-      question: "After completing the Ruby and Sapphire, you will be able to buy 3 new items at the stall, what is not one of them?",
+      question: "After retrieving the Ruby and Sapphire, you will be able to buy 3 new items at the stall, what is not one of them?",
       options: ["Lava Cookie", "Moomoo Milk", "Timer Ball", "Repeat Ball"],
       answer: "Moomoo Milk"
     },
@@ -1217,7 +1217,7 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "Missingno."
     },
     {
-      question: "Who takes over Viridian gym after the events of FireRed/Leafgreen?",
+      question: "Who takes over Viridian gym after the events of FireRed/LeafGreen?",
       options: ["Prof. Oak", "Your Rival", "Team Rocket", "Lance"],
       answer: "Your Rival"
     },
@@ -1242,7 +1242,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const questionsLevel40 = [
     {
-      question: "Which type of Pokemon do the none of trainers in this gym use?",
+      question: "Which type of Pokemon do none of trainers in this gym use?",
       options: ["Ground", "Poison", "Normal", "Water"],
       answer: "Water"
     },
@@ -1262,7 +1262,7 @@ document.addEventListener("DOMContentLoaded", function() {
       answer: "Macho Brace"
     },
     {
-      question: "What Pokemon did Giovanni is no longer on Giovanni's team, compared to Pokemon Red/Blue?",
+      question: "What Pokemon is no longer on Giovanni's team, compared to Pokemon Red/Blue?",
       options: ["Rhyhorn", "Nidoking", "Nidoking", "Kangaskhan"],
       answer: "Kangaskhan"
     }
@@ -1361,7 +1361,7 @@ document.addEventListener("DOMContentLoaded", function() {
     {
       question: "What's Lance's 'only' Pokemon that doesn't have the Flying type?",
       options: ["Dragonair", "Gyarados", "Aerodactyl", "Dragonite"],
-      answer: "Hypnosis"
+      answer: "Dragonair"
     },
     {
       question: "Blizzard will be super effective against each of Lance's Pokemon, except?",
