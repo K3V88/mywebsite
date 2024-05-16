@@ -601,6 +601,8 @@ button:hover {
 
 .content2 {
   max-width: 400px;
+  border: none !important;
+  padding: 10px;
 
 }
 
@@ -624,6 +626,11 @@ button:hover {
 #question {
   margin: 0;
   padding: 0;
+}
+
+#question-container {
+  margin: 0;
+  padding: 10px;
 }
 
 
@@ -884,7 +891,7 @@ margin: 10px;
 }
 
 
-.content2 {
+.content3 {
   color: rgb(6, 6, 13);
   border-left: 4px solid rgb(47, 189, 237);
   border-right: 4px solid rgb(47, 189, 237);
@@ -908,7 +915,30 @@ margin: 10px;
   font-size: 20px;
 }
 
+.content3 p {
+  color: rgb(6, 6, 13);
+  font-family: calibri;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
 .content {
+  color: rgb(6, 6, 13);
+  font-family: calibri;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 200px;
+  max-width: 1200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  border: 2px solid transparent; /* Set initial border */
+}
+
+.content2 {
   color: rgb(6, 6, 13);
   font-family: calibri;
   display: flex;
