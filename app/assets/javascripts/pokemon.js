@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function()
 
   // Function to update the counters
   const updateCounters = () => {
-    const pinkSprites = document.querySelectorAll(".pokemon-sprite[style*='background-color: pink']");
+    const pinkSprites = document.querySelectorAll(".pokemon-sprite[style*='background-color: rgb(65, 216, 14)']");
     const blueSprites = document.querySelectorAll(".pokemon-sprite[style*='background-color: rgb(47, 189, 237)']");
 
     pinkCounter.textContent = pinkSprites.length;
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function()
           if (rightClickCount === 1) {
             clonedImage.style.backgroundColor = "rgb(47, 189, 237)"; // First right-click
           } else if (rightClickCount === 2) {
-            clonedImage.style.backgroundColor = "pink"; // Second right-click
+            clonedImage.style.backgroundColor = "rgb(65, 216, 14)"; // Second right-click
           } else {
             clonedImage.style.backgroundColor = ""; // Third or more right-clicks (remove background color)
             rightClickCount = 0; // Reset the right-click count

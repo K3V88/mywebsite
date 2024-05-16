@@ -289,20 +289,35 @@ nav a:hover {
 
 .boxtop {
   background-color: #ffc107;
+  font-weight: bold;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 5px solid rgb(47, 189, 237);
   border-bottom: 5px solid rgb(47, 189, 237);
-  font-size: 22px;
+  font-size: 30px;
   margin-top: 25px;
 }
 
-.boxtop span {
-  font-size: 22px;
-  color: #333; /* Example color */
+#counter-container p {
+ margin-bottom: 0 !important;
+ color: white;
+ font-size: 1.2em;
+
+
+}
+
+#blue-counter  {
+  font-size: 1.2em;
+  color: rgb(47, 189, 237); /* Blue color */
+}
+
+#pink-counter  {
+  font-size: 1.2em;
+  color: rgb(65, 216, 14); /* Pink color */
 }
 
 .tracker p {

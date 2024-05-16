@@ -5,6 +5,7 @@ function shareArticle(platform, shareButton) {
   const articleUrl = encodeURIComponent(window.location.href);
 
   let shareUrl = '';
+
   // Construct the share URL based on the selected platform
   switch(platform) {
     case 'whatsapp':
