@@ -1,41 +1,50 @@
     <div id="articlestop">
       <h2 class="mb-1">The Golden Times</h2>
       <p>Daily Pokemon stories straight from Johto</p>
+
        <%= image_tag "hohoho.png", class: "hooh" %>
 
 
     </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand p-2 m-2" href="index" style="background-color: gold;">The Golden Times</a>
+<a class="p-1 m-1" href="https://www.instagram.com/goldenrod.city.news/" target="_blank"><%= image_tag "insta.png", class: "socialicon" %></a> <!-- Instagram icon -->
+
+          <a class="p-1 m-1" href="https://www.facebook.com/profile.php?id=61558581625939" target="_blank"><%= image_tag "facebook.png", class: "socialicon" %></a> <!-- Twitch icon -->
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <!-- mx-auto for centering -->
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index">News</a>
+           <%= link_to "News", root_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pokequiz">PokeQuiz</a>
+          <%= link_to "PokeQuiz", pokequiz_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tracker">Pokemon Tracker</a>
+          <%= link_to "Pokemon Tracker", tracker_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="staff">Our Staff</a>
+          <%= link_to "Staff", staff_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about">About Us</a>
+           <%= link_to "About", about_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
           <a class="nav-link donate-button" href="https://www.paypal.com/donate/?hosted_button_id=QCWFD79VTG9SY" target="_blank">Donate</a>
         </li>
               </ul>
       <div class="d-flex"> <!-- Flex container for icons -->
-         <a class="p-1 m-1" href="https://www.instagram.com/goldenrod.city.news/" target="_blank"><%= image_tag "insta.png", class: "socialicon" %></a> <!-- Instagram icon -->
-          <a class="p-1 m-1" href="https://www.twitch.tv/sprintosaurusrex" target="_blank"><%= image_tag "twitch.png", class: "socialicon" %></a> <!-- Facebook icon -->
-          <a class="p-1 m-1" href="https://www.facebook.com/profile.php?id=61558581625939" target="_blank"><%= image_tag "facebook.png", class: "socialicon" %></a> <!-- Twitch icon -->
+           <% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to "Edit profile", edit_user_registration_path, class: "navbar-link" %> |
+  <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "navbar-link"  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, class: "navbar-link"  %> |
+  <%= link_to "Login", new_user_session_path, class: "navbar-link"  %>
+<% end %>
       </div>
     </div>
   </div>
