@@ -172,6 +172,29 @@ h2 {
   max-width: 100%;
 }
 
+ .navbar-link {
+ color: black;
+ text-decoration: none;
+ font-size: smaller;
+ margin: none !important;
+ padding: none !important;
+}
+
+.navbar .navbar-nav .navbar-link:hover,
+.navbar .navbar-nav .navbar-link:hover img.user-image {
+  /* Add your desired hover styles here */
+  color: #ff0000; /* Example: Change text color to red on hover */
+  background-color: transparent !important; /* Override background color */
+  /* Add any other hover styles you want */
+}
+
+.user-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+}
+
+
 
 .navbar-brand {
   background-color: gold;
@@ -220,8 +243,6 @@ nav a {
 
 nav a:hover {
   background-image: linear-gradient(to right, gold, rgb(254, 210, 128));
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 
@@ -910,6 +931,7 @@ margin: 10px;
   color: rgb(6, 6, 13);
   border-left: 4px solid rgb(47, 189, 237);
   border-right: 4px solid rgb(47, 189, 237);
+  border-top: 4px solid rgb(47, 189, 237);
   font-family: calibri;
   display: flex;
   flex-direction: column;

@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'users/registrations' }
+
   devise_scope :user do
     delete '/users/sign_out' => 'devise/sessions#destroy'
-  get '/users/sign_out' => 'devise/sessions#destroy'
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
+
   get 'users/about', to: 'pages#about'
   get 'users/staff', to: 'pages#staff'
   get 'users/tracker', to: 'pages#tracker'
@@ -16,8 +19,4 @@ Rails.application.routes.draw do
   get '/tracker', to: 'pages#tracker'
   get '/index', to: 'pages#index'
   get '/pokequiz', to: 'pages#pokequiz'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-end
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
